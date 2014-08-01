@@ -10,9 +10,9 @@ I created Litework for 2 reasons, firstly, to give myself a project to work on i
 
 Litework is not...
 
-• Expertly coded
-• A competitor to those fantastic frameworks such as Bootstrap and Foundation
-• One framework to rule them all
+• Expertly coded<br>
+• A competitor to those fantastic frameworks such as Bootstrap and Foundation<br>
+• One framework to rule them all<br>
 
 Development Roadmap
 ========
