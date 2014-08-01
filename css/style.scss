@@ -1,0 +1,587 @@
+/* ------------------- START OF RESET CSS -------------------  */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* ------------------- START OF NORMALIZE CSS -------------------  */
+
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/*############################## GENERAL CSS ##############################*/
+
+/*******************************************
+SASS Variables
+*******************************************/
+
+$content-width: 90%;
+$max-content-width: 1200px;
+
+$brand1: #9200FF;
+$brand2: #7500CC;
+$brand3: #49007F;
+$grey: #262626;
+
+$line-height: 1.1;
+
+$title-font: 'Roboto', helvetica, sans-serif;
+$para-font: 'Open Sans', helvetica, sans-serif;
+
+/******************************************* 
+Typography 
+*******************************************/
+
+body
+{
+    line-height:1.42857143;
+    background-color:#fff;
+}
+
+h1
+{
+	font-family:$para-font;
+	font-weight:500;
+	font-size:2.57em;
+	color:$brand3;
+}
+
+h2
+{
+	font-family:$para-font;
+	font-weight:500;
+	font-size:2.14em;
+	color:$brand1;
+    margin:0 0 0 0;
+    line-height:$line-height;
+}
+
+h3
+{
+	font-family:$para-font;
+	font-weight:500;
+	color:$brand1;
+	font-size:1.71em;
+    margin: 1em 0 0 0;
+    line-height:$line-height;
+}
+
+h4
+{
+	font-family:$para-font;
+	font-weight:500;
+	font-size:1.28em;
+    color:$brand1;
+    margin: 1em 0 0 0;
+    line-height:$line-height;
+}
+
+h5
+{
+	font-family:$para-font;
+	font-weight:500;
+	font-size:1em;
+    color:$brand1;
+    margin: 1em 0 0 0;
+    line-height:$line-height;
+}
+
+h6
+{
+	font-family:$para-font;
+	font-weight:500;
+	font-size:0.85em;
+    color:$brand1;
+    margin: 1em 0 0 0;
+    line-height:$line-height;
+}
+
+p
+{
+	font-family:$para-font;
+	font-weight:400;
+	font-size:1em;
+	margin:1.43em 0 0 0;
+    line-height:1.42857143;
+}
+
+a
+{
+    color:$brand3;
+    text-decoration:none;
+}
+
+hr
+{
+    background-color:$brand3;
+    margin:1em 0 1em 0;
+    width:75%;
+}
+
+ul
+{
+    list-style:disc inside;
+    line-height:$line-height;
+    margin:1em 0 0 0;
+}
+
+ol
+{
+    list-style:decimal inside;
+    line-height:$line-height;
+    margin:1em 0 0 0;
+}
+
+em
+
+{
+	font-style:italic;
+}
+
+.small
+{
+    color:#bababa;
+    font-size:0.75em;
+    margin:1em 0 1em 0;
+    line-height:$line-height;
+}
+
+#footer p
+{
+	font-size:0.75em;
+    margin:0 0 0 0;
+    line-height:$line-height;
+}
+
+#footer a
+{
+    color:white;
+}
+
+.title
+{
+float:left;
+margin:1em 0 1em 0;
+}
+
+.white
+{
+	color:white;
+}
+
+
+/******************************************* 
+Header elements 
+*******************************************/
+
+#nav a
+{
+    color:white;
+}
+
+#nav li
+{
+	font-family:$para-font;
+	font-weight:300;
+	display:inline;
+	margin:0 0 0 3em;
+}
+
+#nav
+{
+	margin:1em 0 0 0;
+	float:right;
+}
+
+#nav a:hover
+{
+    border-bottom:0.25em $brand1 solid;
+    padding:0 0 0.25em 0;
+}
+
+#navbox
+{
+	width:$content-width;
+	max-width: $max-content-width;
+	margin:auto;
+}
+
+#header
+{
+	overflow:hidden;
+	background:$brand3;
+	padding:0 0 2em 0;
+	margin:0 0 0 0;
+	clear:both;
+/*	background-image:url('../img/header.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+*/
+}
+
+#hero {
+	width:$content-width;
+	max-width:$max-content-width;
+	margin:auto;
+	margin-top:16em;
+    margin-bottom:12em;
+	color:white;
+    text-align:left;
+    overflow:hidden;
+}
+
+#heroimg {
+	width:50%;
+	float:right;
+    margin:2em 0 2em 0;
+    max-height:12em;
+}
+
+#hero img
+{
+	width:100%;
+	height:100%;
+}
+
+#herotxt {
+	width:50%;
+	padding:0 0 0 0;
+	float:left;
+    margin:2em 0 2em 0;
+}
+
+#white
+{
+	width:100%;
+	clear:both;
+	height:6em;
+	background-color:transparent;
+	position:fixed;
+    top:0;
+}
+
+button
+{
+    margin:1em 0 1em 0;
+    padding:1.5em;
+    background-color:$brand1;
+    border-radius:1em;
+    border:none;
+    color:white;
+}
+
+/******************************************* 
+Columns & layout
+*******************************************/
+
+
+#content
+{
+	width:$content-width;
+	max-width: $max-content-width;
+	margin:auto;
+	padding:2em 0 2em 0;
+}
+
+#social
+{
+	width:$content-width;
+	max-width: $max-content-width;
+	margin:auto;
+	padding:1em 0 1em 0;
+	overflow:hidden;
+		
+}
+
+.col4
+{
+	float:left;
+	width:30%;
+	padding:0 3.33% 0 0;
+    margin:2em 0 2em 0;
+}
+
+.col6
+{
+	float:left;
+	width:45%;
+	padding:0 5% 0 0;
+    margin:2em 0 2em 0;
+}
+
+.col8
+{
+	float:left;
+	width:60%;
+	padding:0 6.66% 0 0;
+    margin:2em 0 2em 0;
+}
+
+.col12
+{
+	width:100%;
+	padding:0;
+    margin:2em 0 2em 0;
+}
+
+#footer
+{
+background-color:$grey;
+margin:0 0 0 0;
+padding:2em 0 2em 0;
+color:white;
+overflow:hidden;
+clear:both;
+text-align:center;
+}
+
+#createdimg
+{
+width:33.3333%;
+float:left;
+max-height:12em;
+}
+
+#createdimg img
+{
+width:100%;
+}
+
+.clearfix
+{
+clear:both;
+overflow:hidden;
+}
+
+/******************************************* 
+Facebook Like box responsive hack 
+*******************************************/
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
+
+/******************************************* 
+Contact Form 
+*******************************************/
+
+.formbg
+{
+background-color:$brand2;
+width:100%;
+margin:0;
+}
+
+.form
+{
+width:$content-width;
+max-width:$max-content-width;
+margin:auto;
+padding:2em 0 2em 0;
+color:white;
+}
+
+input
+{
+width:100%;
+}
+
+label
+{
+padding:0 0 2em 0;
+}
+
+/******************************************* 
+Back to top button
+*******************************************/
+
+.backtotop
+{
+    width:2em;
+    height:2em;
+    position:fixed;
+    top:95%;
+    left:95%;
+}
+
+/*############################## RESPONSIVE CSS ##############################*/
+
+@media screen and (max-width:46em)
+{
+    
+h1
+{
+line-height:$line-height;
+}
+    
+.title
+{
+width:50%;
+float:left;
+max-height:150px;
+margin:1em 0 0 0;
+}
+	
+#logo
+{
+float:none;
+margin:auto;
+}
+    
+.col4
+{
+width:100%;
+padding:0;
+float:none;
+}
+    
+.col6
+{
+width:100%;
+padding:0;
+float:none;
+}
+	
+.col8
+{
+width:100%;
+padding:0;
+float:none;
+}
+	
+    #nav
+    {
+    display:block; 
+    float:none;
+    clear:both;
+    }
+    
+    #nav li
+    {
+        display:block;
+        text-align:center;
+        width:100%;
+        margin:0 0 0 0;
+        padding:1em 0 1em 0;
+        background-color:white;
+    }
+    
+    #nav a
+    {
+        color:$brand2;
+        font-weight:400;
+    }
+    
+    #hero
+    {
+        margin-top:0;
+    }
+	
+	#heroimg
+	{
+		float:none;
+		width:100%;
+	}
+	
+    #herotxt
+    {
+        margin:2em 0 2em 0;
+        padding:0;
+		float:none;
+		text-align:center;
+		width:100%;
+    }
+	
+	#white
+	{
+		position:relative;
+		padding:0 0 1em 0;
+		height:100%;
+        overflow:hidden;
+	}
+    
+    #createdimg
+{
+    width:100%;
+    float:none;
+	margin:1em 0 0 0;
+    overflow:hidden;
+    max-height:24em;
+}
+    
+    #maps
+    {
+        max-height:18em;
+        clear:both;
+        overflow:hidden;
+    }
+    
+    .backtotop
+{
+    top:95%;
+    left:90%;
+}
+
+
+       .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+
+    .nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+    
+    .nav-toggle {
+    float:right;
+        margin:8% 0 0 0;
+		background:url(http://ashedwardsdesign.co.uk/projects/litework/img/nav.gif);
+		width: 15px;
+height: 25px;
+		text-decoration:none;
+		background-size:cover;
+    background-position:center;
+  }
+    
+    
+}
+
+/*############################## END OF RESPONSIVE CSS ##############################*/
