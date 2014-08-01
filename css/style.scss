@@ -26,6 +26,16 @@ $title-font: 'Roboto', helvetica, sans-serif;
 $para-font: 'Open Sans', helvetica, sans-serif;
 
 /******************************************* 
+Box Model
+*******************************************/
+
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+/******************************************* 
 Typography 
 *******************************************/
 
@@ -225,14 +235,12 @@ Header elements
     margin-bottom:12em;
 	color:white;
     text-align:left;
-    overflow:hidden;
 }
 
 #heroimg {
 	width:50%;
 	float:right;
     margin:2em 0 2em 0;
-    max-height:12em;
 }
 
 #hero img
@@ -294,25 +302,25 @@ Columns & layout
 .col4
 {
 	float:left;
-	width:30%;
-	padding:0 3.33% 0 0;
+	width:33.333%;
+	padding:0 1em 0 0;
     margin:2em 0 2em 0;
 }
 
 .col6
 {
 	float:left;
-	width:45%;
-	padding:0 5% 0 0;
+	width:50%;
+	padding:0 1em 0 0;
     margin:2em 0 2em 0;
 }
 
 .col8
 {
 	float:left;
-	width:60%;
-	padding:0 6.66% 0 0;
-    margin:2em 0 2em 0;
+	width:66.666%;
+	padding:0 1em 0 0;
+	margin:2em 0 2em 0;
 }
 
 .col12
