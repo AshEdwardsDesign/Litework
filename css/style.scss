@@ -286,7 +286,7 @@ Columns & layout
 	width:$content-width;
 	max-width: $max-content-width;
 	margin:auto;
-	padding:2em 0 2em 0;
+	padding:0;
 }
 
 #social
@@ -357,6 +357,35 @@ width:100%;
 {
 clear:both;
 overflow:hidden;
+}
+
+/******************************************* 
+Tables
+*******************************************/
+
+table
+{
+	width:100%;
+	margin:1em 0;
+}
+
+tr
+{
+	width:33.333%; /* 100% divided by number of columns*/
+}
+
+td
+{
+	padding:1em;
+	text-align:left;
+}
+
+.tableheader
+{
+	font-weight:700;
+	font-size:1em;
+	background-color:$brand1;
+	color:white;
 }
 
 /******************************************* 
