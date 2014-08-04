@@ -47,16 +47,16 @@ body
 
 h1
 {
-	font-family:$para-font;
-	font-weight:500;
-	font-size:2.57em;
+	font-family:$title-font;
+	font-weight:100;
+	font-size:4em;
 	color:$brand3;
 }
 
 h2
 {
-	font-family:$para-font;
-	font-weight:500;
+	font-family:$title-font;
+	font-weight:400;
 	font-size:2.14em;
 	color:$brand1;
     margin:0 0 0 0;
@@ -65,8 +65,8 @@ h2
 
 h3
 {
-	font-family:$para-font;
-	font-weight:500;
+	font-family:$title-font;
+	font-weight:400;
 	color:$brand1;
 	font-size:1.71em;
     margin: 1em 0 0 0;
@@ -75,8 +75,8 @@ h3
 
 h4
 {
-	font-family:$para-font;
-	font-weight:500;
+	font-family:$title-font;
+	font-weight:400;
 	font-size:1.28em;
     color:$brand1;
     margin: 1em 0 0 0;
@@ -85,8 +85,8 @@ h4
 
 h5
 {
-	font-family:$para-font;
-	font-weight:500;
+	font-family:$title-font;
+	font-weight:300;
 	font-size:1em;
     color:$brand1;
     margin: 1em 0 0 0;
@@ -95,8 +95,8 @@ h5
 
 h6
 {
-	font-family:$para-font;
-	font-weight:500;
+	font-family:$title-font;
+	font-weight:300;
 	font-size:0.85em;
     color:$brand1;
     margin: 1em 0 0 0;
