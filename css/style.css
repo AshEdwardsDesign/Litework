@@ -193,46 +193,46 @@ body {
   background-color: #fff; }
 
 h1 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 2.57em;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 4em;
   color: #49007f; }
 
 h2 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 400;
   font-size: 2.14em;
   color: #9200ff;
   margin: 0 0 0 0;
   line-height: 1.1; }
 
 h3 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 400;
   color: #9200ff;
   font-size: 1.71em;
   margin: 1em 0 0 0;
   line-height: 1.1; }
 
 h4 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 400;
   font-size: 1.28em;
   color: #9200ff;
   margin: 1em 0 0 0;
   line-height: 1.1; }
 
 h5 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 300;
   font-size: 1em;
   color: #9200ff;
   margin: 1em 0 0 0;
   line-height: 1.1; }
 
 h6 {
-  font-family: "Open Sans", helvetica, sans-serif;
-  font-weight: 500;
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 300;
   font-size: 0.85em;
   color: #9200ff;
   margin: 1em 0 0 0;
@@ -246,6 +246,8 @@ p {
   line-height: 1.42857143; }
 
 a {
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 400;
   color: #49007f;
   text-decoration: none; }
 
