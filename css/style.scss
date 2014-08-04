@@ -231,7 +231,7 @@ Header elements
 	width:$content-width;
 	max-width:$max-content-width;
 	margin:auto;
-	margin-top:16em;
+	margin-top:12em;
     margin-bottom:12em;
 	color:white;
     text-align:left;
@@ -376,12 +376,14 @@ tr
 
 td
 {
-	padding:1em;
+	padding:0.5em;
 	text-align:left;
+	border: 1px solid lightgrey;
 }
 
 .tableheader
 {
+	font-family:$title-font;
 	font-weight:700;
 	font-size:1em;
 	background-color:$brand1;

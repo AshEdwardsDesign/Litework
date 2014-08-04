@@ -329,7 +329,7 @@ Header elements
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  margin-top: 16em;
+  margin-top: 12em;
   margin-bottom: 12em;
   color: white;
   text-align: left; }
@@ -437,10 +437,12 @@ tr {
   /* 100% divided by number of columns*/ }
 
 td {
-  padding: 1em;
-  text-align: left; }
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid lightgrey; }
 
 .tableheader {
+  font-family: "Roboto", helvetica, sans-serif;
   font-weight: 700;
   font-size: 1em;
   background-color: #9200ff;
