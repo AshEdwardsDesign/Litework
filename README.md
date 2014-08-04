@@ -1,7 +1,9 @@
 Litework
 ========
 
-Litework is a simple and lightweight HTML5/CSS3 framework for creating websites.
+Litework is a simple, lightweight and open source HTML5/CSS3 framework for creating websites.
+
+<strong>Please note: Litework is not yet ready for a production environment without some tweaking</strong>
 
 Why Litework?
 ========
@@ -10,9 +12,9 @@ I created Litework for 2 reasons, firstly, to give myself a project to work on i
 
 Litework is not...
 
-• Expertly coded<br>
-• A competitor to those fantastic frameworks such as Bootstrap and Foundation<br>
-• One framework to rule them all<br>
+•    Expertly coded<br>
+•    A competitor to those fantastic frameworks such as Bootstrap and Foundation<br>
+•    One framework to rule them all<br>
 
 Development Roadmap
 ========
@@ -25,11 +27,17 @@ If you would like to contribute, fork or make a pull request, please feel free.
 
 Contributions to the items listed on the Trello board (if they haven't already been branched) are highly appreciated.
 
-Useful Links
+Litework on the web
 ========
-
-Here are several links that you may find useful:
 
 Website: (coming soon)<br>
 Facebook: (coming soon)<br>
 Twitter: (coming soon)<br>
+
+Useful 3rd party tools/links
+========
+
+Koala (compiler): http://koala-app.com/<br>
+SASS (the CSS language used in Litework): http://sass-lang.com/<br>
+
+Thanks for visiting!
