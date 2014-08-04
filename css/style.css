@@ -329,7 +329,7 @@ Header elements
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  margin-top: 16em;
+  margin-top: 12em;
   margin-bottom: 12em;
   color: white;
   text-align: left; }
@@ -372,7 +372,7 @@ Columns & layout
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  padding: 2em 0 2em 0; }
+  padding: 0; }
 
 #social {
   width: 90%;
@@ -424,6 +424,29 @@ Columns & layout
 .clearfix {
   clear: both;
   overflow: hidden; }
+
+/******************************************* 
+Tables
+*******************************************/
+table {
+  width: 100%;
+  margin: 1em 0; }
+
+tr {
+  width: 33.333%;
+  /* 100% divided by number of columns*/ }
+
+td {
+  padding: 0.5em;
+  text-align: left;
+  border: 1px solid lightgrey; }
+
+.tableheader {
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #9200ff;
+  color: white; }
 
 /******************************************* 
 Facebook Like box responsive hack 
