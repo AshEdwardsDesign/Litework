@@ -1,9 +1,9 @@
 Litework
 ========
 
-Litework is a simple, lightweight and open source HTML5/CSS3 framework for creating websites.
+Litework is a simple, lightweight, responsive and open source HTML5/CSS3 framework for creating websites.
 
-<strong>Please note: Litework is not yet ready for a production environment without some tweaking</strong>
+<strong>Please note: Litework is not yet ready for a production environment without some tweaking and additions</strong>
 
 Why Litework?
 ========
