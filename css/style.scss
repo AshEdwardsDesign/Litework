@@ -15,9 +15,9 @@ SASS Variables
 $content-width: 90%;
 $max-content-width: 1200px;
 
-$brand1: #9200FF;
-$brand2: #7500CC;
-$brand3: #49007F;
+$brand1: #00A1D9;
+$brand2: #04518C;
+$brand3: #003056;
 $grey: #262626;
 
 $line-height: 1.1;
@@ -227,30 +227,33 @@ Header elements
 	width:$content-width;
 	max-width:$max-content-width;
 	margin:auto;
-	margin-top:12em;
-    margin-bottom:12em;
+	margin-top:6em;
+    margin-bottom:6em;
 	color:white;
     text-align:left;
 	overflow:hidden;
+	position:relative;
 }
 
 #heroimg {
 	width:50%;
+	height:100%;
 	float:right;
-    margin:2em 0 2em 0;
+    margin:0;
+	position:absolute;
+	right:0;
 }
 
 #hero img
 {
 	width:100%;
-	height:100%;
 }
 
 #herotxt {
 	width:50%;
 	padding:0 0 0 0;
 	float:left;
-    margin:2em 0 2em 0;
+    margin:0;
 }
 
 #white
@@ -398,7 +401,7 @@ Contact Form
 
 .formbg
 {
-background-color:$brand2;
+background-color:$brand1;
 width:100%;
 margin:0;
 }
