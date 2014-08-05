@@ -283,10 +283,6 @@ em {
 #footer a {
   color: white; }
 
-.title {
-  float: left;
-  margin: 1em 0 1em 0; }
-
 .white {
   color: white; }
 
@@ -334,7 +330,8 @@ Header elements
   margin-top: 12em;
   margin-bottom: 12em;
   color: white;
-  text-align: left; }
+  text-align: left;
+  overflow: hidden; }
 
 #heroimg {
   width: 50%;
@@ -353,9 +350,8 @@ Header elements
 
 #white {
   width: 100%;
-  clear: both;
   height: 6em;
-  background-color: transparent;
+  background-color: #49007f;
   position: fixed;
   top: 0; }
 
