@@ -37,6 +37,7 @@ Twitter: (coming soon)<br>
 Useful 3rd party tools/links
 ========
 
+Slicknav: http://slicknav.com/ - many thanks to Josh (@computerwolf) for permission to include it :)<br>
 Koala (compiler): http://koala-app.com/<br>
 SASS (the CSS language used in Litework): http://sass-lang.com/<br>
 
