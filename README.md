@@ -14,7 +14,7 @@ Litework is not...
 
 •    Expertly coded<br>
 •    A competitor to those fantastic frameworks such as Bootstrap and Foundation<br>
-•    One framework to rule them all<br>
+•    Any good... at all ;)<br>
 
 Development Roadmap
 ========
