@@ -1,0 +1,30 @@
+/******************************************* 
+Tables
+*******************************************/
+
+table
+{
+	width:100%;
+	margin:1em 0;
+}
+
+tr
+{
+	width:33.333%; /* 100% divided by number of columns*/
+}
+
+td
+{
+	padding:0.5em;
+	text-align:left;
+	border: 1px solid lightgrey;
+}
+
+.tableheader
+{
+	font-family:$title-font;
+	font-weight:700;
+	font-size:1em;
+	background-color:$brand1;
+	color:white;
+}

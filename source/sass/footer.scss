@@ -1,0 +1,26 @@
+/******************************************* 
+Footer
+*******************************************/
+
+#footer
+{
+background-color:$grey;
+margin:0 0 0 0;
+padding:2em 0 2em 0;
+color:white;
+overflow:hidden;
+clear:both;
+text-align:center;
+}
+
+#footer p
+{
+	font-size:0.75em;
+    margin:0 0 0 0;
+    line-height:$line-height;
+}
+
+#footer a
+{
+    color:white;
+}

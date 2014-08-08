@@ -1,0 +1,50 @@
+/******************************************* 
+Header elements 
+*******************************************/
+
+#header
+{
+	overflow:hidden;
+	background:$brand3;
+	padding:0 0 2em 0;
+	margin:0 0 0 0;
+	clear:both;
+/*	background-image:url('../img/header.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+*/
+}
+
+#hero {
+	width:$content-width;
+	max-width:$max-content-width;
+	margin:auto;
+	margin-top:6em;
+    margin-bottom:6em;
+	color:white;
+    text-align:left;
+	overflow:hidden;
+	position:relative;
+}
+
+#heroimg {
+	width:50%;
+	height:100%;
+	float:right;
+    margin:0;
+	position:absolute;
+	right:0;
+}
+
+#hero img
+{
+	width:100%;
+}
+
+#herotxt {
+	width:50%;
+	padding:0 0 0 0;
+	float:left;
+    margin:0;
+}
