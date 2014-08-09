@@ -12,7 +12,7 @@ body
 h1
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	font-size:2.25em;
 	color:$brand3;
 }
@@ -20,50 +20,45 @@ h1
 h2
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	font-size:1.875em;
 	color:$brand1;
-    margin:0 0 0 0;
     line-height:$line-height;
 }
 
 h3
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	color:$brand1;
 	font-size:1.5em;
-    margin: 1em 0 0 0;
     line-height:$line-height;
 }
 
 h4
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	font-size:1.125em;
     color:$brand1;
-    margin: 1em 0 0 0;
     line-height:$line-height;
 }
 
 h5
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	font-size:0.875em;
     color:$brand1;
-    margin: 1em 0 0 0;
     line-height:$line-height;
 }
 
 h6
 {
 	font-family:$title-font;
-	font-weight:100;
+	font-weight:700;
 	font-size:0.75em;
     color:$brand1;
-    margin: 1em 0 0 0;
     line-height:$line-height;
 }
 
@@ -78,7 +73,7 @@ p
 
 a
 {
-     font-family:$title-font;
+     font-family:$para-font;
      font-weight:400;
      color:$brand3;
      text-decoration:none;
@@ -121,5 +116,5 @@ em
 
 .white
 {
-	color:white;
+	color:white !important;
 }

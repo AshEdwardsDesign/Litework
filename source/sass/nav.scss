@@ -2,26 +2,21 @@
 Navigation elements 
 *******************************************/
 
-#nav a
+#menu a
 {
     color:white;
 }
 
-#nav li
+#menu li
 {
+	margin:1em 0 0 3em;
+	float:right;
 	font-family:$para-font;
 	font-weight:300;
 	display:inline;
-	margin:0 0 0 3em;
 }
 
-#nav
-{
-	margin:1em 0 0 0;
-	float:right;
-}
-
-#nav a:hover
+#menu a:hover
 {
     border-bottom:0.25em $brand1 solid;
     padding:0 0 0.25em 0;
@@ -41,4 +36,8 @@ Navigation elements
 	background-color:$brand3;
 	position:fixed;
     top:0;
+}
+
+.slicknav_menu {
+	display:none;
 }
