@@ -862,7 +862,7 @@ Back to top button
     float: none; }
 
   #header {
-    padding: 1em 0; }
+    padding: 0; }
 
   #hero {
     margin: 0 auto;
@@ -870,7 +870,7 @@ Back to top button
 
   #navstrip {
     position: relative;
-    padding: 0 0 1em 0;
+    padding: 0;
     height: 100%;
     overflow: hidden; }
 
@@ -887,5 +887,7 @@ Back to top button
     display: none; }
 
   .slicknav_menu {
-    display: block; } }
+    display: block;
+    position: fixed;
+    width: 100%; } }
 /*############################## END OF RESPONSIVE CSS ##############################*/

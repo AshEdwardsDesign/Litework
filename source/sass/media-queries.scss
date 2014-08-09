@@ -32,7 +32,7 @@ h1
 	
 #header
 {
-	padding:1em 0;
+	padding:0;
 }
 
 #hero
@@ -44,7 +44,7 @@ h1
 #navstrip
 {
 	position:relative;
-	padding:0 0 1em 0;
+	padding:0;
 	height:100%;
     overflow:hidden;
 }
@@ -70,6 +70,8 @@ h1
 .slicknav_menu 
 {
 	display:block;
+	position:fixed;
+	width:100%;
 }
 
 }
