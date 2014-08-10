@@ -1,0 +1,43 @@
+/******************************************* 
+Navigation elements 
+*******************************************/
+
+#menu a
+{
+    color:white;
+}
+
+#menu li
+{
+	margin:1em 0 0 3em;
+	float:right;
+	font-family:$para-font;
+	font-weight:300;
+	display:inline;
+}
+
+#menu a:hover
+{
+    border-bottom:0.25em $brand1 solid;
+    padding:0 0 0.25em 0;
+}
+
+#navbox
+{
+	width:$content-width;
+	max-width: $max-content-width;
+	margin:auto;
+}
+
+#navstrip
+{
+	width:100%;
+	height:6em;
+	background-color:$brand3;
+	position:fixed;
+    top:0;
+}
+
+.slicknav_menu {
+	display:none;
+}

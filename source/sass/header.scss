@@ -1,0 +1,28 @@
+/******************************************* 
+Header elements 
+*******************************************/
+
+#header
+{
+	overflow:hidden;
+	background:$brand3;
+	padding:6em 0;
+	margin:0 0 6em 0;
+	clear:both;
+/*	background-image:url('../img/header.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+*/
+}
+
+#hero {
+	width:$content-width;
+	max-width:$max-content-width;
+	margin:auto;
+	margin-top:6em;
+    margin-bottom:6em;
+	color:white;
+    text-align:left;
+	overflow:hidden;
+}
