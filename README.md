@@ -34,6 +34,8 @@ Website: (coming soon)<br>
 Facebook: (coming soon)<br>
 Twitter: (coming soon)<br>
 
+Please feel free to email me with any suggestions/requests or examples of how you've used Litework: info@ashedwardsdesign.co.uk
+
 Useful 3rd party tools/links
 ========
 
