@@ -14,3 +14,30 @@ $line-height: 1.1;
 
 $title-font: 'Open Sans', helvetica, sans-serif;
 $para-font: 'Open Sans', helvetica, sans-serif;
+
+/*******************************************
+Responsive Media Query Mixins
+*******************************************/
+
+@mixin bp($size) {
+
+    $sml-screen: "(max-wdith:20em)";
+    $med-screen: "(max-width:40em)";
+    $lrg-screen: "(max-width:60em)";
+    
+        @if $size == sml-screen
+    {
+        @media #{$sml-screen} { @content; }
+    }
+    
+        @if $size == med-screen
+    {
+        @media #{$med-screen} { @content; }
+    }
+    
+        @if $size == lrg-screen
+    {
+        @media #{$lrg-screen} { @content; }
+    }
+    
+}
