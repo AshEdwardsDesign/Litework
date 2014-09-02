@@ -372,6 +372,9 @@ th {
 /*******************************************
 SASS Variables
 *******************************************/
+/*******************************************
+Responsive Media Query Mixins
+*******************************************/
 /******************************************* 
 Columns & layout
 *******************************************/
@@ -411,6 +414,21 @@ Columns & layout
   padding: 0;
   margin: 2em 0 2em 0; }
 
+@media (max-width: 20em) {
+  .col4 {
+    width: 100%;
+    padding: 0;
+    float: none; }
+
+  .col6 {
+    width: 100%;
+    padding: 0;
+    float: none; }
+
+  .col8 {
+    width: 100%;
+    padding: 0;
+    float: none; } }
 /******************************************* 
 Typography 
 *******************************************/
@@ -425,6 +443,9 @@ h1 {
   font-size: 2.25em;
   color: #003056; }
 
+@media (max-width: 20em) {
+  h1 {
+    line-height: 1.1; } }
 h2 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
@@ -532,6 +553,20 @@ Navigation elements
 .slicknav_menu {
   display: none; }
 
+@media (max-width: 40em) {
+  #menu {
+    display: none; }
+
+  .slicknav_menu {
+    display: block;
+    position: fixed;
+    width: 100%; }
+
+  #navstrip {
+    position: relative;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; } }
 /*
     Mobile Menu Core Style
 */
@@ -704,6 +739,13 @@ Header elements
   text-align: left;
   overflow: hidden; }
 
+@media (max-width: 40em) {
+  #header {
+    padding: 0; }
+
+  #hero {
+    margin: 0 auto;
+    text-align: center; } }
 /******************************************* 
 Footer
 *******************************************/
@@ -827,9 +869,6 @@ Facebook Like box responsive hack
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
   width: 100% !important; }
 
-/******************************************* 
-Back to top button
-*******************************************/
 .backtotop {
   width: 2em;
   height: 2em;
@@ -837,39 +876,7 @@ Back to top button
   top: 95%;
   left: 95%; }
 
-/*############################## RESPONSIVE CSS ##############################*/
-@media screen and (max-width: 46em) {
-  h1 {
-    line-height: 1.1; }
-
-  .col4 {
-    width: 100%;
-    padding: 0;
-    float: none; }
-
-  .col6 {
-    width: 100%;
-    padding: 0;
-    float: none; }
-
-  .col8 {
-    width: 100%;
-    padding: 0;
-    float: none; }
-
-  #header {
-    padding: 0; }
-
-  #hero {
-    margin: 0 auto;
-    text-align: center; }
-
-  #navstrip {
-    position: relative;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; }
-
+@media (max-width: 40em) {
   #maps {
     max-height: 18em;
     clear: both;
@@ -877,13 +884,4 @@ Back to top button
 
   .backtotop {
     top: 95%;
-    left: 90%; }
-
-  #menu {
-    display: none; }
-
-  .slicknav_menu {
-    display: block;
-    position: fixed;
-    width: 100%; } }
-/*############################## END OF RESPONSIVE CSS ##############################*/
+    left: 90%; } }

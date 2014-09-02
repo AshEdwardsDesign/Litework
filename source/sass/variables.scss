@@ -19,11 +19,11 @@ $para-font: 'Open Sans', helvetica, sans-serif;
 Responsive Media Query Mixins
 *******************************************/
 
-@mixin bp($size) {
-
-    $sml-screen: "(max-wdith:20em)";
+    $sml-screen: "(max-width:20em)";
     $med-screen: "(max-width:40em)";
     $lrg-screen: "(max-width:60em)";
+
+@mixin bp($size) {
     
         @if $size == sml-screen
     {

@@ -26,3 +26,20 @@ Header elements
     text-align:left;
 	overflow:hidden;
 }
+
+@include bp(med-screen)
+	
+{
+	
+	#header
+{
+	padding:0;
+}
+
+#hero
+{
+    margin:0 auto;
+	text-align:center;
+}
+	
+}

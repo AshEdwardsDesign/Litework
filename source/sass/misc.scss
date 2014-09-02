@@ -1,7 +1,3 @@
-/******************************************* 
-Back to top button
-*******************************************/
-
 .backtotop
 {
     width:2em;
@@ -9,4 +5,21 @@ Back to top button
     position:fixed;
     top:95%;
     left:95%;
+}
+
+@include bp(med-screen)
+	
+{
+#maps
+{
+max-height:18em;
+clear:both;
+overflow:hidden;
+}
+   
+.backtotop
+{
+top:95%;
+left:90%;
+}
 }

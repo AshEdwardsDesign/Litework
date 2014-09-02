@@ -42,7 +42,9 @@ Navigation elements
 	display:none;
 }
 
-$sml-screen
+
+@include bp(med-screen)
+
 {
 #menu 
 {
@@ -55,4 +57,13 @@ $sml-screen
 	position:fixed;
 	width:100%;
 }
+	
+#navstrip
+{
+position:relative;
+padding:0;
+height:100%;
+overflow:hidden;
+}
+	
 }

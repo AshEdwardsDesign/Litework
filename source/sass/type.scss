@@ -17,6 +17,14 @@ h1
 	color:$brand3;
 }
 
+@include bp(sml-screen)
+{
+	h1
+{
+	line-height:$line-height;
+}
+}
+
 h2
 {
 	font-family:$title-font;
