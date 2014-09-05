@@ -2,11 +2,17 @@
 Columns & layout
 *******************************************/
 
-#content
+#wrapper
+
+{
+    width:100%;
+}
+
+.container
 {
 	width:$content-width;
 	max-width: $max-content-width;
-	margin:auto;
+	margin:0 auto;
 	padding:0;
 }
 
@@ -19,7 +25,19 @@ Columns & layout
 	overflow:hidden;
 }
 
-.col4
+//    Target all column classes and apply these basic attributes, giving 100% width, some padding, 
+//    a float and a min-height which forces the column to 'render' even if it is empty. 
+
+[class*='column-']
+
+{
+    width:100%;
+    padding:1em;
+    float:left;
+    min-height:1px;
+}
+
+.column-4
 {
 	float:left;
 	width:33.333%;
@@ -27,7 +45,7 @@ Columns & layout
     margin:2em 0 2em 0;
 }
 
-.col6
+.column-6
 {
 	float:left;
 	width:50%;
@@ -35,7 +53,7 @@ Columns & layout
     margin:2em 0 2em 0;
 }
 
-.col8
+.column-8
 {
 	float:left;
 	width:66.666%;
@@ -43,7 +61,7 @@ Columns & layout
 	margin:2em 0 2em 0;
 }
 
-.col12
+.column-12
 {
 	width:100%;
 	padding:0;
@@ -52,21 +70,21 @@ Columns & layout
 
 @include bp(sml-screen) {
 
-.col4
+.column-4
 {
 	width:100%;
 	padding:0;
 	float:none;
 }
     
-.col6
+.column-6
 {
 	width:100%;
 	padding:0;
 	float:none;
 }
 	
-.col8
+.column-8
 {
 	width:100%;
 	padding:0;

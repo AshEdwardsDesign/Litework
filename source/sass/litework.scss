@@ -1,27 +1,27 @@
 // Normalize
 
-@import 'normalize.scss';
+@import 'normalize';
 
 // Font-face
 
-@import 'font-face.scss';
+@import 'font-face';
 
 // Variables
 
-@import 'variables.scss';
+@import '_variables';
 
 // Core SCSS
 
-@import 'columns.scss';
-@import 'type.scss';
-@import 'nav.scss';
-@import 'slicknav.scss';
-@import 'header.scss';
-@import 'footer.scss';
-@import 'images.scss';
-@import 'buttons.scss';
-@import 'forms.scss';
-@import 'tables.scss';
-@import 'clearfix.scss';
-@import 'fixes.scss';
-@import 'misc.scss';
+@import 'columns';
+@import 'type';
+@import 'nav';
+@import 'slicknav';
+@import 'header';
+@import 'footer';
+@import 'images';
+@import 'buttons';
+@import 'forms';
+@import 'tables';
+@import 'clearfix';
+@import 'fixes';
+@import 'misc';

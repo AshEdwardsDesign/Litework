@@ -369,63 +369,66 @@ th {
   font-style: italic;
   font-weight: 300;
   src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v9/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff"); }
-/*******************************************
-SASS Variables
-*******************************************/
-/*******************************************
-Responsive Media Query Mixins
-*******************************************/
 /******************************************* 
 Columns & layout
 *******************************************/
-#content {
-  width: 90%;
+#wrapper {
+  width: 100%; }
+
+.container {
+  width: 95%;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0; }
 
 #social {
-  width: 90%;
+  width: 95%;
   max-width: 1400px;
   margin: auto;
   padding: 1em 0 1em 0;
   overflow: hidden; }
 
-.col4 {
+[class*='column-'] {
+  width: 100%;
+  padding: 1em;
+  float: left;
+  min-height: 1px; }
+
+.column-4 {
   float: left;
   width: 33.333%;
   padding: 0 1em 0 0;
   margin: 2em 0 2em 0; }
 
-.col6 {
+.column-6 {
   float: left;
   width: 50%;
   padding: 0 1em 0 0;
   margin: 2em 0 2em 0; }
 
-.col8 {
+.column-8 {
   float: left;
   width: 66.666%;
   padding: 0 1em 0 0;
   margin: 2em 0 2em 0; }
 
-.col12 {
+.column-12 {
   width: 100%;
   padding: 0;
   margin: 2em 0 2em 0; }
 
 @media (max-width: 20em) {
-  .col4 {
+  .column-4 {
     width: 100%;
     padding: 0;
     float: none; }
 
-  .col6 {
+  .column-6 {
     width: 100%;
     padding: 0;
     float: none; }
 
-  .col8 {
+  .column-8 {
     width: 100%;
     padding: 0;
     float: none; } }
@@ -539,7 +542,7 @@ Navigation elements
   padding: 0 0 0.25em 0; }
 
 #navbox {
-  width: 90%;
+  width: 95%;
   max-width: 1400px;
   margin: auto; }
 
@@ -730,7 +733,7 @@ Header elements
   */ }
 
 #hero {
-  width: 90%;
+  width: 95%;
   max-width: 1400px;
   margin: auto;
   margin-top: 6em;
@@ -770,7 +773,9 @@ Footer
 Images
 *******************************************/
 img {
-  width: 100%; }
+  width: auto;
+  max-width: 100%;
+  height: auto !important; }
 
 /******************************************* 
 Buttons
@@ -792,7 +797,7 @@ Form Elements
   margin: 0; }
 
 .form {
-  width: 90%;
+  width: 95%;
   max-width: 1400px;
   margin: auto;
   padding: 2em 0 2em 0;
@@ -836,21 +841,21 @@ td {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before,
-.cf:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after {
+.clearfix:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf {
+.clearfix {
   *zoom: 1; }
 
 /* Source: http://nicolasgallagher.com/micro-clearfix-hack/ */
