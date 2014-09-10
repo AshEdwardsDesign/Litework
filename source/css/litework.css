@@ -369,20 +369,33 @@ th {
   font-style: italic;
   font-weight: 300;
   src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(http://themes.googleusercontent.com/static/fonts/opensans/v9/PRmiXeptR36kaC0GEAetxh_xHqYgAV9Bl_ZQbYUxnQU.woff) format("woff"); }
-/******************************************* 
-Columns & layout
-*******************************************/
+html, body {
+  font-size: 16px;
+  line-height: 1.428;
+  background-color: #fff;
+  width: 100%;
+  height: 100%; }
+
 #wrapper {
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0; }
 
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+.row:after {
+  clear: both; }
+.row {
+  *zoom: 1; }
+
 #social {
-  width: 95%;
+  width: 100%;
   max-width: 1400px;
   margin: auto;
   padding: 1em 0 1em 0;
@@ -394,59 +407,19 @@ Columns & layout
   float: left;
   min-height: 1px; }
 
-.column-4 {
-  float: left;
-  width: 33.333%;
-  padding: 0 1em 0 0;
-  margin: 2em 0 2em 0; }
-
-.column-6 {
-  float: left;
-  width: 50%;
-  padding: 0 1em 0 0;
-  margin: 2em 0 2em 0; }
-
-.column-8 {
-  float: left;
-  width: 66.666%;
-  padding: 0 1em 0 0;
-  margin: 2em 0 2em 0; }
-
-.column-12 {
-  width: 100%;
-  padding: 0;
-  margin: 2em 0 2em 0; }
-
-@media (max-width: 20em) {
-  .column-4 {
-    width: 100%;
-    padding: 0;
-    float: none; }
-
-  .column-6 {
-    width: 100%;
-    padding: 0;
-    float: none; }
-
-  .column-8 {
-    width: 100%;
-    padding: 0;
-    float: none; } }
+@media (min-width: 20em) {
+  .container {
+    width: 90%; } }
 /******************************************* 
 Typography 
 *******************************************/
-body {
-  font-size: 16px;
-  line-height: 1.428;
-  background-color: #fff; }
-
 h1 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 2.25em;
   color: #003056; }
 
-@media (max-width: 20em) {
+@media (min-width: 20em) {
   h1 {
     line-height: 1.1; } }
 h2 {
@@ -542,7 +515,7 @@ Navigation elements
   padding: 0 0 0.25em 0; }
 
 #navbox {
-  width: 95%;
+  width: 100%;
   max-width: 1400px;
   margin: auto; }
 
@@ -556,7 +529,7 @@ Navigation elements
 .slicknav_menu {
   display: none; }
 
-@media (max-width: 40em) {
+@media (min-width: 40em) {
   #menu {
     display: none; }
 
@@ -733,7 +706,7 @@ Header elements
   */ }
 
 #hero {
-  width: 95%;
+  width: 100%;
   max-width: 1400px;
   margin: auto;
   margin-top: 6em;
@@ -742,7 +715,7 @@ Header elements
   text-align: left;
   overflow: hidden; }
 
-@media (max-width: 40em) {
+@media (min-width: 40em) {
   #header {
     padding: 0; }
 
@@ -797,7 +770,7 @@ Form Elements
   margin: 0; }
 
 .form {
-  width: 95%;
+  width: 100%;
   max-width: 1400px;
   margin: auto;
   padding: 2em 0 2em 0;
@@ -832,33 +805,6 @@ td {
   background-color: #00a1d9;
   color: white; }
 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.clearfix {
-  *zoom: 1; }
-
-/* Source: http://nicolasgallagher.com/micro-clearfix-hack/ */
 /******************************************* 
 Box Model
 *******************************************/
@@ -881,7 +827,7 @@ Facebook Like box responsive hack
   top: 95%;
   left: 95%; }
 
-@media (max-width: 40em) {
+@media (min-width: 40em) {
   #maps {
     max-height: 18em;
     clear: both;

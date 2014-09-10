@@ -1,6 +1,6 @@
 // Content and grid variables
 
-$content-width: 95%;
+$content-width: 100%;
 $max-content-width: 1400px;
 $grid-columns: 12;
 
@@ -19,10 +19,11 @@ $title-font: 'Open Sans', helvetica, sans-serif;
 $para-font: 'Open Sans', helvetica, sans-serif;
 
 // Responsive Media Query Mixins
+// Note: Litework is mobile-first so <20em is the default 
 
-    $sml-screen: "(max-width:20em)";
-    $med-screen: "(max-width:40em)";
-    $lrg-screen: "(max-width:60em)";
+    $sml-screen: "(min-width:20em)";
+    $med-screen: "(min-width:40em)";
+    $lrg-screen: "(min-width:60em)";
 
 @mixin bp($size) {
     
@@ -41,4 +42,23 @@ $para-font: 'Open Sans', helvetica, sans-serif;
         @media #{$lrg-screen} { @content; }
     }
     
+}
+
+// Clearfix mixin
+
+@mixin clearfix {
+
+&:before,
+&:after {
+    content: " ";
+    display: table;
+}
+
+&:after {
+    clear: both;
+}
+
+& {
+    *zoom: 1;
+}
 }
