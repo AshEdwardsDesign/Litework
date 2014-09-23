@@ -38,14 +38,6 @@ Navigation elements
     top:0;
 }
 
-.slicknav_menu {
-	display:none;
-}
-
-
-@include bp(med-screen)
-
-{
 #menu 
 {
 	display:none;
@@ -57,7 +49,15 @@ Navigation elements
 	position:fixed;
 	width:100%;
 }
-	
+
+@include bp(sml-screen)
+
+{
+
+	.slicknav_menu {
+	display:none;
+}
+    
 #navstrip
 {
 position:relative;
