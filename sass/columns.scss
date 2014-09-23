@@ -16,6 +16,7 @@
 	max-width: $max-content-width;
 	margin:0 auto;
 	padding:0;
+	@include clearfix;
 }
 
 .row
@@ -35,7 +36,17 @@
     min-height:1px;
 }
 
-// SASS Column generation
+// Container drops to 90% width at sml-screen and above
+
+@include bp(med-screen)
+{
+
+.container
+{
+    width:90%;
+}
+	
+	// SASS Column generation
 
 @for $i from 1 through $grid-columns {
  
@@ -45,14 +56,6 @@
     width: 100% / $grid-columns * $i;    
     }
 }
-
-// Container drops to 90% width at sml-screen and above
-
-@include bp(sml-screen)
-{
-
-.container
-{
-    width:90%;
-}
+	
+	
 }    
