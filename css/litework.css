@@ -537,6 +537,9 @@ em {
 .white {
   color: white !important; }
 
+.red {
+  color: red !important; }
+
 /******************************************* 
 Navigation elements 
 *******************************************/
@@ -570,6 +573,12 @@ Navigation elements
   display: block;
   position: fixed;
   width: 100%; }
+
+#sidebar {
+  float: left;
+  width: 30%;
+  padding: 2em;
+  height: 100%; }
 
 @media (min-width: 20em) {
   .slicknav_menu {
@@ -854,7 +863,16 @@ Form Elements
   color: white; }
 
 input {
-  width: 100%; }
+  width: 100%;
+  border-radius: 2px;
+  margin: 0.5em 0;
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.75em;
+  color: #acacac;
+  border: 1px solid #acacac;
+  box-shadow: none !important;
+  padding: 0.5em; }
 
 label {
   padding: 0 0 2em 0; }
@@ -903,6 +921,20 @@ Facebook Like box responsive hack
   position: fixed;
   top: 95%;
   left: 95%; }
+
+.maps-lrg {
+  float: right;
+  width: 70%;
+  height: 100%; }
+
+.warning {
+  color: red !important;
+  background-color: rgba(255, 165, 165, 0.5);
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 1em;
+  font-size: 0.75em;
+  margin: 0; }
 
 @media (min-width: 40em) {
   #maps {

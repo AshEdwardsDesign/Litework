@@ -45,6 +45,15 @@ Navigation elements
 	width:100%;
 }
 
+#sidebar
+
+{
+    float:left;
+    width:30%;
+    padding:2em;
+    height:100%;
+}
+
 @include bp(sml-screen)
 
 {

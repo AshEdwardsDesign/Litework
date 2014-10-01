@@ -21,6 +21,15 @@ color:white;
 input
 {
 width:100%;
+border-radius:2px;
+margin:0.5em 0;
+font-family:$para-font;
+font-weight: 300;
+font-size:0.75em;
+color:#acacac;
+border: 1px solid #acacac;
+box-shadow: none !important;
+padding:0.5em;
 }
 
 label
