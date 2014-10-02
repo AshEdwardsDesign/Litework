@@ -863,13 +863,10 @@ input {
   box-shadow: none !important;
   padding: 0.5em;
   margin: 1em 0; }
-  input:before, input:after {
-    content: " ";
-    display: table; }
-  input:after {
-    clear: both; }
-  input {
-    *zoom: 1; }
+
+.input-radio {
+  width: auto !important;
+  margin: 0.25em 1em 0.25em 0; }
 
 label {
   padding: 0;

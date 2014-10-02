@@ -14,7 +14,12 @@ border: 1px solid #acacac;
 box-shadow: none !important;
 padding:0.5em;
 margin:1em 0;
-@include clearfix
+}
+
+.input-radio
+{
+    width:auto !important;
+    margin:0.25em 1em 0.25em 0;
 }
 
 label
