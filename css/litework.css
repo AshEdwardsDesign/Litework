@@ -830,7 +830,8 @@ button:active {
 
 .btn-fluid {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  border-radius: 2px; }
   .btn-fluid:before, .btn-fluid:after {
     content: " ";
     display: table; }
@@ -842,40 +843,63 @@ button:active {
 .btn-ghost {
   background: none;
   border: 1px solid #00a1d9;
-  color: #00a1d9 !important; }
+  color: #00a1d9 !important;
+  border-radius: 2px; }
 
 .btn-ghost:hover {
-  background-color: #ccc !important; }
+  background-color: rgba(206, 206, 206, 0.2) !important; }
 
 /******************************************* 
 Form Elements 
 *******************************************/
-.formbg {
-  background-color: #00a1d9;
-  width: 100%;
-  margin: 0; }
-
-.form {
-  width: 100%;
-  max-width: 1400px;
-  margin: auto;
-  padding: 2em 0 2em 0;
-  color: white; }
-
 input {
   width: 100%;
   border-radius: 2px;
-  margin: 0.5em 0;
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 300;
-  font-size: 0.75em;
-  color: #acacac;
+  color: #989898;
+  font-size: 1em;
   border: 1px solid #acacac;
   box-shadow: none !important;
-  padding: 0.5em; }
+  padding: 0.5em;
+  margin: 1em 0; }
+  input:before, input:after {
+    content: " ";
+    display: table; }
+  input:after {
+    clear: both; }
+  input {
+    *zoom: 1; }
 
 label {
-  padding: 0 0 2em 0; }
+  padding: 0;
+  font-family: "Open Sans", helvetica, sans-serif; }
+  label:before, label:after {
+    content: " ";
+    display: table; }
+  label:after {
+    clear: both; }
+  label {
+    *zoom: 1; }
+
+textarea {
+  width: 100%;
+  border-radius: 2px;
+  font-family: "Open Sans", helvetica, sans-serif;
+  font-weight: 300;
+  color: #989898;
+  font-size: 1em;
+  border: 1px solid #acacac;
+  box-shadow: none !important;
+  padding: 0.5em;
+  margin: 1em 0; }
+  textarea:before, textarea:after {
+    content: " ";
+    display: table; }
+  textarea:after {
+    clear: both; }
+  textarea {
+    *zoom: 1; }
 
 /******************************************* 
 Tables

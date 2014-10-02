@@ -7,7 +7,7 @@ button
     margin:0.25em 0;
     padding:1em;
     background-color:$brand1;
-    border-radius:2px;
+    border-radius:$border-radius;
     border:none;
     color:white !important;
     font-weight:400 !important;
@@ -44,6 +44,7 @@ button:active
     width:100%;
     text-align:center;
     @include clearfix;
+    border-radius:$border-radius;
 }
 
 .btn-ghost
@@ -51,9 +52,10 @@ button:active
     background:none;
     border:1px solid $brand1;
     color:$brand1 !important;
+    border-radius:$border-radius;
 }
 
 .btn-ghost:hover
 {
-    background-color:#ccc !important;
+    background-color:rgba(206, 206, 206, 0.2) !important;
 }

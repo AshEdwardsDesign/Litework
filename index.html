@@ -95,66 +95,27 @@
         <div class="container">
             <div class="row">
                 <div class="column-12">
-                    <h1>Buttons</h1>
-                    <p>Here are the various buttons that ship with the Litework framework.</p>
-                    <a href="#">
-                        <button class="btn-sml">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-med">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-lrg">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-fluid">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-sml btn-ghost">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-med btn-ghost">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-lrg btn-ghost">Text here</button>
-                    </a>
-                    <a href="#">
-                        <button class="btn-fluid btn-ghost">Text here</button>
-                    </a>
+                    <h1>Forms</h1>
+                    <p>Here is an overview of the various form elements that appear in the Litework framework.</p>
+                    <form method="post" action="somescript.php">
+                        <label for="name">Name:</label>
+                        <input id="name" name="name" type="text" placeholder="Type your full name here"/>
+                        <label for="phone">Phone:</label>
+                        <input id="phone" name="phone" type="text" />
+                        <label for="email">Email:</label>
+                        <input id="email" name="email" type="email" />
+                        <label for="box1">Another box:</label>
+                        <input id="box1" name="box1" type="text" />
+                        <label for="box2">Another box:</label>
+                        <input id="box2" name="box2" type="text" />
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" type="text" rows="5"></textarea>
+                        <button class="btn-med btn-fluid" type="submit">SEND</button>
+                    </form>
                 </div>
             </div>
             <!-- Content End -->
         </div>
-
-
-        <div class="formbg">
-            <div class="container">
-                <div class="row">
-                    <div class="column-12">
-                        <h3><span class="white">Contact form</span></h3>
-                        <p>Below you can see a simple, responsive contact form that contains basic fields. Plese note the form does not work currently as I'm a PHP n00b.</p>
-                        <br>
-                        <form method="post" action="scripts/form.php">
-                            <label for="name">Name:</label>
-                            <input id="name" name="name" type="text" />
-                            <label for="phone">Phone:</label>
-                            <input id="phone" name="phone" type="text" />
-                            <label for="email">Email:</label>
-                            <input id="email" name="email" type="email" />
-                            <label for="box1">Another box:</label>
-                            <input id="box1" name="box1" type="text" />
-                            <label for="box2">Another box:</label>
-                            <input id="box2" name="box2" type="text" />
-                            <label for="message">Message:</label>
-                            <input id="message" name="message" type="text" />
-                            <button type="submit">SEND</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
 
         <!-- Footer Start -->
         <div id="footer">

@@ -2,37 +2,39 @@
 Form Elements 
 *******************************************/
 
-.formbg
-{
-background-color:$brand1;
-width:100%;
-margin:0;
-}
-
-.form
-{
-width:$content-width;
-max-width:$max-content-width;
-margin:auto;
-padding:2em 0 2em 0;
-color:white;
-}
-
 input
 {
 width:100%;
-border-radius:2px;
-margin:0.5em 0;
+border-radius:$border-radius;
 font-family:$para-font;
 font-weight: 300;
-font-size:0.75em;
-color:#acacac;
+color:#989898;
+font-size:1em;
 border: 1px solid #acacac;
 box-shadow: none !important;
 padding:0.5em;
+margin:1em 0;
+@include clearfix
 }
 
 label
 {
-padding:0 0 2em 0;
+padding:0;
+font-family:$para-font;
+@include clearfix
+}
+
+textarea
+{
+width:100%;
+border-radius:$border-radius;
+font-family:$para-font;
+font-weight: 300;
+color:#989898;
+font-size:1em;
+border: 1px solid #acacac;
+box-shadow: none !important;
+padding:0.5em;
+margin:1em 0; 
+@include clearfix
 }
