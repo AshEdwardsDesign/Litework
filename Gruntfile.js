@@ -8,31 +8,21 @@ module.exports = function (grunt) {
 		concat: {
 			// 2. Configuration for concatinating files goes here.
 			dist: {
-				src: [
-            'scripts/html5shiv.js',
-            'scripts/respond.min.js'
-        ],
-				dest: 'dist/scripts/ie.js',
-			},
 
-			dist: {
-				src: [
-            'scripts/jquery-1.11.1.min.js',
-            'scripts/jquery.slicknav.min.js'
-        ],
-				dest: 'dist/scripts/litework.js',
+				files: {
+					'dist/scripts/ie.js': ['scripts/html5shiv.js', 'scripts/respond.min.js'],
+					'dist/scripts/litework.js': ['scripts/jquery-1.11.1.min.js', 'scripts/jquery.slicknav.min.js']
+				}
 			}
 		},
 
 		uglify: {
-			build: {
-				src: 'dist/scripts/ie.js',
-				dest: 'dist/scripts/ie.min.js',
-			},
+			my_target: {
+				files: {
 
-			build: {
-				src: 'dist/scripts/litework.js',
-				dest: 'dist/scripts/litework.min.js',
+					'dist/scripts/ie.min.js': ['dist/scripts/ie.js'],
+					'dist/scripts/litework.min.js': ['dist/scripts/litework.js']
+				}
 			}
 		},
 
@@ -48,7 +38,11 @@ module.exports = function (grunt) {
 		},
 
 		htmlmin: {
-			dev: {
+			dist: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true
+				},
 				files: [{
 					expand: true,
 					cwd: '',
