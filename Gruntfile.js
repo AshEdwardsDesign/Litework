@@ -6,12 +6,12 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		// Concat will concantenate (join) any files specified - Javascript in this case
-		
+
 		concat: {
 			dist: {
 				files: {
-					'dist/scripts/ie.js': ['scripts/html5shiv.js', 'scripts/respond.min.js'],
-					'dist/scripts/litework.js': ['scripts/jquery-1.11.1.min.js', 'scripts/jquery.slicknav.min.js']
+					'scripts/ie.js': ['scripts/html5shiv.js', 'scripts/respond.min.js'],
+					'scripts/litework.js': ['scripts/jquery-1.11.1.min.js', 'scripts/jquery.slicknav.min.js']
 				}
 			}
 		},
@@ -22,8 +22,8 @@ module.exports = function (grunt) {
 			my_target: {
 				files: {
 
-					'dist/scripts/ie.min.js': ['dist/scripts/ie.js'],
-					'dist/scripts/litework.min.js': ['dist/scripts/litework.js']
+					'scripts/ie.min.js': ['scripts/ie.js'],
+					'scripts/litework.min.js': ['scripts/litework.js']
 				}
 			}
 		},
@@ -32,6 +32,9 @@ module.exports = function (grunt) {
 
 		imagemin: {
 			dynamic: {
+				options: {
+					optimizationLevel: 3,
+				},
 				files: [{
 					expand: true,
 					cwd: 'img/',
@@ -47,7 +50,8 @@ module.exports = function (grunt) {
 			dist: {
 				options: {
 					removeComments: true,
-					collapseWhitespace: true
+					collapseWhitespace: true,
+					minifyJS: true
 				},
 				files: [{
 					expand: true,
@@ -56,12 +60,25 @@ module.exports = function (grunt) {
 					dest: 'dist/'
             }]
 			}
-		}
+		},
 
 		// Put SASS here
-		
+
 		// Put Autoprefixer here
-		
+
+		// Copy stuff goes here
+
+		copy: {
+			main: {
+				files: {
+					'dist/scripts/ie.min.js': ['scripts/ie.min.js'],
+					'dist/scripts/litework.min.js': ['scripts/litework.min.js']
+				}
+
+			}
+		},
+
+
 		// WATCH stuff goes here
 
 	});
@@ -71,8 +88,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
 	grunt.loadNpmTasks("grunt-contrib-htmlmin");
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
-	grunt.registerTask('default', ["concat", "uglify", "imagemin", "htmlmin"]);
+	grunt.registerTask('default', ["concat", "uglify", "imagemin", "htmlmin", "copy"]);
 
 };
