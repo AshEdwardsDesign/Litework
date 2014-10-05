@@ -91,6 +91,30 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// HTMLhint will check all HTML in the dist/ folder for errors
+
+		htmlhint: {
+			html1: {
+				options: {
+					'tag-pair': true,
+					'tagname-lowercase': true,
+					'attr-lowercase': true,
+					'attr-value-double-quotes': true,
+					'doctype-first': true,
+					'spec-char-escape': true,
+					'id-unique': true,
+					'head-script-disabled': true,
+					'style-disabled': true,
+					'force': true,
+					'doctype-html5': true,
+					'img-alt-require': true,
+					'tag-self-close': true
+				},
+				cwd: '',
+				src: ['*.html']
+			}
+		},
+
 		// Copy stuff goes here - this is set to copy production-ready files from the css and script folders into the appropriate place in the dist folder
 
 		copy: {
@@ -117,9 +141,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
 	grunt.loadNpmTasks("grunt-contrib-htmlmin");
+	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
-	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlmin", "copy"]);
+	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlmin", "htmlhint", "copy"]);
 
 };
