@@ -226,3 +226,9 @@ node_modules/
 #############
 
 .sass-cache/
+
+#############
+## Dist folder
+#############
+
+dist/
