@@ -167,7 +167,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -296,8 +295,6 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -466,13 +463,13 @@ h2 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.875em;
-  color: #00a1d9;
+  color: #00A1D9;
   line-height: 1.1; }
 
 h3 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
-  color: #00a1d9;
+  color: #00A1D9;
   font-size: 1.5em;
   line-height: 1.1; }
 
@@ -480,21 +477,21 @@ h4 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 1.125em;
-  color: #00a1d9;
+  color: #00A1D9;
   line-height: 1.1; }
 
 h5 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.875em;
-  color: #00a1d9;
+  color: #00A1D9;
   line-height: 1.1; }
 
 h6 {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 0.75em;
-  color: #00a1d9;
+  color: #00A1D9;
   line-height: 1.1; }
 
 p {
@@ -554,7 +551,7 @@ Navigation elements
   display: inline; }
 
 #menu a:hover {
-  border-bottom: 0.25em #00a1d9 solid;
+  border-bottom: 0.25em #00A1D9 solid;
   padding: 0 0 0.25em 0; }
 
 #navbox {
@@ -611,8 +608,6 @@ Navigation elements
   display: block;
   width: 1.125em;
   height: 0.125em;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
   border-radius: 1px; }
 
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
@@ -665,8 +660,6 @@ Navigation elements
 .slicknav_btn {
   margin: 5px 5px 6px;
   text-decoration: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: transparent; }
 
@@ -714,15 +707,11 @@ Navigation elements
   margin: 0; }
 
 .slicknav_nav .slicknav_row:hover {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   border-radius: 6px;
   background: #ccc;
   color: #fff; }
 
 .slicknav_nav a:hover {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   border-radius: 6px;
   background: #ccc;
   color: #222; }
@@ -777,7 +766,7 @@ Footer
   color: #888; }
 
 #footer a:hover {
-  color: #00a1d9; }
+  color: #00A1D9; }
 
 .footer-heading {
   color: white;
@@ -806,7 +795,7 @@ Buttons
 button {
   margin: 0.25em 0;
   padding: 1em;
-  background-color: #00a1d9;
+  background-color: #00A1D9;
   border-radius: 2px;
   border: none;
   color: white !important;
@@ -842,8 +831,8 @@ button:active {
 
 .btn-ghost {
   background: none;
-  border: 1px solid #00a1d9;
-  color: #00a1d9 !important;
+  border: 1px solid #00A1D9;
+  color: #00A1D9 !important;
   border-radius: 2px; }
 
 .btn-ghost:hover {
@@ -918,7 +907,7 @@ td {
   font-family: "Open Sans", helvetica, sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #00a1d9;
+  background-color: #00A1D9;
   color: white; }
 
 /******************************************* 
@@ -926,8 +915,6 @@ Box Model
 *******************************************/
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 /******************************************* 

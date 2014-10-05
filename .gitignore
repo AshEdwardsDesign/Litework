@@ -215,8 +215,14 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-#########
-Node
-#########
+#############
+## Node
+#############
 
 node_modules/
+
+#############
+## SASS Cache
+#############
+
+.sass-cache/

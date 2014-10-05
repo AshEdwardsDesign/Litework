@@ -5,6 +5,38 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+		// SASS will compile your Sass files into CSS files
+
+		sass: {
+			dist: {
+				files: {
+					'css/litework.css': ['sass/litework.scss']
+				}
+			}
+		},
+
+		// Autoprefixer adds vendor prefixes to the CSS file - in this case it checks against browsers with >1% global usage
+
+		autoprefixer: {
+			options: {
+				browsers: ['> 1%']
+			},
+			your_target: {
+				src: 'css/litework.css',
+				dest: 'css/litework.css'
+			},
+		},
+
+		// CSSmin will minify your CSS
+
+		cssmin: {
+			my_target: {
+				files: {
+					'css/litework.min.css': ['css/litework.css']
+				}
+			}
+		},
+
 		// Concat will concantenate (join) any files specified - Javascript in this case
 
 		concat: {
@@ -32,9 +64,6 @@ module.exports = function (grunt) {
 
 		imagemin: {
 			dynamic: {
-				options: {
-					optimizationLevel: 3,
-				},
 				files: [{
 					expand: true,
 					cwd: 'img/',
@@ -62,17 +91,14 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Put SASS here
-
-		// Put Autoprefixer here
-
-		// Copy stuff goes here
+		// Copy stuff goes here - this is set to copy production-ready files from the css and script folders into the appropriate place in the dist folder
 
 		copy: {
 			main: {
 				files: {
-					'dist/scripts/ie.min.js': ['scripts/ie.min.js'],
-					'dist/scripts/litework.min.js': ['scripts/litework.min.js']
+					'dist/scripts/ie.min.js': ['scripts/ie.min.js'], // IE bandaid js
+					'dist/scripts/litework.min.js': ['scripts/litework.min.js'], // Liteworks' main js file
+					'dist/css/litework.min.css': ['css/litework.min.css'] // Liteworks' CSS file
 				}
 
 			}
@@ -84,6 +110,9 @@ module.exports = function (grunt) {
 	});
 
 	// List of used plugins
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-imagemin");
@@ -91,6 +120,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
-	grunt.registerTask('default', ["concat", "uglify", "imagemin", "htmlmin", "copy"]);
+	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlmin", "copy"]);
 
 };
