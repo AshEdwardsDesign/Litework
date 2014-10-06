@@ -1,0 +1,43 @@
+.backtotop
+{
+    width:2em;
+    height:2em;
+    position:fixed;
+    top:95%;
+    left:95%;
+}
+
+.maps-lrg
+{
+    float:right;
+    width:70%;
+    height:100%;
+}
+
+.warning
+{
+    color:red !important;
+    background-color:rgba(255, 165, 165, 0.5);
+    border:1px solid red;
+    border-radius:2px;
+    padding:1em;
+    font-size:0.75em;
+    margin:0;
+}
+
+@include bp(med-screen)
+	
+{
+#maps
+{
+max-height:18em;
+clear:both;
+overflow:hidden;
+}
+
+.backtotop
+{
+top:95%;
+left:90%;
+}
+}

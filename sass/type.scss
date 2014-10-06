@@ -2,19 +2,20 @@
 Typography 
 *******************************************/
 
-body
-{
-    font-size:16px;
-	line-height:1.428;
-    background-color:#fff;
-}
-
 h1
 {
 	font-family:$title-font;
 	font-weight:700;
 	font-size:2.25em;
 	color:$brand3;
+}
+
+@include bp(sml-screen)
+{
+	h1
+{
+	line-height:$line-height;
+}
 }
 
 h2
@@ -117,4 +118,10 @@ em
 .white
 {
 	color:white !important;
+}
+
+.red
+
+{
+    color:red !important;
 }

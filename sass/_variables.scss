@@ -1,0 +1,69 @@
+// Content and grid variables
+
+$content-width: 100%;
+$max-content-width: 1400px;
+$grid-columns: 12;
+
+// Branding & Colour variables
+
+$brand1: #00A1D9;
+$brand1-drk: #0077a0;
+$brand2: #04518C;
+$brand3: #003056;
+$grey: #262626;
+
+// Font & Typography variables
+
+$line-height: 1.1;
+
+$title-font: 'Open Sans', helvetica, sans-serif;
+$para-font: 'Open Sans', helvetica, sans-serif;
+
+// Button and form element variables
+
+$border-radius:2px;
+
+// Responsive Media Query Mixins
+// Note: Litework is mobile-first so <20em is the default 
+
+    $sml-screen: "(min-width:20em)";
+    $med-screen: "(min-width:40em)";
+    $lrg-screen: "(min-width:60em)";
+
+@mixin bp($size) {
+    
+        @if $size == sml-screen
+    {
+        @media #{$sml-screen} { @content; }
+    }
+    
+        @if $size == med-screen
+    {
+        @media #{$med-screen} { @content; }
+    }
+    
+        @if $size == lrg-screen
+    {
+        @media #{$lrg-screen} { @content; }
+    }
+    
+}
+
+// Clearfix mixin
+
+@mixin clearfix {
+
+&:before,
+&:after {
+    content: " ";
+    display: table;
+}
+
+&:after {
+    clear: both;
+}
+
+& {
+    *zoom: 1;
+}
+}

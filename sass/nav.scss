@@ -9,11 +9,10 @@ Navigation elements
 
 #menu li
 {
-	margin:1em 0 0 3em;
-	float:right;
+	margin:0 0 0 3em;
 	font-family:$para-font;
 	font-weight:300;
-	display:inline;
+	display:inline-block;
 }
 
 #menu a:hover
@@ -22,22 +21,52 @@ Navigation elements
     padding:0 0 0.25em 0;
 }
 
-#navbox
-{
-	width:$content-width;
-	max-width: $max-content-width;
-	margin:auto;
-}
-
 #navstrip
 {
 	width:100%;
-	height:6em;
 	background-color:$brand3;
 	position:fixed;
     top:0;
+	padding:1em 0;
 }
 
-.slicknav_menu {
+#navstrip ul
+{
+	margin:0;
+}
+
+.slicknav_menu 
+{
+	display:block;
+	position:fixed;
+	width:100%;
+}
+
+#sidebar
+
+{
+    float:left;
+    width:30%;
+    padding:2em;
+    height:100%;
+}
+
+#menu
+{
 	display:none;
+}
+
+@include bp(med-screen)
+
+{
+
+	.slicknav_menu {
+	display:none;
+}
+	
+	#menu {
+		display:block;
+		float:right;
+	}
+	
 }
