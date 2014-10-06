@@ -30,11 +30,6 @@
 
 <body>
 
-	<a name="#top" href="#top"></a>
-	<a href="#top">
-		<img src="img/back-to-top.png" alt="Back to Top" class="backtotop" />
-	</a>
-
 	<!-- Wrapper Start -->
 	<div id="wrapper">
 
@@ -116,6 +111,23 @@
 						<input id="sex-other" name="sex" type="radio" class="input-radio" value="other" />Other
 						<br />
 						<br />
+						<label for="fav-car">What is your favourite car:</label>
+						<br />
+						<input type="checkbox" id="vovlo" name="fav-car" value="volvo" class="input-checkbox"/>Volvo
+						<br />
+						<input type="checkbox" id="Renault" name="fav-car" value="Renault" class="input-checkbox"/>Renault
+						<br />
+						<input type="checkbox" id="Ferrari" name="fav-car" value="Ferrari" class="input-checkbox"/>Ferrari
+						<br />
+						<br />
+						<label for="select">Is Darcy a twat bag:</label>
+						<br />
+						<select name="twatbag">
+						<option value="yes">Yes</option>
+						<option value="no">No</option>	
+						<option value="duh">Duh!</option>	
+						</select>
+						<br /><br />
 						<label for="message">Message:</label>
 						<textarea id="message" name="message" type="text" rows="5"></textarea>
 						<button class="btn-med btn-fluid" type="submit">SEND</button>
@@ -211,6 +223,10 @@
 
 				</div>
 
+			</div>
+		</div>
+		<div id="ftr-dark">
+			<div class="container">
 				<div class="row">
 					<div class="column-12">
 						<p>Litework Framework - Created by
@@ -218,8 +234,9 @@
 						</p>
 					</div>
 				</div>
-
 			</div>
+
+
 		</div>
 		<!-- Footer End -->
 
@@ -231,7 +248,7 @@
 	<script type="text/javascript">
 		function downloadJSAtOnload() {
 			var element = document.createElement("script");
-			element.src = "litework.min.js";
+			element.src = "scripts/litework.min.js";
 			document.body.appendChild(element);
 		}
 		if (window.addEventListener)

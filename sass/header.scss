@@ -6,8 +6,8 @@ Header elements
 {
 	overflow:hidden;
 	background:$brand3;
-	padding:6em 0;
-	margin:3em 0 4em 0;
+	padding:3em 0;
+	margin:0;
 	clear:both;
 /*	background-image:url('../img/header.jpg');
     background-repeat:no-repeat;
@@ -16,30 +16,14 @@ Header elements
 */
 }
 
-#hero {
-	width:$content-width;
-	max-width:$max-content-width;
-	margin:auto;
-	margin-top:6em;
-    margin-bottom:6em;
-	color:white;
-    text-align:left;
-	overflow:hidden;
-}
-
 @include bp(med-screen)
 	
 {
 	
 	#header
 {
-	padding:0;
-}
-
-#hero
-{
-    margin:0 auto;
-	text-align:center;
+	padding:4em 0 2em 0;
+	margin:0;
 }
 	
 }

@@ -128,12 +128,22 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Browser-Sync will allow a live-preview of the project across your browsers & devices
+
+		browserSync: {
+			bsFiles: {
+				src: ['dist/css/*.css', 'dist/*.html', 'dist/scripts/*.js']
+			},
+			options: {
+				watchTask: true,
+				server: {
+					baseDir: "./dist"
+				},
+			}
+		},
 		// WATCH stuff goes here
 
 		watch: {
-			options: {
-				livereload: true,
-			},
 			html: {
 				files: ['*.html'],
 				tasks: ['htmlhint', 'htmlmin']
@@ -166,14 +176,16 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks("grunt-contrib-concat");
-	grunt.loadNpmTasks("grunt-contrib-uglify");
-	grunt.loadNpmTasks("grunt-contrib-imagemin");
-	grunt.loadNpmTasks("grunt-contrib-htmlmin");
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks("grunt-contrib-watch");
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-browser-sync');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
 	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "copy"]);
+	grunt.registerTask('live', ["browserSync", "watch"]);
 };
