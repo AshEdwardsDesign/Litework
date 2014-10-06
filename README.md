@@ -22,7 +22,7 @@ https://waffle.io/ashedwardsdesign/litework
 
 This is simply a visual, column-based overview of all issues listed in the "Issues" section on this repo.
 
-#####Litework on the web
+####Litework on the web
 
 Website: (coming soon)<br>
 Facebook: (coming soon)<br>
@@ -30,10 +30,11 @@ Twitter: (coming soon)<br>
 
 Please feel free to email me with any suggestions/requests or examples of how you've used Litework: info@ashedwardsdesign.co.uk
 
-#####Useful 3rd party tools/links
+####Useful 3rd party tools/links
 
-Slicknav: http://slicknav.com/ - many thanks to Josh (@computerwolf) for permission to include it :)<br>
-Koala (compiler): http://koala-app.com/<br>
-SASS (the CSS language used in Litework): http://sass-lang.com/<br>
+Slicknav: http://slicknav.com/ - many thanks to Josh (@computerwolf) for permission to include it :)<br />
+Grunt (the build system used in Litework): http://gruntjs.com/<br />
+BrowserSync (for live testing across multiple devices): http://www.browsersync.io/ <br />
+SASS (the CSS language used in Litework): http://sass-lang.com/<br />
 
 Thanks for visiting!
