@@ -19,13 +19,11 @@ Litework is not...
 Development Roadmap
 ========
 
-The development roadmap for the Litework framework can be seen on our public Trello board:
+The development roadmap for the Litework framework can be seen on our public Waffle board:
 
-https://trello.com/b/gbl8Ptrc/litework-html5-css3-framework
+https://waffle.io/ashedwardsdesign/litework
 
-If you would like to contribute, fork or make a pull request, please feel free.
-
-Contributions to the items listed on the Trello board (if they haven't already been branched) are highly appreciated.
+This is simply a visual, column-based overview of all issues listed in the "Issues" section on this repo.
 
 Litework on the web
 ========
