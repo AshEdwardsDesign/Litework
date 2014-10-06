@@ -73,25 +73,7 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// HTML Min for minifying all HTML in the root - set to remove both comments and whitespace
-
-		htmlmin: {
-			dist: {
-				options: {
-					removeComments: true,
-					collapseWhitespace: true,
-					minifyJS: true
-				},
-				files: [{
-					expand: true,
-					cwd: '',
-					src: '*.html',
-					dest: 'dist/'
-            }]
-			}
-		},
-
-		// HTMLhint will check all HTML in the dist/ folder for errors
+		// HTMLhint will check all HTML in the root folder for errors
 
 		htmlhint: {
 			html1: {
@@ -115,6 +97,24 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// HTML Min for minifying all HTML in the root - set to remove both comments and whitespace
+
+		htmlmin: {
+			dist: {
+				options: {
+					removeComments: true,
+					collapseWhitespace: true,
+					minifyJS: true
+				},
+				files: [{
+					expand: true,
+					cwd: '',
+					src: '*.html',
+					dest: 'dist/'
+            }]
+			}
+		},
+
 		// Copy stuff goes here - this is set to copy production-ready files from the css and script folders into the appropriate place in the dist folder
 
 		copy: {
@@ -128,8 +128,37 @@ module.exports = function (grunt) {
 			}
 		},
 
-
 		// WATCH stuff goes here
+
+		watch: {
+			options: {
+				livereload: true,
+			},
+			html: {
+				files: ['*.html'],
+				tasks: ['htmlhint', 'htmlmin']
+			},
+			sass: {
+				files: ['sass/*.scss'],
+				tasks: ['sass']
+			},
+			autoprefixer: {
+				files: ['css/litework.css'],
+				tasks: ['autoprefixer', 'cssmin']
+			},
+			js: {
+				files: ['scripts/*.js'],
+				tasks: ['concat', 'uglify']
+			},
+			img: {
+				files: ['img/**/*.{png,jpg,gif}'],
+				tasks: ['imagemin']
+			},
+			copy: {
+				files: ['scripts/ie.min.js', 'scripts/litework.min.js', 'css/litework.min.css'],
+				tasks: ['copy']
+			}
+		},
 
 	});
 
@@ -143,8 +172,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-htmlmin");
 	grunt.loadNpmTasks('grunt-htmlhint');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks("grunt-contrib-watch");
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
 	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlmin", "htmlhint", "copy"]);
-
 };
