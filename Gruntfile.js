@@ -184,6 +184,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-replace');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
 	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "copy"]);
