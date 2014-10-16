@@ -73,6 +73,29 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// Replace will take the @@code snippets in your HTML files and replace them with the relevant code from the snippets folder
+
+		replace: {
+			dist: {
+				options: {
+					patterns: [{
+						match: 'nav',
+						replacement: '<%= grunt.file.read("snippets/nav.html") %>'
+					}, {
+						match: 'footer',
+						replacement: '<%= grunt.file.read("snippets/footer.html") %>'
+					}]
+				},
+				files: [
+					{
+						expand: true,
+						flatten: true,
+						src: ['*.html'],
+						dest: 'build/'
+					}],
+			},
+		},
+
 		// HTMLhint will check all HTML in the root folder for errors
 
 		htmlhint: {
@@ -92,7 +115,7 @@ module.exports = function (grunt) {
 					'img-alt-require': true,
 					'tag-self-close': true
 				},
-				cwd: '',
+				cwd: 'build/',
 				src: ['*.html']
 			}
 		},
@@ -108,7 +131,7 @@ module.exports = function (grunt) {
 				},
 				files: [{
 					expand: true,
-					cwd: '',
+					cwd: 'build/',
 					src: '*.html',
 					dest: 'dist/'
             }]
@@ -187,6 +210,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-replace');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
-	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "copy"]);
+	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin", "copy"]);
 	grunt.registerTask('live', ["browserSync", "watch"]);
+	grunt.registerTask('test', ["replace"]); // Task for testing a particular plugin
 };

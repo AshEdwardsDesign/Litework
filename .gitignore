@@ -232,3 +232,9 @@ node_modules/
 #############
 
 dist/
+
+#############
+## Build folder
+#############
+
+build/
