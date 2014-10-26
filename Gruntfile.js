@@ -180,6 +180,10 @@ module.exports = function (grunt) {
 			},
 		},
 
+		// Clean - This plugin will "clean" folders passed to it
+
+		clean: ["dist", "build"],
+
 	});
 
 	// List of used plugins
@@ -194,8 +198,10 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-replace');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
 	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin"]);
 	grunt.registerTask('live', ["browserSync", "watch"]);
+	grunt.registerTask('wipe', ["clean", "default"]);
 };
