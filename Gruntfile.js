@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 			},
 			your_target: {
 				src: 'css/litework.css',
-				dest: 'css/litework.css'
+				dest: 'build/css/litework.prefixed.css'
 			},
 		},
 
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 		cssmin: {
 			my_target: {
 				files: {
-					'css/litework.min.css': ['css/litework.css']
+					'dist/css/litework.prefixed.min.css': ['build/css/litework.prefixed.css']
 				}
 			}
 		},
@@ -42,8 +42,8 @@ module.exports = function (grunt) {
 		concat: {
 			dist: {
 				files: {
-					'scripts/ie.js': ['scripts/html5shiv.js', 'scripts/respond.min.js'],
-					'scripts/litework.js': ['scripts/jquery-1.11.1.min.js', 'scripts/jquery.slicknav.min.js']
+					'build/scripts/ie.js': ['scripts/html5shiv.js', 'scripts/respond.min.js'],
+					'build/scripts/litework.js': ['scripts/jquery-1.11.1.min.js', 'scripts/jquery.slicknav.min.js']
 				}
 			}
 		},
@@ -54,8 +54,8 @@ module.exports = function (grunt) {
 			my_target: {
 				files: {
 
-					'scripts/ie.min.js': ['scripts/ie.js'],
-					'scripts/litework.min.js': ['scripts/litework.js']
+					'dist/scripts/ie.min.js': ['build/scripts/ie.js'],
+					'dist/scripts/litework.min.js': ['build/scripts/litework.js']
 				}
 			}
 		},
@@ -79,11 +79,15 @@ module.exports = function (grunt) {
 			dist: {
 				options: {
 					patterns: [{
-						match: 'nav',
-						replacement: '<%= grunt.file.read("snippets/nav.html") %>'
+							match: 'nav',
+							replacement: '<%= grunt.file.read("snippets/nav.html") %>'
 					}, {
-						match: 'footer',
-						replacement: '<%= grunt.file.read("snippets/footer.html") %>'
+							match: 'footer',
+							replacement: '<%= grunt.file.read("snippets/footer.html") %>'
+					},
+						{
+							match: 'warnings',
+							replacement: '<%= grunt.file.read("snippets/warnings.html") %>'
 					}]
 				},
 				files: [
@@ -138,19 +142,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Copy stuff goes here - this is set to copy production-ready files from the css and script folders into the appropriate place in the dist folder
-
-		copy: {
-			main: {
-				files: {
-					'dist/scripts/ie.min.js': ['scripts/ie.min.js'], // IE bandaid js
-					'dist/scripts/litework.min.js': ['scripts/litework.min.js'], // Liteworks' main js file
-					'dist/css/litework.min.css': ['css/litework.min.css'] // Liteworks' CSS file
-				}
-
-			}
-		},
-
 		// Browser-Sync will allow a live-preview of the project across your browsers & devices
 
 		browserSync: {
@@ -187,10 +178,6 @@ module.exports = function (grunt) {
 				files: ['img/**/*.{png,jpg,gif}'],
 				tasks: ['imagemin']
 			},
-			copy: {
-				files: ['scripts/ie.min.js', 'scripts/litework.min.js', 'css/litework.min.css'],
-				tasks: ['copy']
-			}
 		},
 
 	});
@@ -204,13 +191,11 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-htmlhint');
-	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-replace');
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
-	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin", "copy"]);
+	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin"]);
 	grunt.registerTask('live', ["browserSync", "watch"]);
-	grunt.registerTask('test', ["replace"]); // Task for testing a particular plugin
 };

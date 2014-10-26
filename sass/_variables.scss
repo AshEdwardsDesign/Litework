@@ -1,7 +1,13 @@
+// px to em conversion mixin
+$base: 16;
+@function em($px) {
+  @return ($px / $base) * 1em;
+}
+
 // Content and grid variables
 
 $content-width: 100%;
-$max-content-width: 1400px;
+$max-content-width: em(1400);
 $grid-columns: 12;
 
 // Branding & Colour variables
@@ -12,23 +18,27 @@ $brand2: #04518C;
 $brand3: #003056;
 $grey: #262626;
 
+$notice:#ff9300;
+$warning:#ad0000;
+$sucess:green;
+
 // Font & Typography variables
 
 $line-height: 1.1;
 
-$title-font: 'Open Sans', helvetica, sans-serif;
-$para-font: 'Open Sans', helvetica, sans-serif;
+$title-font: 'Roboto', 'Open Sans', helvetica, Arial, sans-serif;
+$para-font: 'Roboto', 'Open Sans', helvetica, Arial, sans-serif;
 
 // Button and form element variables
 
-$border-radius:2px;
+$border-radius:em(0);
 
 // Responsive Media Query Mixins
 // Note: Litework is mobile-first so <20em is the default 
 
-    $sml-screen: "(min-width:20em)";
-    $med-screen: "(min-width:40em)";
-    $lrg-screen: "(min-width:60em)";
+    $sml-screen: "(min-width: " + em(700) + ")";
+    $med-screen: "(min-width: " + em(1050) + ")";
+    $lrg-screen: "(min-width: " + em(1400) + ")";
 
 @mixin bp($size) {
     
