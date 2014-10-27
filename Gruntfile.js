@@ -2,6 +2,8 @@ module.exports = function (grunt) {
 
 	// 1. All configuration goes here 
 
+	require('time-grunt')(grunt);
+
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -186,22 +188,11 @@ module.exports = function (grunt) {
 
 	});
 
-	// List of used plugins
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-htmlhint');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-browser-sync');
-	grunt.loadNpmTasks('grunt-replace');
-	grunt.loadNpmTasks('grunt-contrib-clean');
+	// Load all plugins using matchdep
+	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// Here we tell Grunt what to do when we type 'grunt' into the CLI
 	grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin"]);
 	grunt.registerTask('live', ["browserSync", "watch"]);
-	grunt.registerTask('wipe', ["clean", "default"]);
+	grunt.registerTask('fresh', ["clean", "default"]); // This will clean the dist and build folders prior to running our full grunt task
 };
