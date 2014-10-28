@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        // SASS will compile your Sass files into CSS files
+        // SASS will compile your Sass files into a CSS file
 
         sass: {
             dist: {
