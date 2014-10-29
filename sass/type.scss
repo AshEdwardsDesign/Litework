@@ -10,6 +10,11 @@ h1
 	color:$brand3;
 }
 
+.header h1
+{
+	font-weight: 300;
+}
+
 @include bp(sml-screen)
 {
 	h1
