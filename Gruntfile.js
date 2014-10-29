@@ -157,12 +157,21 @@ module.exports = function (grunt) {
                 },
             }
         },
+
+        // Sitemap - This task will create an xml sitemap based on the HTML files in your dist folder
+
+        sitemap: {
+            xml: {
+                siteRoot: ['dist/']
+            },
+        },
+
         // WATCH stuff goes here
 
         watch: {
             html: {
                 files: ['*.html'],
-                tasks: ['htmlhint', 'htmlmin']
+                tasks: ['htmlhint', 'htmlmin', 'sitemap']
             },
             sass: {
                 files: ['sass/*.scss'],
@@ -184,7 +193,7 @@ module.exports = function (grunt) {
 
         // Clean - This plugin will "clean" folders passed to it
 
-        clean: ["dist", "build"],
+        clean: ['dist', 'build']
 
     });
 
@@ -192,7 +201,7 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     // Here we tell Grunt what to do when we type 'grunt' into the CLI
-    grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin"]);
+    grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin", "sitemap"]);
     grunt.registerTask('live', ["browserSync", "watch"]);
     grunt.registerTask('fresh', ["clean", "default"]); // This will clean the dist and build folders prior to running our full grunt task
 };
