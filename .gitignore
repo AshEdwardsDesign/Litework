@@ -238,3 +238,9 @@ dist/
 #############
 
 build/
+
+#############
+## ftppass file
+#############
+
+ftppass.json

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             your_target: {
                 src: 'build/css/litework.css',
                 dest: 'build/css/litework.prefixed.css'
-            },
+            }
         },
 
         // CSSmin will minify your CSS
@@ -70,7 +70,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'dist/img/',
+                    dest: 'dist/img/'
         }]
             }
         },
@@ -98,8 +98,8 @@ module.exports = function (grunt) {
                         flatten: true,
                         src: ['*.html'],
                         dest: 'build/'
-     }],
-            },
+     }]
+            }
         },
 
         // HTMLhint will check all HTML in the root folder for errors
@@ -154,7 +154,7 @@ module.exports = function (grunt) {
                 watchTask: true,
                 server: {
                     baseDir: "./dist"
-                },
+                }
             }
         },
 
@@ -163,7 +163,19 @@ module.exports = function (grunt) {
         sitemap: {
             xml: {
                 siteRoot: ['dist/']
-            },
+            }
+        },
+
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'ftp.ashedwardsdesign.co.uk',
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'dist/',
+                dest: 'public_html/projects/litework'
+            }
         },
 
         // WATCH stuff goes here
@@ -188,7 +200,7 @@ module.exports = function (grunt) {
             img: {
                 files: ['img/**/*.{png,jpg,gif}'],
                 tasks: ['imagemin']
-            },
+            }
         },
 
         // Clean - This plugin will "clean" folders passed to it
@@ -204,4 +216,4 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin", "sitemap"]);
     grunt.registerTask('live', ["browserSync", "watch"]);
     grunt.registerTask('fresh', ["clean", "default"]); // This will clean the dist and build folders prior to running our full grunt task
-};
+    grunt.registerTask('ftp', ["'ftp-deploy'"]);}
