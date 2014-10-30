@@ -216,6 +216,6 @@ module.exports = function (grunt) {
     grunt.registerTask('default', ["sass", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace", "htmlhint", "htmlmin", "sitemap"]);
     grunt.registerTask('live', ["browserSync", "watch"]);
     grunt.registerTask('fresh', ["clean", "default"]); // This will clean the dist and build folders prior to running our full grunt task
-    grunt.registerTask('ftp', ["'ftp-deploy'"]);
+    grunt.registerTask('ftp', ['ftp-deploy']);
 
 };
