@@ -6,14 +6,14 @@ Header elements
 {
 	overflow:hidden;
 	background:$brand3;
+	text-align: center !important;
 	padding:3em 0;
 	margin:0;
-	clear:both;
-/*	background-image:url('../img/header.jpg');
+	background-image:url('../img/litework-grid.png');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-*/
+	@include clearfix;
 }
 
 @include bp(med-screen)
@@ -22,7 +22,7 @@ Header elements
 	
 	#header
 {
-	padding:4em 0 2em 0;
+	padding:2em 0;
 	margin:0;
 }
 	

@@ -10,6 +10,11 @@ h1
 	color:$brand3;
 }
 
+.header h1
+{
+	font-weight: 300;
+}
+
 @include bp(sml-screen)
 {
 	h1
@@ -75,7 +80,7 @@ p
 a
 {
      font-family:$para-font;
-     font-weight:400;
+     font-weight:300;
      color:$brand3;
      text-decoration:none;
 }
@@ -89,14 +94,16 @@ hr
 
 ul
 {
-    list-style:disc inside;
+    font-family:$para-font;
+	list-style:disc inside;
     line-height:$line-height;
     margin:1em 0 0 0;
 }
 
 ol
 {
-    list-style:decimal inside;
+    font-family:$para-font;
+	list-style:decimal inside;
     line-height:$line-height;
     margin:1em 0 0 0;
 }
@@ -104,12 +111,14 @@ ol
 em
 
 {
+	font-family:$para-font;
 	font-style:italic;
 }
 
 .small
 {
-    color:#bababa;
+ 	font-family:$para-font;
+	color:#bababa;
     font-size:0.75em;
     margin:1em 0 1em 0;
     line-height:$line-height;
@@ -117,11 +126,13 @@ em
 
 .white
 {
+	font-family:$para-font;
 	color:white !important;
 }
 
 .red
 
 {
-    color:red !important;
+    font-family:$para-font;
+	color:red !important;
 }

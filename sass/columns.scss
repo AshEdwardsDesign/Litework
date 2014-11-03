@@ -38,7 +38,7 @@
 
 // Container drops to 90% width at sml-screen and above
 
-@include bp(med-screen)
+@include bp(sml-screen)
 {
 
 .container

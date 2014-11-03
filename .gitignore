@@ -232,3 +232,15 @@ node_modules/
 #############
 
 dist/
+
+#############
+## Build folder
+#############
+
+build/
+
+#############
+## ftppass file
+#############
+
+ftppass.json

@@ -1,18 +1,37 @@
 {
   "name": "litework",
-  "version": "0.1.0",
+  "version": "0.0.4",
+  "description": "Litework is a lightweight HTML/CSS framework built with Grunt.",
+  "homepage": "http://www.litework-framework.co.uk/",
+  "keywords": [
+    "framework",
+    "HTML/CSS",
+    "util"
+  ],
+  "author": "Ash Edwards <info@ashedwardsdesign.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AshEdwardsDesign/Litework"
+  },
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-autoprefixer": "^1.0.1",
     "grunt-browser-sync": "^1.5.3",
+    "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-concat": "^0.5.0",
-    "grunt-contrib-copy": "^0.6.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-imagemin": "^0.8.1",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-htmlhint": "^0.4.1"
+    "grunt-ftp-deploy": "^0.1.9",
+    "grunt-htmlhint": "^0.4.1",
+    "grunt-replace": "^0.7.9",
+    "grunt-sitemap": "^1.2.0",
+    "grunt-uncss": "^0.3.7",
+    "matchdep": "^0.3.0",
+    "time-grunt": "^1.0.0"
   }
 }
