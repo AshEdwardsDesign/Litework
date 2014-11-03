@@ -3,26 +3,26 @@
 
 <head>
 
-	<!-- Main Meta Content -->
+  <!-- Main Meta Content -->
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta charset="utf-8" />
-	<title></title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="robots" content="index,follow" />
-	<link rel="icon" content="" />
-	<link rel="canonical" href="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" content="" />
+  <link rel="canonical" href="" />
 
-	<!-- CSS -->
+  <!-- CSS -->
 
-	<link rel="stylesheet" href="css/litework.prefixed.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/litework.prefixed.min.css" type="text/css" />
 
-	<!-- Scripts for improved support in IE 9 or below -->
+  <!-- Scripts for improved support in IE 9 or below -->
 
-	<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
     <script src="scripts/ie.min.js"></script>
     <![endif]-->
 
@@ -30,73 +30,73 @@
 
 <body>
 
-	<!-- Wrapper Start -->
-	<div id="wrapper">
+  <!-- Wrapper Start -->
+  <div id="wrapper">
 
-		<!-- Warnings -->
-		@@warnings
-		<!-- Warnings End -->
+    <!-- Warnings -->
+    @@warnings
+    <!-- Warnings End -->
 
-		<!-- Nav start -->
-		@@nav
-		<!-- Nav End -->
+    <!-- Nav start -->
+    @@nav
+    <!-- Nav End -->
 
-		<!-- Header Start -->
-		<div id="header">
-			<div class="container">
-				<div class="row">
-					<div class="column-12">
-						<h1 class="white">My new website</h1>
-						<p class="white">Created with the super-duper litework framework.</p>
-					</div>
-				</div>
-			</div>
+    <!-- Header Start -->
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="column-12">
+            <h1 class="white">My new website</h1>
+            <p class="white">Created with the super-duper litework framework.</p>
+          </div>
+        </div>
+      </div>
 
-			<!-- Header End -->
-		</div>
+      <!-- Header End -->
+    </div>
 
-		<!-- Content Start -->
-		<div class="container" role="main">
-			<div class="row">
-				<div class="column-12">
-					<h1>Heading 1</h1>
-					<p>Hello, world!</p>
-				</div>
-			</div>
-			<!-- Content End -->
-		</div>
+    <!-- Content Start -->
+    <div class="container" role="main">
+      <div class="row">
+        <div class="column-12">
+          <h1>Heading 1</h1>
+          <p>Hello, world!</p>
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
 
-		<!-- Footer Start -->
-		@@footer
-		<!-- Footer End -->
+    <!-- Footer Start -->
+    @@footer
+    <!-- Footer End -->
 
-	</div>
-	<!-- Wrapper End -->
+  </div>
+  <!-- Wrapper End -->
 
-	<!-- Deffered litework JS until after page load -->
+  <!-- Deffered litework JS until after page load -->
 
-	<script type="text/javascript">
-		function downloadJSAtOnload() {
-			var element = document.createElement("script");
-			element.src = "scripts/litework.min.js";
-			document.body.appendChild(element);
-		}
-		if (window.addEventListener)
-			window.addEventListener("load", downloadJSAtOnload, false);
-		else if (window.attachEvent)
-			window.attachEvent("onload", downloadJSAtOnload);
-		else window.onload = downloadJSAtOnload;
-	</script>
+  <script type="text/javascript">
+    function downloadJSAtOnload() {
+    	var element = document.createElement("script");
+    	element.src = "scripts/litework.min.js";
+    	document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    	window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    	window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
 
-	<!-- Call Slicknav -->
+  <!-- Call Slicknav -->
 
-	<script>
-		$(function () {
-			$('#menu').slicknav();
-		});
-	</script>
+  <script>
+    $(function() {
+    	$('#menu').slicknav();
+    });
+  </script>
 
-	<!-- End of Slicknav -->
+  <!-- End of Slicknav -->
 
 </body>
 
