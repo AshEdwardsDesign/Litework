@@ -217,8 +217,8 @@ module.exports = function(grunt) {
 
     watch: {
       html: {
-        files: ['*.html'],
-        tasks: ['htmlhint', 'htmlmin', 'sitemap']
+        files: ['*.html', 'snippets/*.html'],
+        tasks: ['replace:dist', 'htmlhint', 'uncss', 'replace:css', 'htmlmin', 'sitemap']
       },
       sass: {
         files: ['sass/*.scss'],
@@ -226,7 +226,7 @@ module.exports = function(grunt) {
       },
       autoprefixer: {
         files: ['css/litework.css'],
-        tasks: ['autoprefixer', 'cssmin']
+        tasks: ['autoprefixer', 'cssmin', 'replace:css']
       },
       js: {
         files: ['scripts/*.js'],
@@ -249,7 +249,13 @@ module.exports = function(grunt) {
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
   grunt.registerTask('default', ["sass", "autoprefixer", "replace:dist", "uncss", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "replace:css", "htmlmin", "sitemap"]);
+
+  // This will start a live preview of your project and then trigger the watch task
   grunt.registerTask('live', ["browserSync", "watch"]);
-  grunt.registerTask('fresh', ["clean", "default"]); // This will clean the dist and build folders prior to running our full grunt task
+
+  // This will clean the dist and build folders prior to running our full grunt task
+  grunt.registerTask('fresh', ["clean", "default"]);
+
+  // This will deploy your dist/ folder to your server, auth is contained in the separate .ftppass file
   grunt.registerTask('ftp', ['ftp-deploy']);
 };
