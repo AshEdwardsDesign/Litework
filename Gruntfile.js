@@ -24,8 +24,8 @@ module.exports = function(grunt) {
         browsers: ['> 1%']
       },
       your_target: {
-        src: 'build/css/litework.css',
-        dest: 'build/css/litework.prefixed.css'
+        src: 'build/css/litework.slim.css',
+        dest: 'build/css/litework.prefixed.slim.css'
       }
     },
 
@@ -35,10 +35,10 @@ module.exports = function(grunt) {
       dist: {
         options: {
           ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active'],
-          stylesheets: ['css/litework.prefixed.css'],
+          stylesheets: ['css/litework.css'],
         },
         files: {
-          'build/css/litework.prefixed.slim.css': ['build/*.html']
+          'build/css/litework.slim.css': ['build/*.html']
         }
       },
     },
@@ -218,15 +218,15 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ['*.html', 'snippets/*.html'],
-        tasks: ['replace:dist', 'htmlhint', 'uncss', 'replace:css', 'htmlmin', 'sitemap']
+        tasks: ['replace:dist', 'htmlhint', 'replace:css', 'htmlmin', 'sitemap']
       },
       sass: {
         files: ['sass/*.scss'],
         tasks: ['sass']
       },
-      autoprefixer: {
-        files: ['css/litework.css'],
-        tasks: ['autoprefixer', 'cssmin', 'replace:css']
+      css: {
+        files: ['build/css/litework.css'],
+        tasks: ['uncss', 'autoprefixer', 'cssmin', 'replace:css', 'watch:html']
       },
       js: {
         files: ['scripts/*.js'],
@@ -248,7 +248,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
-  grunt.registerTask('default', ["sass", "autoprefixer", "replace:dist", "uncss", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "replace:css", "htmlmin", "sitemap"]);
+  grunt.registerTask('default', ["sass", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "replace:css", "htmlmin", "sitemap"]);
 
   // This will start a live preview of your project and then trigger the watch task
   grunt.registerTask('live', ["browserSync", "watch"]);

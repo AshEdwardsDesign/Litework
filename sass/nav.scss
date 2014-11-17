@@ -1,5 +1,5 @@
-/******************************************* 
-Navigation elements 
+/*******************************************
+Navigation elements
 *******************************************/
 
 #menu a
@@ -34,11 +34,9 @@ Navigation elements
 	margin:0;
 }
 
-.slicknav_menu 
+.js .slicknav_menu
 {
 	display:block;
-	position:fixed;
-	width:100%;
 }
 
 #sidebar
@@ -48,9 +46,10 @@ Navigation elements
     width:30%;
     padding:2em;
     height:100%;
+    background:$grey;
 }
 
-#menu
+.js #menu
 {
 	display:none;
 }
@@ -59,13 +58,13 @@ Navigation elements
 
 {
 
-	.slicknav_menu {
+.js	.slicknav_menu {
 	display:none;
 }
-	
-	#menu {
+
+.js	#menu {
 		display:block;
 		float:right;
 	}
-	
+
 }
