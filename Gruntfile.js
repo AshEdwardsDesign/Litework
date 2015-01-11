@@ -103,6 +103,9 @@ module.exports = function(grunt) {
           }, {
             match: 'warnings',
             replacement: '<%= grunt.file.read("snippets/warnings.html") %>'
+          }, {
+            match: 'analytics',
+            replacement: '<%= grunt.file.read("snippets/analytics.html") %>'
           }, ]
         },
         files: [{
