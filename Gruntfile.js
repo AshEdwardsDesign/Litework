@@ -96,20 +96,20 @@ module.exports = function(grunt) {
         options: {
           patterns: [{
             match: 'twitter-share',
-            replacement: '<%= grunt.file.read("snippets/twitter-share.html") %>'
+            replacement: '<%= grunt.file.read("snippets/footer/twitter-share.html") %>'
           }, {
             match: 'twitter-follow',
-            replacement: '<%= grunt.file.read("snippets/twitter-follow.html") %>'
+            replacement: '<%= grunt.file.read("snippets/footer/twitter-follow.html") %>'
           }, {
             match: 'facebook-like',
-            replacement: '<%= grunt.file.read("snippets/facebook-like.html") %>'
-          },]
+            replacement: '<%= grunt.file.read("snippets/footer/facebook-like.html") %>'
+          }, ]
         },
         files: [{
           expand: true,
           flatten: true,
-          src: ['snippets/footer-build.html'],
-          dest: 'snippets/footer.html'
+          src: ['snippets/footer/footer.html'],
+          dest: 'snippets/'
         }]
       },
       dist: {
@@ -274,7 +274,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
-  grunt.registerTask('default', ["sass", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "replace:css", "htmlmin", "sitemap"]);
+  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "replace:css", "htmlmin", "sitemap"]);
 
   // This will start a live preview of your project and then trigger the watch task
   grunt.registerTask('live', ["browserSync", "watch"]);
