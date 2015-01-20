@@ -92,6 +92,26 @@ module.exports = function(grunt) {
     // Replace will take the @@code snippets in your HTML files and replace them with the relevant code from the snippets folder
 
     replace: {
+      footer: {
+        options: {
+          patterns: [{
+            match: 'twitter-share',
+            replacement: '<%= grunt.file.read("snippets/twitter-share.html") %>'
+          }, {
+            match: 'twitter-follow',
+            replacement: '<%= grunt.file.read("snippets/twitter-follow.html") %>'
+          }, {
+            match: 'facebook-like',
+            replacement: '<%= grunt.file.read("snippets/facebook-like.html") %>'
+          },]
+        },
+        files: [{
+          expand: true,
+          flatten: true,
+          src: ['snippets/footer-build.html'],
+          dest: 'snippets/footer.html'
+        }]
+      },
       dist: {
         options: {
           patterns: [{
@@ -106,6 +126,9 @@ module.exports = function(grunt) {
           }, {
             match: 'analytics',
             replacement: '<%= grunt.file.read("snippets/analytics.html") %>'
+          }, {
+            match: 'facebookSDK',
+            replacement: '<%= grunt.file.read("snippets/facebookSDK.html") %>'
           }, ]
         },
         files: [{

@@ -26,15 +26,17 @@
     <script src="scripts/ie.min.js"></script>
     <![endif]-->
 
-    <!-- GA tracking code -->
+  <!-- GA tracking code -->
 
-    @@analytics
+  @@analytics
 
-    <!-- End of GA tracking code -->
+  <!-- End of GA tracking code -->
 
 </head>
 
 <body>
+
+  @@facebookSDK
 
   <!-- Wrapper Start -->
   <div id="wrapper">
@@ -85,24 +87,24 @@
 
   <script type="text/javascript">
     function downloadJSAtOnload() {
-    	var element = document.createElement("script");
-    	element.src = "scripts/litework.min.js";
-    	document.body.appendChild(element);
+      var element = document.createElement("script");
+      element.src = "scripts/litework.min.js";
+      document.body.appendChild(element);
     }
     if (window.addEventListener)
-    	window.addEventListener("load", downloadJSAtOnload, false);
+      window.addEventListener("load", downloadJSAtOnload, false);
     else if (window.attachEvent)
-    	window.attachEvent("onload", downloadJSAtOnload);
+      window.attachEvent("onload", downloadJSAtOnload);
     else window.onload = downloadJSAtOnload;
   </script>
 
   <!-- Call Slicknav -->
 
-<script>
-    $(function(){
-        $('#menu').slicknav();
+  <script>
+    $(function() {
+      $('#menu').slicknav();
     });
-</script>
+  </script>
 
   <!-- End of Slicknav -->
 
