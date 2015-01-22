@@ -1,6 +1,8 @@
 html{
 	font-family:$para-font;
 	font-size:1em;
+	background-color:black;
+	color:white;
 }
 
 .backtotop
@@ -31,7 +33,7 @@ html{
 }
 
 @include bp(med-screen)
-	
+
 {
 #maps
 {
