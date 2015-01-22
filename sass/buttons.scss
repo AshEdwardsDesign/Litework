@@ -1,4 +1,4 @@
-/******************************************* 
+/*******************************************
 Buttons
 *******************************************/
 
@@ -6,7 +6,7 @@ button
 {
     margin:0.25em 0;
     padding:1em;
-    background-color:$brand1;
+    background-color:#141414;
     border-radius:$border-radius;
     border:none;
     color:white !important;
@@ -23,7 +23,7 @@ button:active
 {
     background-color:$brand1-drk;
 }
-    
+
 .btn-sml
 {
     font-size:0.75em !important;

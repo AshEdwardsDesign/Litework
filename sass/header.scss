@@ -5,25 +5,23 @@ Header elements
 #header
 {
 	overflow:hidden;
-	background:$brand3;
-	text-align: center !important;
+	background:black;
 	padding:3em 0;
 	margin:0;
-	background-image:url('/img/running.jpg');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+	background-image:url('img/running.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 	@include clearfix;
 }
 
 #header-contact
 {
 	overflow:hidden;
-	background:$brand3;
-	text-align: center !important;
+	background:black;
 	padding:3em 0;
 	margin:0;
-	background-image:url('/img/contact.jpg');
+	background-image:url('img/contact.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
@@ -36,13 +34,13 @@ Header elements
 
 	#header
 {
-	padding:12em 0;
+	padding:18em 0 14em 0;
 	margin:0;
 }
 
 #header-contact
 {
-	padding:12em 0;
+	padding:18em 0 14em 0;
 	margin:0;
 }
 
