@@ -129,9 +129,6 @@ module.exports = function(grunt) {
           }, {
             match: 'facebookSDK',
             replacement: '<%= grunt.file.read("snippets/facebookSDK.html") %>'
-          }, {
-            match: 'css',
-            replacement: '<%= grunt.file.read("dist/css/litework.prefixed.slim.min.css") %>'
           }]
         },
         files: [{
@@ -254,7 +251,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
-  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "sitemap"]);
+  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint",  "htmlmin", "sitemap"]);
 
   // This will start a live preview of your project and then trigger the watch task
   grunt.registerTask('live', ["browserSync", "watch"]);
