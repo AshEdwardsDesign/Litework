@@ -26,23 +26,10 @@
 .grey-bg
 {
   background-color:#141414;
-  width:30%;
+  width:50%;
   padding:1em;
+  margin: 0 0 0 0;
   float:right;
-}
-
-.image-block
-{
-  width:70%;
-  height:100%;
-  min-height:1px;
-  float:left;
-}
-
-.image-block img
-{
-  width:100%;
-  height:auto;
 }
 
 .teeth-whitening
@@ -144,7 +131,7 @@
 
 // Container drops to 90% width at sml-screen and above
 
-@include bp(med-screen)
+@include bp(sml-screen)
 {
 
 .container
@@ -154,12 +141,12 @@
 
 .grey-bg
 {
-  width:40%;
+  width:50%;
 }
 
 .grey
 {
-  min-height:510px !important;
+  min-height:400px !important;
 }
 
 	// SASS Column generation

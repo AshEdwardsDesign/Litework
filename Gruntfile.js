@@ -229,7 +229,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['build/css/litework.css'],
-        tasks: ['uncss', 'autoprefixer', 'cssmin', 'replace:css', 'watch:html']
+        tasks: ['uncss', 'autoprefixer', 'cssmin', 'watch:html']
       },
       js: {
         files: ['scripts/*.js'],
