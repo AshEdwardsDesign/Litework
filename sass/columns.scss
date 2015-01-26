@@ -26,6 +26,103 @@
 .grey-bg
 {
   background-color:#141414;
+  width:30%;
+  padding:1em;
+  float:right;
+}
+
+.image-block
+{
+  width:70%;
+  height:100%;
+  min-height:1px;
+  float:left;
+}
+
+.image-block img
+{
+  width:100%;
+  height:auto;
+}
+
+.teeth-whitening
+{
+  background-image:url('../img/teeth-whitening.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.dietician
+{
+  background-image:url('../img/foodchoice.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.facial
+{
+  background-image:url('../img/facial.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.crosstrainer
+{
+  background-image:url('../img/crosstrainer.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+}
+
+.healthy
+{
+  background-image:url('../img/healthy.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.pedicure
+{
+  background-image:url('../img/pedicure.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.slim-woman
+{
+  background-image:url('../img/slim-woman.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.waxing
+{
+  background-image:url('../img/waxing.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.slim-man
+{
+  background-image:url('../img/slim-man.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.massage
+{
+  background-image:url('../img/massage.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
 }
 
 //    Target all column classes and apply these basic attributes, giving 100% width, some padding,
@@ -40,14 +137,29 @@
     min-height:1px;
 }
 
+.grey
+{
+  background-color:#141414;
+}
+
 // Container drops to 90% width at sml-screen and above
 
-@include bp(sml-screen)
+@include bp(med-screen)
 {
 
 .container
 {
     width:90%;
+}
+
+.grey-bg
+{
+  width:40%;
+}
+
+.grey
+{
+  min-height:510px !important;
 }
 
 	// SASS Column generation

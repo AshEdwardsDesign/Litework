@@ -24,6 +24,28 @@ button:active
     background-color:$brand1-drk;
 }
 
+.button
+{
+  margin:0.25em 0;
+  padding:1em;
+  background-color:#2f2f2f;
+  border-radius:$border-radius;
+  border:none;
+  color:white !important;
+  font-weight:400 !important;
+  font-size:1em;
+}
+
+.button:hover
+{
+  background-color:$brand1-drk;
+}
+
+.button:active
+{
+  background-color:$brand1-drk;
+}
+
 .btn-sml
 {
     font-size:0.75em !important;
