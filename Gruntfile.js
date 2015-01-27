@@ -204,6 +204,8 @@ module.exports = function(grunt) {
       }
     },
 
+    // FTP deploy will deploy your site over FTP from the CL
+
     'ftp-deploy': {
       build: {
         auth: {
@@ -213,6 +215,26 @@ module.exports = function(grunt) {
         },
         src: 'dist/',
         dest: 'public_html/projects/litework'
+      }
+    },
+
+    // Copy will copy certain files into the dist/ folder, in this case the robots.txt and your .htaccess file
+
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          src: ['robots.txt'],
+          dest: 'dist/',
+        }, {
+          expand: true,
+          src: ['*.htaccess'],
+          dest: 'dist/',
+        }, {
+          expand: true,
+          src: ['*cfg*/'],
+          dest: 'dist/',
+        }]
       }
     },
 
@@ -251,7 +273,7 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
-  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint",  "htmlmin", "sitemap"]);
+  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "sitemap", "copy"]);
 
   // This will start a live preview of your project and then trigger the watch task
   grunt.registerTask('live', ["browserSync", "watch"]);
