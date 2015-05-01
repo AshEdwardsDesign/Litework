@@ -129,6 +129,9 @@ module.exports = function(grunt) {
           }, {
             match: 'facebookSDK',
             replacement: '<%= grunt.file.read("snippets/facebookSDK.html") %>'
+          },{
+            match: 'contactform',
+            replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
           }]
         },
         files: [{
