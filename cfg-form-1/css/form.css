@@ -1,0 +1,266 @@
+body{
+	background-color:#f7f7f7;
+}
+.cfg-form-container{
+	padding:30px;
+	border:1px solid #EEE;
+	background-color:#FFF;
+	border-radius:4px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	max-width:100%;
+}
+.ui-datepicker{
+	font-size:9pt !important;
+}
+#cfg-form-1 .cfg-clear{
+	clear:both;
+}
+#cfg-form-1 .cfg-element-container{
+	clear:both;
+}
+#cfg-form-1 .cfg-element-set{
+	margin-bottom:16px;
+	max-width:100%;
+}
+#cfg-form-1 .cfg-option-set::after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+#cfg-form-1 .cfgenwp-label{
+	display:block;
+	margin-right:10px;
+	max-width:100%;
+}
+#cfg-form-1 .cfgenwp-paragraph{
+	margin-bottom:1px;
+}
+#cfg-form-1 .captcha_container{
+	margin-top:2px;
+}
+#cfg-form-1 .cfg-captcha-img{
+	border:1px solid #dcdcdc;
+	border-radius:4px;
+	margin-bottom:1px;
+}
+#cfg-form-1 .cfg-captcha-refresh{
+	margin-bottom:2px;
+	margin-left:2px;
+	cursor:pointer;
+}
+#cfg-form-1 .cfgenwp-submit{
+	cursor:pointer;
+	height:auto;
+	padding:8px 4px;
+	-webkit-appearance:none;
+}
+#cfg-form-1 .cfg-required{
+	color:#990000;
+}
+#cfg-form-1 .cfg-uploadsuccess-container{
+	margin-top:10px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+#cfg-form-1 .cfg-deleteupload{
+	color:#ff0033;
+	margin-left:10px;
+	cursor:pointer;
+}
+#cfg-form-1 .cfg-deleteupload:hover{
+	text-decoration:underline;
+}
+#cfg-form-1 .cfg-loading{
+	display:none;
+	background:url('../img/loading.gif') no-repeat 0 1px;
+	width:16px;
+	height:16px;
+}
+#cfg-form-1 .cfg-errormessage, 
+#cfg-form-1 .cfg-validationmessage{
+	padding:8px 8px;
+	line-height:normal;
+	border-radius:4px;
+}
+#cfg-form-1 .cfg-validationmessage{
+	margin:0 0 10px 0;
+}
+#cfg-form-1 .cfg-errormessage{
+	display:none;
+	margin:4px 0;
+}
+#cfg-form-1 .cfg-option-content{
+	max-width:100%;
+}
+#cfg-form-1 .cfgenwp-option-radio{
+	margin-bottom:4px;
+}
+#cfg-form-1 .cfgenwp-option-checkbox{
+	margin-bottom:2px;
+}
+#cfg-form-1 .cfg-option-content input[type=radio], 
+#cfg-form-1 .cfg-option-content input[type=checkbox]{
+	margin-right:2px;
+	margin-left:1px;
+	vertical-align:middle;
+}
+#cfg-form-1 .cfg-option-content input[type=checkbox]{
+	margin-top:0;
+}
+#cfg-form-1 .cfg-option-content input[type=radio]{
+	margin-top:-2px;
+}
+#cfg-form-1 .cfgenwp-icon-c{
+	width:40px;
+	text-align:center;
+	display:table;
+	padding:4px;
+}
+#cfg-form-1 .cfgenwp-icon-c .fa{
+	display:table-cell;
+	vertical-align:middle;
+}
+#cfg-form-1 .cfg-element-content input[type="text"], 
+#cfg-form-1 .cfg-element-content select, 
+#cfg-form-1 .cfg-element-content input[type="submit"], 
+#cfg-form-1 .cfg-element-content textarea{
+	outline-style:none;
+}
+#cfg-form-1 .cfg-element-content input[type="text"], 
+#cfg-form-1 .cfg-element-content select, 
+#cfg-form-1 .cfg-element-content input[type="submit"], 
+#cfg-form-1 .cfg-element-content textarea, 
+#cfg-form-1 .cfgenwp-paragraph, 
+#cfg-form-1 .cfg-errormessage, 
+#cfg-form-1 .cfg-validationmessage, 
+#cfg-form-1 .cfgenwp-icon-c{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	max-width:100%;
+}
+@media only screen and (min-width: 320px), only screen and (max-width: 320px){
+.cfg-form-container{
+	width:300px;
+	margin:2px auto;
+}
+
+}
+@media only screen and (min-width: 480px){
+.cfg-form-container{
+	width:440px;
+}
+
+}
+@media only screen and (min-width: 600px){
+.cfg-form-container{
+	width:580px;
+}
+
+}
+@media only screen and (min-width: 768px){
+.cfg-form-container{
+	width:680px;
+}
+
+}
+#cfg-form-1 .cfgenwp-label{
+	font-family:Arial;
+	font-weight:bold;
+	font-style:normal;
+	font-size:16px;
+	color:#4DBCE9;
+	margin-bottom:2px;
+}
+#cfg-form-1 .cfg-element-content input[type="text"],
+#cfg-form-1 .cfg-element-content textarea,
+#cfg-form-1 .cfg-element-content select,
+#cfg-form-1 .cfg-option-content{
+	font-family:Arial;
+	font-weight:normal;
+	font-style:normal;
+	font-size:14px;
+	color:#000000;
+}
+#cfg-form-1 .cfg-element-content input[type="text"],
+#cfg-form-1 .cfg-element-content textarea,
+#cfg-form-1 .cfg-element-content select{
+	padding:7px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#dcdcdc;
+	background-color:#ffffff;
+}
+#cfg-form-1 .cfg-element-content input[type="text"],
+#cfg-form-1 .cfg-element-content textarea,
+#cfg-form-1 .cfg-element-content select:not([multiple]){
+	border-radius:4px;
+}
+#cfg-form-1 .cfg-element-content input[type="text"]:focus,
+#cfg-form-1 .cfg-element-content textarea:focus,
+#cfg-form-1 .cfg-element-content select:focus{
+	border-color:#dcdcdc;
+}
+#cfg-form-1 #cfg-element-1-6{
+	width:300px;
+}
+#cfg-form-1 #cfg-element-1-7{
+	width:300px;
+}
+#cfg-form-1 #cfg-element-1-9{
+	width:300px;
+}
+#cfg-form-1 #cfg-element-1-3{
+	width:300px;
+}
+#cfg-form-1 #cfg-element-1-4{
+	width:300px;
+	height:140px;
+}
+#cfg-form-1 #cfg-element-1-8{
+	width:110px;
+}
+#cfg-form-1 #cfg-element-1-5{
+	width:140px;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:normal;
+	font-size:20px;
+	color:#555555;
+	background-color:#f1f1f1;
+	border-width:1px;
+	border-style:solid;
+	border-color:#cccccc;
+	border-radius:5px;
+	margin-left:0px;
+}
+@media only screen and (min-width: 600px){
+#cfg-element-1-5{
+	margin-left:0px;
+}
+
+}
+#cfg-form-1 .cfg-validationmessage{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:normal;
+	font-style:normal;
+	color:#ffffff;
+	background-color:#3bb000;
+	width:315px;
+}
+#cfg-form-1 .cfg-errormessage{
+	font-family:Verdana;
+	font-size:12px;
+	font-weight:normal;
+	font-style:normal;
+	color:#ffffff;
+	background-color:#ff0000;
+	width:315px;
+}

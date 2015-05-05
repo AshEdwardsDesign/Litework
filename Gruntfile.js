@@ -132,7 +132,7 @@ module.exports = function(grunt) {
           },{
             match: 'contactform',
             replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
-          }]
+          },]
         },
         files: [{
           expand: true,
@@ -203,7 +203,7 @@ module.exports = function(grunt) {
 
     sitemap: {
       xml: {
-        siteRoot: ['dist/']
+        siteRoot: 'dist/'
       }
     },
 
