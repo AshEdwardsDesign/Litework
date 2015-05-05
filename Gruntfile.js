@@ -203,7 +203,7 @@ module.exports = function(grunt) {
 
     sitemap: {
       xml: {
-        siteRoot: ['dist/']
+        siteRoot: 'dist/'
       }
     },
 
