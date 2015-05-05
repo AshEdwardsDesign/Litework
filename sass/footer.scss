@@ -5,17 +5,17 @@ Footer
 #footer
 {
 font-size:1em;
-background-color:$grey;
+background-color:$brand1;
 margin:0;
 padding:2em 0 2em 0;
-color:#888;
+color:white;
 overflow:hidden;
 @include clearfix
 }
 
 #footer a
 {
-    color:#888;
+    color:white;
 }
 
 #footer a:hover
@@ -50,22 +50,22 @@ overflow:hidden;
 #ftr-dark
 {
 	font-size:0.8em;
-  background-color:#171717 !important;
+  background-color:$brand1-drk !important;
 	margin:0;
 	padding:2em 0 2em 0;
-	color:#888;
+	color:white;
 	overflow:hidden;
 	@include clearfix
 }
 
 #ftr-dark a
 {
-    color:#888;
+    color:white;
 }
 
 #ftr-dark a:hover
 {
-    color:$brand1;
+    color:white;
 }
 
 #ftr-dark ul

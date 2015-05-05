@@ -12,10 +12,8 @@ $grid-columns: 12;
 
 // Branding & Colour variables
 
-$brand1: #00A1D9;
-$brand1-drk: #0077a0;
-$brand2: #04518C;
-$brand3: #003056;
+$brand1: #f44336;
+$brand1-drk: #d50000;
 $grey: #262626;
 
 $notice:#ff9300;
@@ -34,29 +32,29 @@ $para-font: 'Roboto', 'Open Sans', helvetica, Arial, sans-serif;
 $border-radius:em(0);
 
 // Responsive Media Query Mixins
-// Note: Litework is mobile-first so <20em is the default 
+// Note: Litework is mobile-first so <20em is the default
 
     $sml-screen: "(min-width: " + em(700) + ")";
     $med-screen: "(min-width: " + em(1050) + ")";
     $lrg-screen: "(min-width: " + em(1400) + ")";
 
 @mixin bp($size) {
-    
+
         @if $size == sml-screen
     {
         @media #{$sml-screen} { @content; }
     }
-    
+
         @if $size == med-screen
     {
         @media #{$med-screen} { @content; }
     }
-    
+
         @if $size == lrg-screen
     {
         @media #{$lrg-screen} { @content; }
     }
-    
+
 }
 
 // Clearfix mixin
