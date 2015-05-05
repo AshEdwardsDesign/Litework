@@ -132,6 +132,9 @@ module.exports = function(grunt) {
           },{
             match: 'contactform',
             replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
+          },{
+            match: 'webmaster',
+            replacement: '<%= grunt.file.read("snippets/webmaster.html") %>'
           }]
         },
         files: [{
