@@ -26,8 +26,14 @@ Navigation elements
 #navstrip .column-4 {
   padding: 0 1em;
 }
+.xray {
+  display:none;
+}
 #navstrip ul {
   margin: 0;
+}
+#navstrip p {
+  margin: 1.5em 0 1.5em 0;
 }
 .js .slicknav_menu {
   display: block;
@@ -49,5 +55,8 @@ Navigation elements
   .js #menu {
     display: block;
     float: right;
+  }
+  .xray {
+    display:inline;
   }
 }
