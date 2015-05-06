@@ -30,8 +30,18 @@ html{
     margin:0;
 }
 
+.red-bg
+{
+	width:100%;
+	background-color:$brand1-drk;
+	margin:0 auto;
+	padding:0;
+	@include clearfix;
+	color:white !important;
+}
+
 @include bp(med-screen)
-	
+
 {
 #maps
 {
