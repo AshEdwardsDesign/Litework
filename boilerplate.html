@@ -11,7 +11,7 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta name="author" content="Ash Edwards Design (www.ashedwardsdesign.co.uk)" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index,follow" />
   <link rel="icon" content="img/favicon.ico" />
   <link rel="canonical" href="" />
@@ -87,30 +87,7 @@
   </div>
   <!-- Wrapper End -->
 
-  <!-- Deffered litework JS until after page load -->
-
-  <script type="text/javascript">
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "scripts/litework.min.js";
-      document.body.appendChild(element);
-    }
-    if (window.addEventListener)
-      window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-      window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-  </script>
-
-  <!-- Call Slicknav -->
-
-  <script>
-    $(function() {
-      $('#menu').slicknav();
-    });
-  </script>
-
-  <!-- End of Slicknav -->
+  @@scripts
 
 </body>
 

@@ -1,0 +1,29 @@
+<!-- YOUR JAVASCRIPT GOES HERE -->
+
+<!-- Deffered litework JS until after page load -->
+
+<script type="text/javascript">
+  function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "scripts/litework.min.js";
+    document.body.appendChild(element);
+  }
+  if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
+</script>
+
+<!-- Call Slicknav -->
+
+<script>
+  $(function() {
+    $('#menu').slicknav();
+  });
+</script>
+
+<!-- End of Slicknav -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="cfg-form-2/js/form.js"></script>
