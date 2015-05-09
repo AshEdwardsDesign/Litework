@@ -24,8 +24,8 @@
     @include clearfix;
 }
 
-//    Target all column classes and apply these basic attributes, giving 100% width, some padding, 
-//    a float and a min-height which forces the column to 'render' even if it is empty. 
+//    Target all column classes and apply these basic attributes, giving 100% width, some padding,
+//    a float and a min-height which forces the column to 'render' even if it is empty.
 
 [class*='column-']
 
@@ -34,6 +34,14 @@
     padding:1em;
     float:left;
     min-height:1px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
 }
 
 // Container drops to 90% width at sml-screen and above
@@ -45,17 +53,17 @@
 {
     width:90%;
 }
-	
+
 	// SASS Column generation
 
 @for $i from 1 through $grid-columns {
- 
+
     .column-#{$i}
-    
+
     {
-    width: 100% / $grid-columns * $i;    
+    width: 100% / $grid-columns * $i;
     }
 }
-	
-	
-}    
+
+
+}

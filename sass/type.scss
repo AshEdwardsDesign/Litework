@@ -136,3 +136,22 @@ em
     font-family:$para-font;
 	color:red !important;
 }
+
+.brand1 {
+color:$brand1;
+}
+
+.right {
+	text-align:right !important;
+}
+
+.left {
+	text-align:left !important;
+}
+
+.blue-box {
+	color:white !important;
+	background-color:$brand1;
+	padding:1em;
+	width:inherit;
+}

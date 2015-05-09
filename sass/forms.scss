@@ -1,5 +1,5 @@
-/******************************************* 
-Form Elements 
+/*******************************************
+Form Elements
 *******************************************/
 
 input
@@ -20,6 +20,11 @@ margin:1em 0;
 {
     width:auto !important;
     margin:0.25em 1em 0.25em 0;
+}
+
+input[type=radio] {
+  padding:0 !important;
+  margin: 0 !important;
 }
 
 .input-checkbox
@@ -46,6 +51,6 @@ font-size:1em;
 border: 1px solid #acacac;
 box-shadow: none !important;
 padding:0.5em;
-margin:1em 0; 
+margin:1em 0;
 @include clearfix
 }

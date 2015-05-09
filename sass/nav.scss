@@ -2,9 +2,13 @@
 Navigation elements
 *******************************************/
 
+.logo {
+  padding:1.5em !important;
+}
+
 #menu a
 {
-    color:white;
+    color:#212121;
 }
 
 #menu li
@@ -24,9 +28,11 @@ Navigation elements
 #navstrip
 {
 	width:100%;
-	background-color:$brand3;
+	background-color:white;
     top:0;
 	padding:1em 0;
+  color:#212121;
+  border-bottom: $brand1 solid 0.5em;
 }
 
 #navstrip ul

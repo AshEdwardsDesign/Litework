@@ -1,5 +1,5 @@
-/******************************************* 
-Header elements 
+/*******************************************
+Header elements
 *******************************************/
 
 #header
@@ -7,9 +7,9 @@ Header elements
 	overflow:hidden;
 	background:$brand3;
 	text-align: center !important;
-	padding:3em 0;
+	padding:3em 0 0 0;
 	margin:0;
-	background-image:url('../img/litework-grid.png');
+	background-image:url('../img/header-image.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -17,13 +17,13 @@ Header elements
 }
 
 @include bp(med-screen)
-	
+
 {
-	
+
 	#header
 {
-	padding:2em 0;
+	padding:3em 0 0 0;
 	margin:0;
 }
-	
+
 }
