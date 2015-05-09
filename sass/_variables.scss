@@ -7,7 +7,7 @@ $base: 16;
 // Content and grid variables
 
 $content-width: 100%;
-$max-content-width: em(1400);
+$max-content-width: em(1366);
 $grid-columns: 12;
 
 // Branding & Colour variables
@@ -38,7 +38,7 @@ $border-radius:em(0);
 
     $sml-screen: "(min-width: " + em(700) + ")";
     $med-screen: "(min-width: " + em(1050) + ")";
-    $lrg-screen: "(min-width: " + em(1400) + ")";
+    $lrg-screen: "(min-width: " + em(1366) + ")";
 
 @mixin bp($size) {
 
