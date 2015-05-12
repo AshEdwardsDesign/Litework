@@ -40,6 +40,15 @@ html{
 	color:white !important;
 }
 
+.paypal {
+	border:none !important;
+	width:150px !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
 @include bp(med-screen)
 
 {

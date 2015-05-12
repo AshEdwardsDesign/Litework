@@ -13,6 +13,16 @@ Header elements
 	background-position: center;
 	@include clearfix;
 }
+
+#header-no-img {
+	overflow: hidden;
+	background: $brand1;
+	text-align: center !important;
+	padding: 3em 0;
+	margin: 0;
+	@include clearfix;
+}
+
 #header .column-6 {
 	background-color: $brand1;
 	color: white !important;
