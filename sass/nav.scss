@@ -60,6 +60,11 @@ Navigation elements
 	display:none;
 }
 
+#menu
+{
+	display:none;
+}
+
 @include bp(lrg-screen)
 
 {
@@ -68,9 +73,18 @@ Navigation elements
 	display:none;
 }
 
+.slicknav_menu {
+	display:none;
+}
+
 .js	#menu {
 		display:block;
 		float:right;
 	}
+
+  #menu {
+  		display:block;
+  		float:right;
+  	}
 
 }
