@@ -1,90 +1,65 @@
 /*******************************************
 Navigation elements
 *******************************************/
-
 .logo {
-  padding:1.5em !important;
+  padding: 1.5em !important;
 }
-
-#menu a
-{
-    color:#212121;
+#menu a {
+  color: #212121;
 }
-
-#menu li
-{
-	margin:0 0 0 3em;
-	font-family:$para-font;
-	font-weight:300;
-	display:inline-block;
+#menu li {
+  margin: 0 0 0 3em;
+  font-family: $para-font;
+  font-weight: 300;
+  display: inline-block;
 }
-
-#menu a:hover
-{
-    border-bottom:0.25em $brand1 solid;
-    padding:0 0 0.25em 0;
+#menu a:hover {
+  border-bottom: 0.25em $brand1 solid;
+  padding: 0 0 0.25em;
 }
-
-#navstrip
-{
-	width:100%;
-	background-color:white;
-    top:0;
-	padding:1em 0;
-  color:#212121;
+#navstrip {
+  width: 100%;
+  background-color: white;
+  top: 0;
+  padding: 1em 0;
+  color: #212121;
   border-bottom: $brand1 solid 0.5em;
 }
-
-#navstrip ul
-{
-	margin:0;
+#navstrip ul {
+  margin: 0;
 }
-
-.js .slicknav_menu
-{
-	display:block;
-}
-
-#sidebar
-
-{
-    float:left;
-    width:30%;
-    padding:2em;
-    height:100%;
-    background:$grey;
-}
-
-.js #menu
-{
-	display:none;
-}
-
-#menu
-{
-	display:none;
-}
-
-@include bp(lrg-screen)
-
-{
-
-.js	.slicknav_menu {
-	display:none;
-}
-
 .slicknav_menu {
-	display:none;
+  display: block;
 }
-
-.js	#menu {
-		display:block;
-		float:right;
-	}
-
+.slicknav_menu ul li {
+  list-style: none !important;
+}
+#sidebar {
+  float: left;
+  width: 30%;
+  padding: 2em;
+  height: 100%;
+  background: $grey;
+}
+.js #menu {
+  display: none;
+}
+#menu {
+  display: none;
+}
+@include bp(lrg-screen) {
+  .js .slicknav_menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: none;
+  }
+  .js #menu {
+    display: block;
+    float: right;
+  }
   #menu {
-  		display:block;
-  		float:right;
-  	}
-
+    display: block;
+    float: right;
+  }
 }
