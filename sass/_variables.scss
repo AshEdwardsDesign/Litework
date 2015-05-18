@@ -38,7 +38,7 @@ $border-radius:em(0);
 
     $sml-screen: "(min-width: " + em(700) + ")";
     $med-screen: "(min-width: " + em(1050) + ")";
-    $lrg-screen: "(min-width: " + em(1366) + ")";
+    $lrg-screen: "(min-width: " + em(1728) + ")";
 
 @mixin bp($size) {
 

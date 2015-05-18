@@ -11,6 +11,7 @@
   padding: 0.438em 0.625em;
   line-height: 1.125em;
   cursor: pointer;
+  color:white;
 }
 .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 0.188em;
@@ -22,6 +23,7 @@
   display: block;
   line-height: 1.188em;
   float: left;
+  color:white;
 }
 .slicknav_menu .slicknav_icon {
   float: left;
@@ -58,6 +60,8 @@
 }
 .slicknav_nav li {
   display: block;
+  padding: 1em 0;
+  color: white !important;
 }
 .slicknav_nav .slicknav_arrow {
   font-size: 0.8em;
@@ -74,6 +78,7 @@
 }
 .slicknav_nav a {
   display: block;
+  color: white !important;
 }
 .slicknav_nav .slicknav_parent-link a {
   display: inline;
@@ -82,36 +87,37 @@
   float: left;
 }
 .slicknav_menu {
-  font-size: 16px;
   box-sizing: border-box;
-  background: #4c4c4c;
-  padding: 5px;
+  background: $grey;
+  padding: 15px;
+}
+.slicknav_menu a li ul {
+  box-sizing: border-box;
+  color: white !important;
 }
 .slicknav_menu * {
   box-sizing: border-box;
 }
 .slicknav_menu .slicknav_menutxt {
-  color: #fff;
+  color: #fff !important;
   font-weight: bold;
   text-shadow: 0 1px 3px #000;
 }
 .slicknav_menu .slicknav_icon-bar {
-  background-color: #fff;
+  background-color: white;
 }
 .slicknav_btn {
   margin: 5px 5px 6px;
   text-decoration: none;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background-color: #222;
+  background-color: $brand1;
 }
 .slicknav_nav {
-  color: #fff;
+  color: #fff !important;
   margin: 0;
   padding: 0;
-  font-size: 0.875em;
   list-style: none;
   overflow: hidden;
 }
@@ -119,7 +125,7 @@
   list-style: none;
   overflow: hidden;
   padding: 0;
-  margin: 0 0 0 20px;
+  margin: 20px;
 }
 .slicknav_nav .slicknav_row {
   padding: 5px 10px;

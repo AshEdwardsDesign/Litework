@@ -30,10 +30,10 @@ Navigation elements
 }
 .slicknav_menu {
   display: block;
-  position: fixed;
-}
-.slicknav_menu ul li {
-  list-style: none !important;
+  position:fixed;
+  top:0;
+  width:100%;
+  margin:0;
 }
 #sidebar {
   float: left;
@@ -48,6 +48,18 @@ Navigation elements
 #menu {
   display: none;
 }
+
+.margin-top {
+  margin-top: 5em;
+}
+
+@include bp(sml-screen) {
+  .margin-top {
+    margin-top: 3em;
+  }
+
+}
+
 @include bp(lrg-screen) {
   .js .slicknav_menu {
     display: none;
@@ -62,5 +74,9 @@ Navigation elements
   #menu {
     display: block;
     float: right;
+  }
+
+  .margin-top {
+    margin-top:0;
   }
 }
