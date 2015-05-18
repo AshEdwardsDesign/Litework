@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     uncss: {
       dist: {
         options: {
-          ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active'],
+          ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.slicknav_*'],
           stylesheets: ['css/litework.css'],
         },
         files: {
