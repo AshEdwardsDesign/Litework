@@ -27,15 +27,15 @@ Navigation elements
   padding: 0 1em;
 }
 .xray {
-  display:none;
+  display: none;
 }
 #navstrip ul {
   margin: 0;
 }
 #navstrip p {
-  margin: 1.5em 0 1.5em 0;
+  margin: 1.5em 0;
 }
-.js .slicknav_menu {
+.slicknav_menu {
   display: block;
 }
 #sidebar {
@@ -45,18 +45,18 @@ Navigation elements
   height: 100%;
   background: $grey;
 }
-.js #menu {
+#menu {
   display: none;
 }
 @include bp(med-screen) {
-  .js .slicknav_menu {
+  .slicknav_menu {
     display: none;
   }
-  .js #menu {
+  #menu {
     display: block;
     float: right;
   }
   .xray {
-    display:inline;
+    display: inline;
   }
 }

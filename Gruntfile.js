@@ -246,7 +246,7 @@ module.exports = function(grunt) {
           dest: 'dist/',
         }, {
           expand: true,
-          src: ['*cfg*/*.*'],
+          src: ['*cfg*/**'],
           dest: 'dist/',
         }]
       }
