@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     uncss: {
       dist: {
         options: {
-          ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active'],
+          ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.slicknav_*'],
           stylesheets: ['css/litework.css'],
         },
         files: {
@@ -95,15 +95,20 @@ module.exports = function(grunt) {
       footer: {
         options: {
           patterns: [{
-            match: 'twitter-share',
-            replacement: '<%= grunt.file.read("snippets/footer/twitter-share.html") %>'
-          }, {
-            match: 'twitter-follow',
-            replacement: '<%= grunt.file.read("snippets/footer/twitter-follow.html") %>'
-          }, {
-            match: 'facebook-like',
-            replacement: '<%= grunt.file.read("snippets/footer/facebook-like.html") %>'
-          }, ]
+              match: 'twitter-share',
+              replacement: '<%= grunt.file.read("snippets/footer/twitter-share.html") %>'
+            }, {
+              match: 'twitter-follow',
+              replacement: '<%= grunt.file.read("snippets/footer/twitter-follow.html") %>'
+            }, {
+              match: 'facebook-like',
+              replacement: '<%= grunt.file.read("snippets/footer/facebook-like.html") %>'
+            }, {
+              match: 'contactform',
+              replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
+            },
+
+          ]
         },
         files: [{
           expand: true,
@@ -129,10 +134,16 @@ module.exports = function(grunt) {
           }, {
             match: 'facebookSDK',
             replacement: '<%= grunt.file.read("snippets/facebookSDK.html") %>'
-          },{
+          }, {
             match: 'contactform',
             replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
-          },]
+          }, {
+            match: 'webmaster',
+            replacement: '<%= grunt.file.read("snippets/webmaster.html") %>'
+          }, {
+            match: 'scripts',
+            replacement: '<%= grunt.file.read("snippets/scripts.html") %>'
+          }, ]
         },
         files: [{
           expand: true,
@@ -235,7 +246,7 @@ module.exports = function(grunt) {
           dest: 'dist/',
         }, {
           expand: true,
-          src: ['*cfg*/'],
+          src: ['*cfg*/*.*'],
           dest: 'dist/',
         }]
       }

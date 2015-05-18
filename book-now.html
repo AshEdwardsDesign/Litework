@@ -80,54 +80,23 @@
         </div>
         <div class="column-6">
           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-            <input type="hidden" name="cmd" value="_s-xclick">
-
-            <input type="hidden" name="hosted_button_id" value="UFEQT79SN8CU2">
-
-            <table>
-
-              <tr>
-                <td>
-                  <input type="hidden" name="on0" value="Test Includes Health Report. Select 2 or more for extra discount">Test Includes Health Report. Select 2 or more for extra discount</td>
-              </tr>
-              <tr>
-                <td>
-                  <select name="os0">
-
-                    <option value="Single Health test">Single Health test £48.00 GBP</option>
-
-                    <option value="2 Health Tests (SAVE)">2 Health Tests (SAVE) £88.32 GBP</option>
-
-                    <option value="3 Health Tests (SAVE)">3 Health Tests (SAVE) £129.60 GBP</option>
-
-                    <option value="4 Health Tests (SAVE)">4 Health Tests (SAVE) £168.96 GBP</option>
-
-                    <option value="5 Health Tests (SAVE)">5 Health Tests (SAVE) £204.00 GBP</option>
-
-                  </select>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <input type="hidden" name="on1" value="Enter Your Name">Enter Your Name</td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" name="os1" maxlength="200">
-                </td>
-              </tr>
-
-            </table>
-
-            <input type="hidden" name="currency_code" value="GBP">
-
-            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="CWLALGQE7JVP2">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Packages">Packages</td></tr><tr><td><select name="os0">
+          	<option value="Single Health test">Single Health test £48.00 GBP</option>
+          	<option value="2 Health Tests (SAVE)">2 Health Tests (SAVE) £88.32 GBP</option>
+          	<option value="3 Health Tests (SAVE)">3 Health Tests (SAVE) £129.60 GBP</option>
+          	<option value="4 Health Tests (SAVE)">4 Health Tests (SAVE) £168.96 GBP</option>
+          	<option value="5 Health Tests (SAVE)">5 Health Tests (SAVE) £204.00 GBP</option>
+          </select> </td></tr>
+          <tr><td><input type="hidden" name="on1" value="Enter your name">Enter your name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="GBP">
+          <input type="image" class="paypal" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
           </form>
+
         </div>
 
       </div>
@@ -141,22 +110,8 @@
   </div>
   <!-- Wrapper End -->
 
-  <!-- Deffered litework JS until after page load -->
-  <!--
-  <script type="text/javascript">
-    function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "scripts/litework.min.js";
-      document.body.appendChild(element);
-    }
-    if (window.addEventListener)
-      window.addEventListener("load", downloadJSAtOnload, false);
-    else if (window.attachEvent)
-      window.attachEvent("onload", downloadJSAtOnload);
-    else window.onload = downloadJSAtOnload;
-  </script>
--->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  @@scripts
+
   <script src="cfg-form-1/js/form.js"></script>
 
 </body>
