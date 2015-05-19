@@ -30,10 +30,10 @@ Navigation elements
 }
 .slicknav_menu {
   display: block;
-  position:fixed;
-  top:0;
-  width:100%;
-  margin:0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
 }
 #sidebar {
   float: left;
@@ -48,20 +48,46 @@ Navigation elements
 #menu {
   display: none;
 }
-
 .margin-top {
   margin-top: 5em;
 }
-
+.mini-nav {
+  display: block;
+  text-align: center;
+  margin:1em 0 0 0;
+}
+.mini-nav-box {
+  margin: 0;
+  padding: 1em 0;
+  background-color: #e2e2e2;
+}
+.mini-nav-box a {
+  color: $brand1;
+}
+.mini-nav-box a:hover {
+  color: white !important;
+}
+.mini-nav-box a:active {
+  color: white !important;
+}
+.mini-nav-box:active {
+  background-color: $brand1;
+  color: #fff !important;
+}
+.mini-nav-box:hover {
+  background-color: $brand1;
+  color: #fff !important;
+}
 @include bp(sml-screen) {
   .margin-top {
     margin-top: 3em;
   }
-
 }
-
 @include bp(lrg-screen) {
   .js .slicknav_menu {
+    display: none;
+  }
+  .mini-nav {
     display: none;
   }
   .slicknav_menu {
@@ -75,8 +101,7 @@ Navigation elements
     display: block;
     float: right;
   }
-
   .margin-top {
-    margin-top:0;
+    margin-top: 0;
   }
 }
