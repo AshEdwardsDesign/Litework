@@ -48,6 +48,33 @@ Navigation elements
 #menu {
   display: none;
 }
+.mini-nav {
+  display: block;
+  text-align: center;
+  margin: 1em 0 0;
+}
+.mini-nav-box {
+  margin: 0;
+  padding: 1em 0;
+  background-color: #e2e2e2;
+}
+.mini-nav-box a {
+  color: $brand1;
+}
+.mini-nav-box a:hover {
+  color: white !important;
+}
+.mini-nav-box a:active {
+  color: white !important;
+}
+.mini-nav-box:active {
+  background-color: $brand1;
+  color: #fff !important;
+}
+.mini-nav-box:hover {
+  background-color: $brand1;
+  color: #fff !important;
+}
 @include bp(med-screen) {
   .slicknav_menu {
     display: none;
