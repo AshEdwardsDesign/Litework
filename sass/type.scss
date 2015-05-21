@@ -92,22 +92,24 @@ hr
     width:75%;
 }
 
-ul
-{
-    font-family:$para-font;
-	list-style:disc inside;
-    line-height:1.428;
-    margin:1em 0 0 0;
+ul {
+  font-family: $para-font;
+  list-style: disc;
+  line-height: 1.428;
+  margin: 1em 0 0;
+  padding-left: 2em;
+  display: block;
 }
-
-ol
-{
-    font-family:$para-font;
-	list-style:decimal inside;
-    line-height:1.428;
-    margin:1em 0 0 0;
+ol {
+  font-family: $para-font;
+  list-style: decimal;
+  line-height: 1.428;
+  margin: 1em 0 0;
+  display: block;
 }
-
+li {
+  display: list-item;
+}
 em
 
 {
