@@ -2,7 +2,7 @@
   "name": "litework",
   "version": "0.0.4",
   "description": "Litework is a lightweight HTML/CSS framework built with Grunt.",
-  "homepage": "http://www.litework-framework.co.uk/",
+  "homepage": "http://www.monstermunchiez.co.uk/",
   "keywords": [
     "framework",
     "HTML/CSS",
@@ -12,7 +12,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/AshEdwardsDesign/Litework"
+    "url": ""
   },
   "devDependencies": {
     "grunt": "0.4.5",
