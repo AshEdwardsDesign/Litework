@@ -82,6 +82,10 @@ Navigation elements
   .margin-top {
     margin-top: 3em;
   }
+
+  .logo {
+    width:50%;
+  }
 }
 @include bp(lrg-screen) {
   .js .slicknav_menu {
@@ -103,5 +107,8 @@ Navigation elements
   }
   .margin-top {
     margin-top: 0;
+  }
+  .logo {
+    width: 25%;
   }
 }
