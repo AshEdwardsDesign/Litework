@@ -52,6 +52,10 @@
   margin: 0 !important;
 }
 
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
 // Container drops to 90% width at sml-screen and above
 
 @include bp(sml-screen)

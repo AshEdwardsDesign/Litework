@@ -54,7 +54,7 @@ Navigation elements
 .mini-nav {
   display: block;
   text-align: center;
-  margin:1em 0 0 0;
+  margin: 1em 0 0;
 }
 .mini-nav-box {
   margin: 0;
@@ -82,10 +82,6 @@ Navigation elements
   .margin-top {
     margin-top: 3em;
   }
-
-  .logo {
-    width:50%;
-  }
 }
 @include bp(lrg-screen) {
   .js .slicknav_menu {
@@ -107,8 +103,5 @@ Navigation elements
   }
   .margin-top {
     margin-top: 0;
-  }
-  .logo {
-    width: 25%;
   }
 }
