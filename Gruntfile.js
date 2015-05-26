@@ -109,6 +109,9 @@ module.exports = function(grunt) {
             }, {
               match: 'gplus',
               replacement: '<%= grunt.file.read("snippets/footer/gplus.html") %>'
+            }, {
+              match: 'pinit',
+              replacement: '<%= grunt.file.read("snippets/footer/pinit.html") %>'
             },
 
           ]
