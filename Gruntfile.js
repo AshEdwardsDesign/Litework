@@ -106,6 +106,9 @@ module.exports = function(grunt) {
             }, {
               match: 'contactform',
               replacement: '<%= grunt.file.read("snippets/contactform.html") %>'
+            }, {
+              match: 'gplus',
+              replacement: '<%= grunt.file.read("snippets/footer/gplus.html") %>'
             },
 
           ]
