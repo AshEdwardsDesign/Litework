@@ -112,6 +112,9 @@ module.exports = function(grunt) {
             }, {
               match: 'pinit',
               replacement: '<%= grunt.file.read("snippets/footer/pinit.html") %>'
+            }, {
+              match: 'linkedin-share',
+              replacement: '<%= grunt.file.read("snippets/footer/linkedin-share.html") %>'
             },
 
           ]
