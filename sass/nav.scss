@@ -1,70 +1,58 @@
 /*******************************************
 Navigation elements
 *******************************************/
-
-#menu a
-{
-    color:white;
+#menu a {
+  color: white;
 }
-
-#menu li
-{
-	margin:0 0 0 3em;
-	font-family:$para-font;
-	font-weight:300;
-	display:inline-block;
+#menu li {
+  margin: 0 0 0 3em;
+  font-family: $para-font;
+  font-weight: 300;
+  display: inline-block;
 }
-
-#menu a:hover
-{
-    border-bottom:0.25em $brand1 solid;
-    padding:0 0 0.25em 0;
+#menu a:hover {
+  border-bottom: 0.25em $brand1 solid;
+  padding: 0 0 0.25em;
 }
-
-#navstrip
-{
-	width:100%;
-	background-color:$brand3;
-    top:0;
-	padding:1em 0;
+#navstrip {
+  width: 100%;
+  background-color: $brand3;
+  top: 0;
+  padding: 1em 0;
 }
-
-#navstrip ul
-{
-	margin:0;
+#navstrip ul {
+  margin: 0;
 }
-
-.js .slicknav_menu
-{
-	display:block;
+.slicknav_menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
 }
-
-#sidebar
-
-{
-    float:left;
-    width:30%;
-    padding:2em;
-    height:100%;
-    background:$grey;
+#sidebar {
+  float: left;
+  width: 30%;
+  padding: 2em;
+  height: 100%;
+  background: $grey;
 }
-
-.js #menu
-{
-	display:none;
+.js #menu {
+  display: none;
 }
-
-@include bp(med-screen)
-
-{
-
-.js	.slicknav_menu {
-	display:none;
-}
-
-.js	#menu {
-		display:block;
-		float:right;
-	}
-
+@include bp(med-screen) {
+  .js .slicknav_menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: none;
+  }
+  .js #menu {
+    display: block;
+    float: right;
+  }
+  #menu {
+    display: block;
+    float: right;
+  }
 }

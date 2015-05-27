@@ -292,8 +292,8 @@ module.exports = function(grunt) {
 
   });
 
-  // Load all plugins using matchdep
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  // Load all plugins using JIT (just in time)
+  require('jit-grunt')(grunt);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
   grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "sitemap", "copy"]);
