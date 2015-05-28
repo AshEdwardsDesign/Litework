@@ -2,123 +2,123 @@
 Typography
 *******************************************/
 h1 {
-	font-family: $title-font;
-	font-weight: 700;
-	font-size: 2.25em;
-	color: $brand3;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 2.25em;
+  color: $brand3;
 }
 .header h1 {
-	font-weight: 300;
+  font-weight: 300;
 }
-
 .blue-box {
-	color: white !important;
-	background-color: $brand1;
-	padding: 1em;
-	width: inherit;
+  color: white !important;
+  background-color: $brand1;
+  padding: 1em;
+  width: inherit;
 }
-
 .slicknav_menu .blue-box {
-	color: white !important;
+  color: white !important;
 }
-
 @include bp(sml-screen) {
-	h1 {
-		line-height: $line-height;
-	}
+  h1 {
+    line-height: $line-height;
+  }
 }
 h2 {
-	font-family: $title-font;
-	font-weight: 700;
-	font-size: 1.875em;
-	color: $brand1;
-	line-height: $line-height;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.875em;
+  color: $brand1;
+  line-height: $line-height;
 }
 h3 {
-	font-family: $title-font;
-	font-weight: 700;
-	color: $brand1;
-	font-size: 1.5em;
-	line-height: $line-height;
+  font-family: $title-font;
+  font-weight: 700;
+  color: $brand1;
+  font-size: 1.5em;
+  line-height: $line-height;
 }
 h4 {
-	font-family: $title-font;
-	font-weight: 700;
-	font-size: 1.125em;
-	color: $brand1;
-	line-height: $line-height;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.125em;
+  color: $brand1;
+  line-height: $line-height;
 }
 h5 {
-	font-family: $title-font;
-	font-weight: 700;
-	font-size: 0.875em;
-	color: $brand1;
-	line-height: $line-height;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: $brand1;
+  line-height: $line-height;
 }
 h6 {
-	font-family: $title-font;
-	font-weight: 700;
-	font-size: 0.75em;
-	color: $brand1;
-	line-height: $line-height;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.75em;
+  color: $brand1;
+  line-height: $line-height;
 }
 p {
-	font-family: $para-font;
-	font-weight: 400;
-	font-size: 1em;
-	margin: 0 0 1.43em;
-	line-height: 1.428;
+  font-family: $para-font;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 1.43em;
+  line-height: 1.428;
 }
 a {
-	font-family: $para-font;
-	font-weight: 300;
-	color: $brand3;
-	text-decoration: none;
+  font-family: $para-font;
+  font-weight: 300;
+  color: $brand3;
+  text-decoration: none;
 }
 hr {
-	background-color: $brand3;
-	margin: 1em 0;
-	width: 75%;
+  background-color: $brand3;
+  margin: 1em 0;
+  width: 75%;
 }
 ul {
-	font-family: $para-font;
-	list-style: disc inside;
-	line-height: 1.428;
-	margin: 1em 0 0;
+  font-family: $para-font;
+  list-style: disc;
+  line-height: 1.428;
+  margin: 1em 0 0;
+  padding-left: 2em;
+  display: block;
 }
 ol {
-	font-family: $para-font;
-	list-style: decimal inside;
-	line-height: 1.428;
-	margin: 1em 0 0;
+  font-family: $para-font;
+  list-style: decimal;
+  line-height: 1.428;
+  margin: 1em 0 0;
+  display: block;
 }
 em {
-	font-family: $para-font;
-	font-style: italic;
+  font-family: $para-font;
+  font-style: italic;
 }
 .small {
-	font-family: $para-font;
-	color: #bababa;
-	font-size: 0.75em;
-	margin: 1em 0;
-	line-height: $line-height;
+  font-family: $para-font;
+  color: #bababa;
+  font-size: 0.75em;
+  margin: 1em 0;
+  line-height: $line-height;
 }
 .white {
-	font-family: $para-font;
-	color: white !important;
+  font-family: $para-font;
+  color: white !important;
 }
 .red {
-	font-family: $para-font;
-	color: red !important;
+  font-family: $para-font;
+  color: red !important;
 }
 .brand1 {
-	color: $brand1;
+  color: $brand1;
 }
 .right {
-	text-align: right !important;
+  text-align: right !important;
 }
 .left {
-	text-align: left !important;
+  text-align: left !important;
 }
 @include bp(lrg-screen) {
 
