@@ -72,6 +72,10 @@ a {
   color: $brand3;
   text-decoration: none;
 }
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
 hr {
   background-color: $brand3;
   margin: 1em 0;
