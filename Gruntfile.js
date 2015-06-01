@@ -240,7 +240,7 @@ module.exports = function(grunt) {
           dest: 'dist/',
         }, {
           expand: true,
-          src: ['*.htaccess'],
+          src: ['.htaccess'],
           dest: 'dist/',
         }, {
           expand: true,
