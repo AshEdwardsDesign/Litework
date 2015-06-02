@@ -80,6 +80,9 @@ module.exports = function(grunt) {
 
     imagemin: {
       dynamic: {
+        options: {
+          optimizationLevel: 3,
+        },
         files: [{
           expand: true,
           cwd: 'img/',
@@ -112,6 +115,9 @@ module.exports = function(grunt) {
             }, {
               match: 'pinit',
               replacement: '<%= grunt.file.read("snippets/footer/pinit.html") %>'
+            }, {
+              match: 'linkedin-share',
+              replacement: '<%= grunt.file.read("snippets/footer/linkedin-share.html") %>'
             },
 
           ]
@@ -224,20 +230,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // FTP deploy will deploy your site over FTP from the CL
-
-    'ftp-deploy': {
-      build: {
-        auth: {
-          host: 'ftp.ashedwardsdesign.co.uk',
-          port: 21,
-          authKey: 'key1'
-        },
-        src: 'dist/',
-        dest: 'public_html/projects/litework'
-      }
-    },
-
     // Copy will copy certain files into the dist/ folder, in this case the robots.txt and your .htaccess file
 
     copy: {
@@ -248,7 +240,7 @@ module.exports = function(grunt) {
           dest: 'dist/',
         }, {
           expand: true,
-          src: ['*.htaccess'],
+          src: ['.htaccess'],
           dest: 'dist/',
         }, {
           expand: true,
@@ -289,8 +281,8 @@ module.exports = function(grunt) {
 
   });
 
-  // Load all plugins using matchdep
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  // Load all plugins using JIT (just in time)
+  require('jit-grunt')(grunt);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
   grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "sitemap", "copy"]);
@@ -300,7 +292,4 @@ module.exports = function(grunt) {
 
   // This will clean the dist and build folders prior to running our full grunt task
   grunt.registerTask('fresh', ["clean", "default"]);
-
-  // This will deploy your dist/ folder to your server, auth is contained in the separate .ftppass file
-  grunt.registerTask('ftp', ['ftp-deploy']);
 };
