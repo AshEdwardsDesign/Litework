@@ -1,7 +1,7 @@
 {
   "name": "health-check-north-west",
   "version": "0.0.1",
-  "homepage": "http://www.healthchecknorthwest.co.uk/",
+  "homepage": "http://healthchecknorthwest.co.uk/",
   "author": "Ash Edwards <info@ashedwardsdesign.com>",
   "devDependencies": {
     "grunt": "0.4.5",
