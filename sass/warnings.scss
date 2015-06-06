@@ -7,23 +7,23 @@
 	margin:0;
 	color:white;
 	background-color:$notice;
-	position:fixed;
+	position:relative;
 	top:0;
 	@include clearfix;
 }
 
 .warnings {
-	a 
-	{ 
+	a
+	{
 		color:white;
 		text-decoration: underline;
 	}
-	
+
 	a:hover
 	{
 		font-weight:700;
 	}
-	
+
 	p
 	{
 		margin:0;

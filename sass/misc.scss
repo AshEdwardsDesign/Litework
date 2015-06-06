@@ -31,15 +31,29 @@ html {
   @include clearfix;
   color: white !important;
 }
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  @include clearfix;
+  color: #212121 !important;
+}
 .paypal {
   border: none !important;
   width: 175px !important;
+}
+.paypal-bigger {
+  border: none !important;
+  width: 250px !important;
 }
 .no-margin {
   margin: 0 !important;
 }
 iframe {
   width: 100%;
+}
+.heart-bullet {
+  list-style-image: url("/img/heart-logo.png");
 }
 @include bp(med-screen) {
   #maps {
