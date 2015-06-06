@@ -1,97 +1,73 @@
 /*******************************************
 Typography
 *******************************************/
-
-h1
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:2.25em;
-	color:$brand3;
+h1 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 2.25em;
+  color: $brand3;
 }
-
-.header h1
-{
-	font-weight: 300;
+.header h1 {
+  font-weight: 300;
 }
-
-@include bp(sml-screen)
-{
-	h1
-{
-	line-height:$line-height;
+@include bp(sml-screen) {
+  h1 {
+    line-height: $line-height;
+  }
 }
+h2 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.875em;
+  color: $brand1;
+  line-height: $line-height;
 }
-
-h2
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:1.875em;
-	color:$brand1;
-    line-height:$line-height;
+h3 {
+  font-family: $title-font;
+  font-weight: 700;
+  color: $brand1;
+  font-size: 1.5em;
+  line-height: $line-height;
 }
-
-h3
-{
-	font-family:$title-font;
-	font-weight:700;
-	color:$brand1;
-	font-size:1.5em;
-    line-height:$line-height;
+h4 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.125em;
+  color: $brand1;
+  line-height: $line-height;
 }
-
-h4
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:1.125em;
-    color:$brand1;
-    line-height:$line-height;
+h5 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: $brand1;
+  line-height: $line-height;
 }
-
-h5
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:0.875em;
-    color:$brand1;
-    line-height:$line-height;
+h6 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.75em;
+  color: $brand1;
+  line-height: $line-height;
 }
-
-h6
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:0.75em;
-    color:$brand1;
-    line-height:$line-height;
+p {
+  font-family: $para-font;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 1.43em;
+  line-height: 1.428;
 }
-
-p
-{
-	font-family:$para-font;
-	font-weight:400;
-	font-size:1em;
-	margin:0 0 1.43em 0;
-    line-height:1.428;
+a {
+  font-family: $para-font;
+  font-weight: 300;
+  color: $brand3;
+  text-decoration: none;
 }
-
-a
-{
-     font-family:$para-font;
-     font-weight:300;
-     color:$brand3;
-     text-decoration:none;
+hr {
+  background-color: $brand3;
+  margin: 1em 0;
+  width: 75%;
 }
-
-hr
-{
-    background-color:$brand3;
-    margin:1em 0 1em 0;
-    width:75%;
-}
-
 ul {
   font-family: $para-font;
   list-style: disc;
@@ -110,31 +86,25 @@ ol {
 li {
   display: list-item;
 }
-em
-
-{
-	font-family:$para-font;
-	font-style:italic;
+em {
+  font-family: $para-font;
+  font-style: italic;
 }
-
-.small
-{
- 	font-family:$para-font;
-	color:#bababa;
-    font-size:0.75em;
-    margin:1em 0 1em 0;
-    line-height:$line-height;
+.small {
+  font-family: $para-font;
+  color: #bababa;
+  font-size: 0.75em;
+  margin: 1em 0;
+  line-height: $line-height;
 }
-
-.white
-{
-	font-family:$para-font;
-	color:white !important;
+.white {
+  font-family: $para-font;
+  color: white !important;
 }
-
-.red
-
-{
-    font-family:$para-font;
-	color:red !important;
+.red {
+  font-family: $para-font;
+  color: red !important;
+}
+.no-bold {
+  font-weight: 300 !important;
 }
