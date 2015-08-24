@@ -1,102 +1,49 @@
 /*******************************************
 Typography
 *******************************************/
-
-h1
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:2.25em;
-	color:$brand3;
+h1 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 2.25em;
 }
-
-.header h1
-{
-	font-weight: 300;
+h2 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.875em;
 }
-
-@include bp(sml-screen)
-{
-	h1
-{
-	line-height:$line-height;
+h3 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.5em;
 }
+h4 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1.125em;
 }
-
-h2
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:1.875em;
-	color:$brand1;
-    line-height:$line-height;
+h5 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.875em;
 }
-
-h3
-{
-	font-family:$title-font;
-	font-weight:700;
-	color:$brand1;
-	font-size:1.5em;
-    line-height:$line-height;
+h6 {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 0.75em;
 }
-
-h4
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:1.125em;
-    color:$brand1;
-    line-height:$line-height;
+p {
+  font-family: $para-font;
+  font-weight: 400;
+  font-size: 1em;
 }
-
-h5
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:0.875em;
-    color:$brand1;
-    line-height:$line-height;
+a {
+  font-family: $para-font;
+  text-decoration: none;
 }
-
-h6
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:0.75em;
-    color:$brand1;
-    line-height:$line-height;
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
 }
-
-p
-{
-	font-family:$para-font;
-	font-weight:400;
-	font-size:1em;
-	margin:0 0 1.43em 0;
-    line-height:1.428;
-}
-
-a
-{
-     font-family:$para-font;
-     font-weight:300;
-     color:$brand3;
-     text-decoration:none;
-}
-
-a[href^=tel]{
-    color:inherit;
-    text-decoration:none;
-}
-
-hr
-{
-    background-color:$brand3;
-    margin:1em 0 1em 0;
-    width:75%;
-}
-
 ul {
   font-family: $para-font;
   list-style: disc;
@@ -115,31 +62,80 @@ ol {
 li {
   display: list-item;
 }
-em
-
-{
-	font-family:$para-font;
-	font-style:italic;
+em {
+  font-family: $para-font;
+  font-style: italic;
 }
 
-.small
-{
- 	font-family:$para-font;
-	color:#bababa;
-    font-size:0.75em;
-    margin:1em 0 1em 0;
-    line-height:$line-height;
+/*****
+Horizontal Rules
+*****/
+hr {
+  margin: 1em 0;
+}
+.hr-quarter {
+  width: 25%;
+}
+.hr-half {
+  width: 50%;
+}
+.hr-threequarter {
+  width: 75%;
+}
+.hr-full {
+  width: 100%;
+}
+.hr-brand1 {
+  background-color: $brand1;
+}
+.hr-brand2 {
+  background-color: $brand2;
+}
+.hr-brand3 {
+  background-color: $brand3;
 }
 
-.white
-{
-	font-family:$para-font;
-	color:white !important;
+/*****
+Custom type
+*****/
+.small {
+  font-family: $para-font;
+  font-size: 0.75em;
 }
 
-.red
+/*****
+Type colours
+*****/
+.white {
+  font-family: $para-font;
+  color: white !important;
+}
+.red {
+  font-family: $para-font;
+  color: red !important;
+}
+.text-brand1 {
+  color: $brand1;
+}
+.text-brand2 {
+  color: $brand2;
+}
+.text-brand3 {
+  color: $brand3;
+}
 
-{
-    font-family:$para-font;
-	color:red !important;
+/*****
+Text alignment
+*****/
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
 }

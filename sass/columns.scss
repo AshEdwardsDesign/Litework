@@ -1,61 +1,40 @@
-#wrapper
-
-{
-    width:100%;
-    margin:0 auto;
-    font-size:16px;
-	line-height:1.428;
-    background-color:#fff;
-    width:100%;
-    @include clearfix;
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.428;
+  background-color: #fff;
+  @include clearfix;
+}
+.container {
+  width: 90%;
+  max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 0;
+  @include clearfix;
+}
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  @include clearfix;
 }
 
-.container
-{
-	width:100%;
-	max-width: $max-content-width;
-	margin:0 auto;
-	padding:0;
-	@include clearfix;
+//    Target all column classes and apply these basic attributes, giving 100% width, some padding,
+//    a float and a min-height which forces the column to 'render' even if it is empty.
+[class*='column-'] {
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  float: left;
+  min-height: 1px;
 }
+@include bp(sml-screen) {
 
-.row
-{
-    @include clearfix;
-}
-
-//    Target all column classes and apply these basic attributes, giving 100% width, some padding, 
-//    a float and a min-height which forces the column to 'render' even if it is empty. 
-
-[class*='column-']
-
-{
-    width:100%;
-    padding:1em;
-    float:left;
-    min-height:1px;
-}
-
-// Container drops to 90% width at sml-screen and above
-
-@include bp(sml-screen)
-{
-
-.container
-{
-    width:90%;
-}
-	
-	// SASS Column generation
-
-@for $i from 1 through $grid-columns {
- 
-    .column-#{$i}
-    
-    {
-    width: 100% / $grid-columns * $i;    
+  // SASS Column generation
+  @for $i from 1 through $grid-columns {
+    .column-#{$i} {
+      width: 100% / $grid-columns * $i;
     }
+  }
 }
-	
-	
-}    
