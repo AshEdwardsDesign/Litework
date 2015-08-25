@@ -7,7 +7,7 @@ Footer
   margin: 0;
   padding: 2em 0;
   color: white;
-  overflow: hidden;
+  overflow: visible;
   @include clearfix;
 }
 #footer a {
