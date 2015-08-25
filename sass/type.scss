@@ -73,17 +73,20 @@ Horizontal Rules
 hr {
   margin: 1em 0;
 }
-.hr-quarter {
+.hr-25 {
   width: 25%;
 }
-.hr-half {
+.hr-50 {
   width: 50%;
 }
-.hr-threequarter {
+.hr-75 {
   width: 75%;
 }
-.hr-full {
+.hr-100 {
   width: 100%;
+}
+.hr-centered {
+  margin: inherit auto;
 }
 .hr-brand1 {
   background-color: $brand1;
