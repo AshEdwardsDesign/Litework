@@ -1,80 +1,34 @@
 /*******************************************
 Footer
 *******************************************/
-
-#footer
-{
-font-size:1em;
-background-color:$grey;
-margin:0;
-padding:2em 0 2em 0;
-color:#888;
-overflow:hidden;
-@include clearfix
+#footer {
+  font-size: 1em;
+  background-color: $grey;
+  margin: 0;
+  padding: 2em 0;
+  color: #888;
+  overflow: visible;
+  @include clearfix;
 }
-
-#footer a
-{
-    color:#888;
+#footer a {
+  color: #888;
 }
-
-#footer a:hover
-{
-    color:$brand1;
+#footer a:hover {
+  color: $brand1;
 }
-
-.footer-heading
-{
-    color:white;
-    font-size:1em;
-    padding:0 0 1em 0;
-    margin:0;
+.footer-heading {
+  color: white;
+  font-size: 1em;
+  padding: 0 0 1em;
+  margin: 0;
 }
-
-#footer ul
-{
-    margin:0;
-    padding:0;
+#footer ul {
+  margin: 0;
+  padding: 0;
 }
-
-#footer li
-{
-    list-style: none;
+#footer li {
+  list-style: none;
 }
-
-#footer p, #ftr-dark p
-{
-	margin:0;
-}
-
-#ftr-dark
-{
-	font-size:1em;
-  background-color:#171717 !important;
-	margin:0;
-	padding:2em 0 2em 0;
-	color:#888;
-	overflow:hidden;
-	@include clearfix
-}
-
-#ftr-dark a
-{
-    color:#888;
-}
-
-#ftr-dark a:hover
-{
-    color:$brand1;
-}
-
-#ftr-dark ul
-{
-    margin:0;
-    padding:0;
-}
-
-#ftr-dark li
-{
-    list-style: none;
+#footer p {
+  margin: 0;
 }

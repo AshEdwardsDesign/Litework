@@ -1,23 +1,16 @@
 // Normalize
-
 @import 'normalize';
 
-// Font-face
-
-@import 'font-face';
-
 // Variables
-
 @import '_variables';
 
 // Core SCSS
-
-@import 'page.scss';
+@import 'page';
 @import 'columns';
 @import 'type';
 @import 'nav';
 @import 'slicknav';
-@import 'header';
+@import 'hero';
 @import 'footer';
 @import 'images';
 @import 'buttons';

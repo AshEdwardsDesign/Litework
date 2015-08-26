@@ -4,4 +4,10 @@ html {
   word-break: break-all;
   word-break: break-word;
   hyphens: auto;
+
+  // Set global font to p font
+  font-family: $para-font;
+
+  // Set global line height
+  line-height: $line-height;
 }

@@ -1,4 +1,4 @@
-/******************************************* 
+/*******************************************
 Buttons
 *******************************************/
 
@@ -16,14 +16,14 @@ button
 
 button:hover
 {
-    background-color:$brand1-drk;
+    background-color:$brand2;
 }
 
 button:active
 {
-    background-color:$brand1-drk;
+    background-color:$brand2;
 }
-    
+
 .btn-sml
 {
     font-size:0.75em !important;
