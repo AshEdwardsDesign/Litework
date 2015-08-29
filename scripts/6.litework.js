@@ -11,7 +11,7 @@ $(function() {
 
   window.sr = new scrollReveal({
     reset: true,
-    mobile: true
+    mobile: false
   });
 
 })();

@@ -1,24 +1,29 @@
 /*******************************************
 Navigation elements
 *******************************************/
+#menu {
+  float: right;
+}
 #menu a {
   color: white;
 }
 #menu li {
-  margin: 0 0 0 3em;
+  margin: 0 0 0 2em;
   font-family: $para-font;
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
 }
 #menu a:hover {
-  border-bottom: 0.25em $brand1 solid;
+  border-bottom: 0.25em $brand2 solid;
   padding: 0 0 0.25em;
 }
 #navstrip {
   width: 100%;
-  background-color: $brand3;
+  background-color: $brand1;
   top: 0;
   padding: 1em 0;
+  position: fixed;
+  display: none;
 }
 #navstrip ul {
   margin: 0;
@@ -30,29 +35,14 @@ Navigation elements
   width: 100%;
   margin: 0;
 }
-#sidebar {
-  float: left;
-  width: 30%;
-  padding: 2em;
-  height: 100%;
-  background: $grey;
-}
-.js #menu {
-  display: none;
-}
-@include bp(med-screen) {
+@include bp(sml-screen) {
   .js .slicknav_menu {
     display: none;
   }
   .slicknav_menu {
     display: none;
   }
-  .js #menu {
+  #navstrip {
     display: block;
-    float: right;
-  }
-  #menu {
-    display: block;
-    float: right;
   }
 }
