@@ -8,6 +8,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="utf-8" />
   <title>Your page title</title>
+
+  <!-- DNS Prefetch -->
+
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://apis.google.com" />
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com" />
+  <link rel="dns-prefetch" href="//connect.facebook.net" />
+  <link rel="dns-prefetch" href="http://www.facebook.com" />
+  <link rel="dns-prefetch" href="http://cdn.syndication.twitter.com" />
+
+  <!-- Other meta content -->
+
   <meta name="description" content="Your page description" />
   <meta name="author" content="Ash Edwards Design (www.ashedwardsdesign.co.uk)" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,13 +27,13 @@
   <link rel="icon" content="img/favicon.ico" />
   <link rel="canonical" href="" />
 
-  <!-- CSS -->
-
-  <link rel="stylesheet" href="css/litework.prefixed.slim.min.css" type="text/css" />
-
   <!-- Google Fonts -->
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,700italic,300italic" rel="stylesheet" type="text/css" />
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/litework.prefixed.slim.min.css" type="text/css" />
 
   <!-- Scripts for improved support in IE 9 or below -->
 
@@ -159,6 +171,107 @@
           <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
         </div>
       </div>
+
+      <div class="row">
+        <div class="column-6">
+          <h2>Contact us</h2>
+          <p>Contact us on the following:</p>
+          <p>
+            <strong>Phone: </strong>0800 000 0000</p>
+          <p>
+            <strong>Email: </strong>info@example.com</p>
+        </div>
+        <div class="column-6">@@contactform</div>
+      </div>
+
+      <!-- ISOTOPE TEST AREA -->
+
+      <div class="row">
+        <div class="column-4">
+          <h4>Filters</h4>
+          <p>Use the filters below to find your ideal business opportunity!</p>
+
+          <!-- Category buttons -->
+
+          <div class="button-group" data-filter-group="category-buttons">
+            <button class="button" data-filter="*">Show all</button>
+            <button class="button" data-filter=".mobile">Mobile</button>
+            <button class="button" data-filter=".beauty">Beauty</button>
+            <button class="button" data-filter=".vending">Vending</button>
+            <button class="button" data-filter=".other">Other</button>
+          </div>
+
+          <!-- Price buttons -->
+          <div class="button-group" data-filter-group="price-buttons">
+            <button class="button" data-filter="*">Show all</button>
+            <button class="button" data-filter="lessthan">Less than £1,999+VAT</button>
+            <button class="button" data-filter="">£2,000+VAT - £3,999+VAT</button>
+            <button class="button" data-filter="">£4,000+VAT - £5,999+VAT</button>
+            <button class="button" data-filter="">£6,000+VAT - £7,999+VAT</button>
+            <button class="button" data-filter="">Over £8,000+VAT</button>
+          </div>
+
+        </div>
+        <div class="column-8 grid js-isotope">
+          <div class="grid-sizer"></div>
+          <div class="grid-item beauty mobile">
+            <h4>Tattoo Removal</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item mobile">
+            <h4>Waste Distribution</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item beauty mobile">
+            <h4>Inch Loss Clinic</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item vending">
+            <h4>Mobile Phone Charging</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item vending">
+            <h4>Multi-Washroom Vending</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item mobile">
+            <h4>Hire Bar</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item mobile">
+            <h4>DJ/Karaoke</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item mobile">
+            <h4>Portable Appliance Testing</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+          <div class="grid-item other">
+            <h4>Help A Charity</h4>
+            <p>Business opportunity short description</p>
+            <p>Starting from: £
+              <span class="cost">4,995</span>+VAT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content end -->
     </div>
 
     <!-- Footer Start -->
