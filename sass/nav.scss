@@ -1,29 +1,38 @@
 /*******************************************
 Navigation elements
 *******************************************/
-#menu {
-  float: right;
-}
-#menu a {
-  color: white;
-}
 #menu li {
-  margin: 0 0 0 2em;
   font-family: $para-font;
   font-weight: 400;
   display: inline-block;
+  width: 20%;
+  background-color: $brand2;
+  color: white;
+  float: left;
+  text-align: center;
+  margin: 0;
+  padding: 2em 0;
+}
+#menu a {
+  color: inherit;
 }
 #menu a:hover {
   border-bottom: 0.25em $brand2 solid;
   padding: 0 0 0.25em;
+  color: $brand2;
+}
+#menu {
+  font-family: $para-font;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 #navstrip {
   width: 100%;
-  background-color: $brand1;
+  background-color: white;
   top: 0;
-  padding: 1em 0;
-  position: fixed;
-  display: none;
+  padding: em(15) 0;
 }
 #navstrip ul {
   margin: 0;
@@ -42,7 +51,7 @@ Navigation elements
   .slicknav_menu {
     display: none;
   }
-  #navstrip {
+  #menu {
     display: block;
   }
 }

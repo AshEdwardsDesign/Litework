@@ -1,0 +1,33 @@
+.whatsapp-box {
+  background-color: #25b43c;
+  padding: 2em;
+  text-align: center;
+}
+.whatsapp-box p {
+  color: white;
+}
+.strongblue {
+  color: $brand2;
+  font-weight: 700;
+}
+#menu li:hover {
+  background-color: white;
+  color: $brand2 !important;
+}
+.whatsapp-logo {
+  width: 100px;
+  height: auto;
+}
+.brand2-bg {
+  background-color: $brand2;
+}
+.logo {
+  width: 200px;
+  height: auto;
+}
+.no-margin-top-bottom {
+  margin: 0;
+}
+.no-padding-top-bottom {
+  padding: 0 1em;
+}
