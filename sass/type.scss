@@ -6,42 +6,49 @@ h1 {
   font-weight: 700;
   font-size: 2.25em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 h2 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.875em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 h3 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.5em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 h4 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.125em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 h5 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.875em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 h6 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.75em;
   color: $brand2;
+  margin: 0 0 1em;
 }
 p {
   font-family: $para-font;
   font-weight: 400;
   font-size: 1em;
   color: #212121;
+  margin: 0 0 1em;
 }
 a {
   font-family: $para-font;
@@ -55,7 +62,7 @@ ul {
   font-family: $para-font;
   list-style: disc;
   line-height: 1.428;
-  margin: 1em 0 0;
+  margin: 1em 0;
   padding-left: 2em;
   display: block;
 }
