@@ -41,12 +41,13 @@ p {
   font-family: $para-font;
   font-weight: 400;
   font-size: 1em;
-  color: #212121;
+  color: white;
   margin: 0 0 1em;
 }
 a {
   font-family: $para-font;
   text-decoration: none;
+  color:white
 }
 a[href^=tel] {
   color: inherit;
