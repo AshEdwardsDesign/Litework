@@ -1,0 +1,31 @@
+/*****
+Div backgrounds
+*****/
+.bg-brand1 {
+  background-color: $brand1;
+}
+.bg-brand2 {
+  background-color: $brand1;
+}
+.bg-brand3 {
+  background-color: $brand1;
+}
+
+/*****
+Margin and padding
+*****/
+.no-margin {
+  margin: 0;
+}
+.no-vertical-margin {
+  margin: 0 1em;
+}
+.no-padding {
+  padding: 0;
+}
+.no-vertical-padding {
+  padding: 0 1em;
+}
+.vertical-padding {
+  padding: 10em 0;
+}

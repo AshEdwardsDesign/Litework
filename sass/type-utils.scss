@@ -1,0 +1,36 @@
+/*****
+Type colours
+*****/
+.white {
+  font-family: $para-font;
+  color: white !important;
+}
+.red {
+  font-family: $para-font;
+  color: red !important;
+}
+.text-brand1 {
+  color: $brand1;
+}
+.text-brand2 {
+  color: $brand2;
+}
+.text-brand3 {
+  color: $brand3;
+}
+
+/*****
+Text alignment
+*****/
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}

@@ -18,10 +18,10 @@ $(function() {
 
 // Hero Centering
 $(document).ready(function() {
-$('#hero-centered').flexVerticalCenter({
+  $('#hero-centered').flexVerticalCenter({
 
-  parentSelector: '#hero'
-});
+    parentSelector: '#hero'
+  });
 });
 
 // // Call Isotope
@@ -69,6 +69,6 @@ $('#hero-centered').flexVerticalCenter({
 //       columnWidth: '.grid-sizer',
 //       gutter: 10
 //     }
-
-
-});
+//
+//
+// });

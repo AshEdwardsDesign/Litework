@@ -5,37 +5,44 @@ h1 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 2.25em;
+  margin: 0 0 1em;
 }
 h2 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.875em;
+  margin: 0 0 1em;
 }
 h3 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.5em;
+  margin: 0 0 1em;
 }
 h4 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.125em;
+  margin: 0 0 1em;
 }
 h5 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.875em;
+  margin: 0 0 1em;
 }
 h6 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.75em;
+  margin: 0 0 1em;
 }
 p {
   font-family: $para-font;
   font-weight: 400;
   font-size: 1em;
   color: #212121;
+  margin: 0 0 1em;
 }
 a {
   font-family: $para-font;
@@ -49,7 +56,7 @@ ul {
   font-family: $para-font;
   list-style: disc;
   line-height: 1.428;
-  margin: 1em 0 0;
+  margin: 1em 0;
   padding-left: 2em;
   display: block;
 }
@@ -108,41 +115,4 @@ Custom type
 .small {
   font-family: $para-font;
   font-size: 0.75em;
-}
-
-/*****
-Type colours
-*****/
-.white {
-  font-family: $para-font;
-  color: white !important;
-}
-.red {
-  font-family: $para-font;
-  color: red !important;
-}
-.text-brand1 {
-  color: $brand1;
-}
-.text-brand2 {
-  color: $brand2;
-}
-.text-brand3 {
-  color: $brand3;
-}
-
-/*****
-Text alignment
-*****/
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
 }

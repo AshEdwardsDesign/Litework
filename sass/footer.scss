@@ -6,15 +6,14 @@ Footer
   background-color: $grey;
   margin: 0;
   padding: 2em 0;
-  color: #888;
   overflow: visible;
   @include clearfix;
 }
 #footer a {
-  color: #888;
+  color: $brand1;
 }
 #footer a:hover {
-  color: $brand1;
+  color: $brand3;
 }
 .footer-heading {
   color: white;
@@ -31,4 +30,5 @@ Footer
 }
 #footer p {
   margin: 0;
+  color: white;
 }
