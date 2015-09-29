@@ -161,6 +161,22 @@ module.exports = function(grunt) {
           dest: 'build/'
         }]
       },
+      inlinecss: {
+        options: {
+          patterns: [{
+              match: 'inline-css',
+              replacement: '<%= grunt.file.read("dist/css/litework.prefixed.slim.min.css") %>'
+            },
+
+          ]
+        },
+        files: [{
+          expand: true,
+          flatten: true,
+          src: ['build/*.html'],
+          dest: 'build/inline/'
+        }]
+      },
     },
 
     // HTMLhint will check all HTML in the root folder for errors
@@ -198,7 +214,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'build/',
+          cwd: 'build/inline',
           src: '*.html',
           dest: 'dist/'
         }]
