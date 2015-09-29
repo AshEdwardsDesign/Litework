@@ -24,6 +24,15 @@ $(document).ready(function() {
   });
 });
 
+// Nav centering
+$(document).ready(function() {
+  $('#menu').flexVerticalCenter({
+
+    parentSelector: '#navstrip'
+  });
+});
+
+
 // // Call Isotope
 // $('.grid').isotope({
 //
