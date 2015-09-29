@@ -6,7 +6,7 @@ $base: 16;
 
 // Content and grid variables
 $content-width: 95%;
-$max-content-width: em(960);
+$max-content-width: em(1080);
 $grid-columns: 12;
 
 // Branding & Colour variables
@@ -17,6 +17,10 @@ $grey: #111111;
 $notice: #ff9300;
 $warning: #ad0000;
 $sucess: green;
+
+$background-color: black;
+$heading-color: $brand1;
+$text-color: white;
 
 // Font & Typography variables
 $line-height: 1.48;
