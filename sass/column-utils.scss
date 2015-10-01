@@ -21,7 +21,7 @@ Margin and padding
   margin: 0 1em;
 }
 .vertical-margin {
-  margin: 10em 0;
+  margin: 3em 0;
 }
 .no-padding {
   padding: 0;
@@ -31,6 +31,11 @@ Margin and padding
 }
 .vertical-padding {
   padding: 10em 0;
+}
+@include bp(sml-screen) {
+  .vertical-margin {
+    margin: 10em 0;
+  }
 }
 
 /*****
