@@ -1,11 +1,18 @@
-/******************************************* 
+/*******************************************
 Images
 *******************************************/
-
-img 
-
-{
-	width:auto;
-    max-width:100%;
-    height:auto !important;
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
+.mobile-logo {
+  display: block;
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+@include bp(sml-screen) {
+  .mobile-logo {
+    display: none;
+  }
 }
