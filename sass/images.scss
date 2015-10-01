@@ -9,3 +9,13 @@ img
     max-width:100%;
     height:auto !important;
 }
+
+.mobile-logo {
+	display:block;
+	margin:2em 0;
+}
+
+@include bp(sml-screen) {
+.mobile-logo {
+	display:none;
+}}
