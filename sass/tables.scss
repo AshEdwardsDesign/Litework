@@ -1,34 +1,27 @@
-/******************************************* 
+/*******************************************
 Tables
 *******************************************/
-
-table
-{
-	width:100%;
-	margin:1em 0;
+table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
 }
-
-tr
-{
-	width:33.333%; /* 100% divided by number of columns*/
+tr {
+  width: 33.333%;
+  /* 100% divided by number of columns*/
 }
-
-td
-{
-	padding:0.5em;
-	text-align:left;
-	border: 1px solid lightgrey;
+td {
+  padding: 1em;
+  border: 1px solid lightgrey;
+  vertical-align: top !important;
 }
-
-.tableheader
-{
-	font-family:$title-font;
-	font-weight:700;
-	font-size:1em;
-	background-color:$brand1;
-	color:white;
+.table-header {
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: $brand1;
+  color: white !important;
 }
-
 .no-border {
-border: none !important;
+  border: none !important;
 }
