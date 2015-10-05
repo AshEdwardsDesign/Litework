@@ -1,15 +1,8 @@
 {
-  "name": "litework",
-  "version": "0.0.6",
-  "description": "Litework is a lightweight HTML/CSS framework built with Grunt.",
-  "homepage": "http://www.litework-framework.co.uk/",
-  "keywords": [
-    "framework",
-    "HTML/CSS",
-    "util"
-  ],
+  "name": "Body Firma",
+  "version": "1.0",
+  "homepage": "http://bodyfirma.co.uk/",
   "author": "Ash Edwards <info@ashedwardsdesign.com>",
-  "contributors": [],
   "repository": {
     "type": "git",
     "url": "git://github.com/AshEdwardsDesign/Litework"

@@ -1,11 +1,4 @@
 <?php
-
-$captcha_length = 6;
-
-$captcha_format = 'lettersandnumbers';
-
-?>
-<?php
 include('sessionpath.php');
 
 
@@ -92,7 +85,7 @@ foreach($captcha_characters as $value){
 	$captcha_img_value .= $value;
 }
 
-$_SESSION['captcha_img_string']['5875b57512d67e69b00bc44d5fb727e4331f977b'] = $captcha_img_value;
+$_SESSION['captcha_img_string']['UNIQUE_ID'] = $captcha_img_value;
 
 
 

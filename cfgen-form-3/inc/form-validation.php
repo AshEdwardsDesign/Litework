@@ -9,13 +9,6 @@ $contactform_obj = new contactForm($cfg);
 
 $json_error_array = array();
 
-if($_SESSION['captcha_img_string']['5875b57512d67e69b00bc44d5fb727e4331f977b'] != $_POST['captcha_input']){
-	$captcha_element_id = 'cfgen-element-2-7'; // will be used in merge_post
-	$captcha_elementlabel_id = 'cfgen-element-2-7-label'; // will be used in element_ids_values
-	$json_error_array['cfgen-element-2-7']['errormessage'] = $contactform_obj->cfg['form_errormessage_captcha'];
-	$error_captcha = true;
-}
-
 ?>
 <?php
 

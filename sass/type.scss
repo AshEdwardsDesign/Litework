@@ -6,48 +6,54 @@ h1 {
   font-weight: 700;
   font-size: 2.25em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 h2 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.875em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 h3 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.5em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 h4 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 1.125em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 h5 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.875em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 h6 {
   font-family: $title-font;
   font-weight: 700;
   font-size: 0.75em;
   margin: 0 0 1em;
+  color: $brand1;
 }
 p {
   font-family: $para-font;
   font-weight: 400;
   font-size: 1em;
-  color: white;
   margin: 0 0 1em;
+  color: $text-color;
 }
 a {
   font-family: $para-font;
   text-decoration: none;
-  color:white
+  color: $brand1;
 }
 a[href^=tel] {
   color: inherit;

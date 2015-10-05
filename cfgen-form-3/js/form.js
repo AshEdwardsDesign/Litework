@@ -1,6 +1,6 @@
 jQuery(function(){
 	
-	var form = jQuery('#cfgen-form-2');
+	var form = jQuery('#cfgen-form-3');
 	
 	function cfgen_isScrolledIntoView(elem){
 		
@@ -24,7 +24,7 @@ jQuery(function(){
 	
 	form.on('click', 'img.cfgen-captcha-refresh', function(){
 		
-		form.find('img.cfgen-captcha-img').prop('src','cfgen-form-2/inc/captcha.php?r='+Math.random());
+		form.find('img.cfgen-captcha-img').prop('src','cfgen-form-3/inc/captcha.php?r='+Math.random());
 		
 	});
 	
@@ -217,7 +217,7 @@ jQuery(function(){
 					'deleteuploadedfile':deleteuploadedfile_value
 					};
 
-		jQuery.post('cfgen-form-2/inc/form-validation.php',
+		jQuery.post('cfgen-form-3/inc/form-validation.php',
 					post,
 					function(data){
 

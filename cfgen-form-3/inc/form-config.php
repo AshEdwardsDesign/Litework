@@ -2,7 +2,7 @@
 $cfg['debug'] = false;
 
 // This is the email address where you will receive the notification message
-$cfg['email_address'] = 'info@ozantiums.co.uk';
+$cfg['email_address'] = 'info@bodyfirma.co.uk';
 
 $cfg['email_from'] = '';
 
@@ -29,11 +29,11 @@ $cfg['timezone'] = 'UTC';
 
 $cfg['form_id'] = '';
 
-$cfg['form_name'] = 'Ozantiums';
+$cfg['form_name'] = 'Body Firma';
 
 $cfg['form_validationmessage'] = 'Thank you, your message has been sent to us.<br />We will get back to you as soon as possible.';
 
-$cfg['form_errormessage_captcha'] = 'Incorrect captcha';
+$cfg['form_errormessage_captcha'] = '';
 
 $cfg['form_errormessage_emptyfield'] = 'This field cannot be left blank';
 
@@ -51,7 +51,7 @@ $cfg['adminnotification_hideemptyvalues'] = false;
 
 $cfg['adminnotification_hideformurl'] = true;
 
-$cfg['usernotification_inputid'] = 'cfgen-element-2-3';
+$cfg['usernotification_inputid'] = 'cfgen-element-3-3';
 
 $cfg['usernotification_activate'] = false;
 
@@ -65,8 +65,8 @@ $cfg['usernotification_message'] = '';
 
 $cfg['usernotification_hideemptyvalues'] = false;
 
-$cfg['formvalidation_required'] = array('cfgen-element-2-6','cfgen-element-2-3','cfgen-element-2-8','cfgen-element-2-4');
+$cfg['formvalidation_required'] = array('cfgen-element-3-8','cfgen-element-3-3','cfgen-element-3-10','cfgen-element-3-4');
 
-$cfg['formvalidation_email'] = array('cfgen-element-2-3');
+$cfg['formvalidation_email'] = array('cfgen-element-3-3');
 
 ?>
