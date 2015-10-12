@@ -1,51 +1,74 @@
-/******************************************* 
-Form Elements 
+/*******************************************
+Form Elements
 *******************************************/
-
-input
-{
-width:100%;
-border-radius:$border-radius;
-font-family:$para-font;
-font-weight: 300;
-color:#989898;
-font-size:1em;
-border: 1px solid #acacac;
-box-shadow: none !important;
-padding:0.5em;
-margin:1em 0;
+input {
+  width: 100%;
+  border-radius: $border-radius;
+  font-family: $para-font;
+  font-weight: 400;
+  color: #212121;
+  font-size: 1em;
+  border: 1px solid #212121;
+  box-shadow: none !important;
+  padding: 1em;
+  margin: 1em 0;
 }
-
-.input-radio
-{
-    width:auto !important;
-    margin:0.25em 1em 0.25em 0;
+.input-radio {
+  width: auto !important;
+  margin: 0.25em 1em 0.25em 0;
 }
-
-.input-checkbox
-{
-    width:auto !important;
-    margin:0.25em 1em 0.25em 0;
+.input-checkbox {
+  width: auto !important;
+  margin: 0.25em 1em 0.25em 0;
 }
-
-label
-{
-padding:0;
-font-family:$para-font;
-@include clearfix
+label {
+  padding: 0;
+  font-family: $para-font;
+  font-weight: 700;
+  @include clearfix;
 }
-
-textarea
-{
-width:100%;
-border-radius:$border-radius;
-font-family:$para-font;
-font-weight: 300;
-color:#989898;
-font-size:1em;
-border: 1px solid #acacac;
-box-shadow: none !important;
-padding:0.5em;
-margin:1em 0; 
-@include clearfix
+textarea {
+  width: 100%;
+  border-radius: $border-radius;
+  font-family: $para-font;
+  font-weight: 400;
+  color: #212121;
+  font-size: 1em;
+  border: 1px solid #acacac;
+  box-shadow: none !important;
+  padding: 0.5em;
+  margin: 1em 0;
+  @include clearfix;
+}
+.cfgen-submit {
+  margin: 0.25em 0;
+  padding: 1em;
+  background-color: $brand1;
+  border-radius: $border-radius;
+  border: none;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1em;
+}
+.cfgen-submit:hover {
+  background-color: white;
+  color: $brand2 !important;
+  border: 1px $brand2 solid;
+  border-radius: $border-radius;
+}
+.cfgen-submit:active {
+  background-color: white;
+  color: $brand2 !important;
+  border: 1px $brand2 solid;
+  border-radius: $border-radius;
+}
+.cfgen-captcha-c {
+  margin: 1em 0;
+}
+select {
+  color: #212121;
+  margin: 1em 0;
+}
+option {
+  color: #212121;
 }
