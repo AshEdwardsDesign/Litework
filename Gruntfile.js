@@ -17,18 +17,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // Autoprefixer adds vendor prefixes to the CSS file - in this case it checks against browsers with >1% global usage
-
-    autoprefixer: {
-      options: {
-        browsers: ['> 1%']
-      },
-      your_target: {
-        src: 'build/css/litework.slim.css',
-        dest: 'build/css/litework.prefixed.slim.css'
-      }
-    },
-
     // Uncss will remove any un-used CSS in your project, ensuring your CSS doesn't suffer from code bloat
 
     uncss: {
@@ -41,6 +29,18 @@ module.exports = function(grunt) {
           'build/css/litework.slim.css': ['build/*.html']
         }
       },
+    },
+
+    // Autoprefixer adds vendor prefixes to the CSS file - in this case it checks against browsers with >1% global usage
+
+    autoprefixer: {
+      options: {
+        browsers: ['> 1%']
+      },
+      your_target: {
+        src: 'build/css/litework.slim.css',
+        dest: 'build/css/litework.prefixed.slim.css'
+      }
     },
 
     // CSSmin will minify your CSS
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
           dest: 'build/'
         }]
       },
-      inlinecss: {
+      css: {
         options: {
           patterns: [{
               match: 'inline-css',
@@ -192,13 +192,13 @@ module.exports = function(grunt) {
           'spec-char-escape': true,
           'id-unique': true,
           'head-script-disabled': true,
-          'style-disabled': true,
+          'style-disabled': false,
           'force': true,
           'doctype-html5': true,
           'img-alt-require': true,
           'tag-self-close': true
         },
-        cwd: 'build/',
+        cwd: 'build/inline/',
         src: ['*.html']
       }
     },
@@ -263,31 +263,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // WATCH stuff goes here
-
-    watch: {
-      html: {
-        files: ['*.html', 'snippets/*.html'],
-        tasks: ['replace:dist', 'htmlhint', 'replace:css', 'htmlmin', 'sitemap']
-      },
-      sass: {
-        files: ['sass/*.scss'],
-        tasks: ['sass']
-      },
-      css: {
-        files: ['build/css/litework.css'],
-        tasks: ['uncss', 'autoprefixer', 'cssmin', 'replace:css', 'watch:html']
-      },
-      js: {
-        files: ['scripts/*.js'],
-        tasks: ['concat', 'uglify']
-      },
-      img: {
-        files: ['img/**/*.{png,jpg,gif}'],
-        tasks: ['imagemin']
-      }
-    },
-
     // Clean - This plugin will "clean" folders passed to it
 
     clean: ['dist', 'build']
@@ -298,10 +273,10 @@ module.exports = function(grunt) {
   require('jit-grunt')(grunt);
 
   // Here we tell Grunt what to do when we type 'grunt' into the CLI
-  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "htmlhint", "htmlmin", "sitemap", "copy"]);
+  grunt.registerTask('default', ["sass", "replace:footer", "replace:dist", "uncss", "autoprefixer", "cssmin", "concat", "uglify", "imagemin", "replace:css", "htmlhint", "htmlmin", "sitemap", "copy"]);
 
   // This will start a live preview of your project and then trigger the watch task
-  grunt.registerTask('live', ["browserSync", "watch"]);
+  grunt.registerTask('live', ["browserSync"]);
 
   // This will clean the dist and build folders prior to running our full grunt task
   grunt.registerTask('fresh', ["clean", "default"]);

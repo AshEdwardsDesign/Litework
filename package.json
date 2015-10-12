@@ -10,6 +10,9 @@
   ],
   "author": "Ash Edwards <info@ashedwardsdesign.com>",
   "contributors": [],
+  "scripts": {
+    "test": "grunt fresh"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/AshEdwardsDesign/Litework"
@@ -28,7 +31,7 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-htmlhint": "^0.4.1",
+    "grunt-htmlhint": "^0.9.9",
     "grunt-replace": "^0.11.0",
     "grunt-sitemap": "^1.2.1",
     "grunt-uncss": "^0.4.3",
