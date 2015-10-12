@@ -1,4 +1,4 @@
-#Litework [![devDependency Status](https://david-dm.org/AshEdwardsDesign/Litework/dev-status.svg)](https://david-dm.org/AshEdwardsDesign/Litework#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+#Litework [![devDependency Status](https://david-dm.org/AshEdwardsDesign/Litework/dev-status.svg)](https://david-dm.org/AshEdwardsDesign/Litework#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/AshEdwardsDesign/Litework.svg?branch=master)](https://travis-ci.org/AshEdwardsDesign/Litework)
 
 Litework is a simple, lightweight, responsive and open source HTML5/CSS3 framework for creating websites.
 
