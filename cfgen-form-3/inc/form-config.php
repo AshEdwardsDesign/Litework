@@ -27,7 +27,7 @@ $cfg['smtp_password'] = '';
 
 $cfg['timezone'] = 'UTC';
 
-$cfg['form_id'] = '';
+$cfg['form_id'] = '3';
 
 $cfg['form_name'] = 'Body Firma';
 
