@@ -32,52 +32,47 @@ $(document).ready(function() {
   });
 });
 
+// Isotope
+$(document).ready(function() {
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+  });
 
-// // Call Isotope
-// $('.grid').isotope({
-//
-//   // bind category button click
-//   $('.category-buttons').on('click', 'button', function() {
-//     var filterValue = $(this).attr('data-filter');
-//     // use filterFn if matches value
-//     filterValue = filterFns[filterValue] || filterValue;
-//     $grid.isotope({
-//       filter: filterValue
-//     });
-//   });
-//
-//   /*
-//
-//           // bind price button click
-//           $('.price-buttons').on('click', 'button', function() {
-//             var filterValue = $(this).attr('data-filter');
-//             // use filterFn if matches value
-//             filterValue = filterFns[filterValue] || filterValue;
-//             $grid.isotope({
-//               filter: filterValue
-//             });
-//           });
-//
-//   */
-//
-//   // change is-checked class on buttons
-//   $('.button-group').each(function(i, buttonGroup) {
-//     var $buttonGroup = $(buttonGroup);
-//     $buttonGroup.on('click', 'button', function() {
-//       $buttonGroup.find('.active').removeClass('active');
-//       $(this).addClass('active');
-//     });
-//   });
-//
-//   // options
-//   itemSelector: '.grid-item',
-//     layoutMode: 'fitRows',
-//     percentPosition: true,
-//     masonry: {
-//       // use outer width of grid-sizer for columnWidth
-//       columnWidth: '.grid-sizer',
-//       gutter: 10
-//     }
-//
-//
-// });
+  // store filter for each group
+  var filters = {};
+
+  $('.filters').on('click', '.button', function() {
+    var $this = $(this);
+    // get group key
+    var $buttonGroup = $this.parents('.button-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[filterGroup] = $this.attr('data-filter');
+    // combine filters
+    var filterValue = concatValues(filters);
+    // set filter for Isotope
+    $grid.isotope({
+      filter: filterValue
+    });
+  });
+
+  //  change is-checked class on buttons
+  $('.button-group').each(function(i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on('click', 'button', function() {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      $(this).addClass('is-checked');
+    });
+  });
+
+});
+
+// flatten object by concatting values
+function concatValues(obj) {
+  var value = '';
+  for (var prop in obj) {
+    value += obj[prop];
+  }
+  return value;
+}

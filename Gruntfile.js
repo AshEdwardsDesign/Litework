@@ -150,6 +150,9 @@ module.exports = function(grunt) {
             match: 'webmaster',
             replacement: '<%= grunt.file.read("snippets/webmaster.html") %>'
           }, {
+            match: 'isotope',
+            replacement: '<%= grunt.file.read("snippets/isotope.html") %>'
+          }, {
             match: 'scripts',
             replacement: '<%= grunt.file.read("snippets/scripts.html") %>'
           }, ]
@@ -228,7 +231,6 @@ module.exports = function(grunt) {
         src: ['dist/css/*.css', 'dist/*.html', 'dist/scripts/*.js']
       },
       options: {
-        watchTask: true,
         server: {
           baseDir: "./dist"
         }
