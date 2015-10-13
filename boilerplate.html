@@ -35,8 +35,9 @@
 
   <!-- <link rel="stylesheet" href="css/litework.prefixed.slim.min.css" type="text/css" /> -->
   <style>
-    @@inline-css
+    /* @@inline-css */
   </style>
+
   <!-- Scripts for improved support in IE 9 or below -->
 
   <!--[if lt IE 9]>
@@ -99,222 +100,128 @@
           <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia. Mauris sit amet lacus magna. Curabitur sodales elit arcu, eget eleifend lacus volutpat eget. Maecenas hendrerit purus sed ultrices scelerisque. Quisque gravida quam turpis, eget
             tempor purus pulvinar nec. Etiam sed eros auctor, suscipit magna id, convallis leo. Pellentesque vestibulum urna in ligula aliquam, vel aliquam odio eleifend. Sed blandit enim ex, at interdum mauris vehicula in. Duis ac semper erat.</p>
         </div>
+
+        <!-- ISOTOPE TEST AREA -->
+
         <div class="row">
-          <div data-sr class="column-12">
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+          <div class="column-4">
+            <h4>Filters</h4>
+            <p>Use the filters below to find your ideal business opportunity!</p>
+
+            <!-- Category buttons -->
+
+            <div class="button-group" data-filter-group="category-buttons">
+              <button class="button" data-filter="*">Show all</button>
+              <button class="button" data-filter=".mobile">Mobile</button>
+              <button class="button" data-filter=".beauty">Beauty</button>
+              <button class="button" data-filter=".vending">Vending</button>
+              <button class="button" data-filter=".other">Other</button>
+            </div>
+
+            <!-- Price buttons -->
+            <div class="button-group" data-filter-group="price-buttons">
+              <button class="button" data-filter="*">Show all</button>
+              <button class="button" data-filter="lessthan">Less than £1,999+VAT</button>
+              <button class="button" data-filter="">£2,000+VAT - £3,999+VAT</button>
+              <button class="button" data-filter="">£4,000+VAT - £5,999+VAT</button>
+              <button class="button" data-filter="">£6,000+VAT - £7,999+VAT</button>
+              <button class="button" data-filter="">Over £8,000+VAT</button>
+            </div>
+
+          </div>
+          <div class="column-8 grid js-isotope">
+            <div class="grid-sizer"></div>
+            <div class="grid-item beauty mobile">
+              <h4>Tattoo Removal</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item mobile">
+              <h4>Waste Distribution</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item beauty mobile">
+              <h4>Inch Loss Clinic</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item vending">
+              <h4>Mobile Phone Charging</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item vending">
+              <h4>Multi-Washroom Vending</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item mobile">
+              <h4>Hire Bar</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item mobile">
+              <h4>DJ/Karaoke</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item mobile">
+              <h4>Portable Appliance Testing</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+            <div class="grid-item other">
+              <h4>Help A Charity</h4>
+              <p>Business opportunity short description</p>
+              <p>Starting from: £
+                <span class="cost">4,995</span>+VAT</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fullwidth vertical-padding parallax-window" data-parallax="scroll" data-image-src="img/gallery-image.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="column-12" data-sr>
+              <h3 class="white">Hello world!</h3>
+              <p class="white">Lorem ipsum blah bladdy blah</p>
+              <button>Click for Woos!</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div data-sr class="column-3">
-          <h2>Column 3</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-9">
-          <h2>Column 9</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-4">
-          <h2>Column 4</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-8">
-          <h2>Column 8</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-5">
-          <h2>Column 5</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-7">
-          <h2>Column 7</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-6">
-          <h2>Column 6</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-6">
-          <h2>Column 6</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-7">
-          <h2>Column 7</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-5">
-          <h2>Column 5</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-8">
-          <h2>Column 8</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-4">
-          <h2>Column 4</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div data-sr class="column-9">
-          <h2>Column 9</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
-        </div>
-        <div data-sr class="column-3">
-          <h2>Column 3</h2>
-          <p>Ut condimentum lacus eu lectus finibus, nec commodo lacus lacinia.</p>
+      <div class="container-fullwidth vertical-padding parallax-window" data-parallax="scroll" data-image-src="img/contact-us-image.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="column-12 text-right" data-sr>
+              <h3 class="white">Hello world!</h3>
+              <p class="white">Lorem ipsum blah bladdy blah</p>
+              <button>Click for Woos!</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="column-6">
-          <h2>Contact us</h2>
-          <p>Contact us on the following:</p>
-          <p>
-            <strong>Phone: </strong>0800 000 0000</p>
-          <p>
-            <strong>Email: </strong>info@example.com</p>
-        </div>
-        <div class="column-6">@@contactform</div>
-      </div>
-
-      <!-- ISOTOPE TEST AREA -->
-
-      <div class="row">
-        <div class="column-4">
-          <h4>Filters</h4>
-          <p>Use the filters below to find your ideal business opportunity!</p>
-
-          <!-- Category buttons -->
-
-          <div class="button-group" data-filter-group="category-buttons">
-            <button class="button" data-filter="*">Show all</button>
-            <button class="button" data-filter=".mobile">Mobile</button>
-            <button class="button" data-filter=".beauty">Beauty</button>
-            <button class="button" data-filter=".vending">Vending</button>
-            <button class="button" data-filter=".other">Other</button>
-          </div>
-
-          <!-- Price buttons -->
-          <div class="button-group" data-filter-group="price-buttons">
-            <button class="button" data-filter="*">Show all</button>
-            <button class="button" data-filter="lessthan">Less than £1,999+VAT</button>
-            <button class="button" data-filter="">£2,000+VAT - £3,999+VAT</button>
-            <button class="button" data-filter="">£4,000+VAT - £5,999+VAT</button>
-            <button class="button" data-filter="">£6,000+VAT - £7,999+VAT</button>
-            <button class="button" data-filter="">Over £8,000+VAT</button>
-          </div>
-
-        </div>
-        <div class="column-8 grid js-isotope">
-          <div class="grid-sizer"></div>
-          <div class="grid-item beauty mobile">
-            <h4>Tattoo Removal</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item mobile">
-            <h4>Waste Distribution</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item beauty mobile">
-            <h4>Inch Loss Clinic</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item vending">
-            <h4>Mobile Phone Charging</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item vending">
-            <h4>Multi-Washroom Vending</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item mobile">
-            <h4>Hire Bar</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item mobile">
-            <h4>DJ/Karaoke</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item mobile">
-            <h4>Portable Appliance Testing</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-          <div class="grid-item other">
-            <h4>Help A Charity</h4>
-            <p>Business opportunity short description</p>
-            <p>Starting from: £
-              <span class="cost">4,995</span>+VAT</p>
-          </div>
-        </div>
-      </div>
+      <!-- Footer Start -->
+      @@footer
+      <!-- Footer End -->
 
     </div>
+    <!-- Wrapper End -->
 
-    <div class="container-fullwidth vertical-padding parallax-window" data-parallax="scroll" data-image-src="img/gallery-image.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="column-12" data-sr>
-            <h3 class="white">Hello world!</h3>
-            <p class="white">Lorem ipsum blah bladdy blah</p>
-            <button>Click for Woos!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fullwidth vertical-padding parallax-window" data-parallax="scroll" data-image-src="img/contact-us-image.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="column-12 text-right" data-sr>
-            <h3 class="white">Hello world!</h3>
-            <p class="white">Lorem ipsum blah bladdy blah</p>
-            <button>Click for Woos!</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Start -->
-    @@footer
-    <!-- Footer End -->
-
-  </div>
-  <!-- Wrapper End -->
-
-  @@scripts
+    @@scripts
 
 </body>
 
