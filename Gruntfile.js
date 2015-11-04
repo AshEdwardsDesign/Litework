@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'build/css/litework.css': ['sass/litework.scss']
+          'build/css/litework.css': ['sass/_bootstrap.scss']
         }
       }
     },
@@ -58,7 +58,6 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: {
-          'build/scripts/ie.js': ['scripts/ie/*.js'],
           'build/scripts/litework.js': ['scripts/*.js']
         }
       }
@@ -69,8 +68,6 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-
-          'dist/scripts/ie.min.js': ['build/scripts/ie.js'],
           'dist/scripts/litework.min.js': ['build/scripts/litework.js']
         }
       }
@@ -258,6 +255,10 @@ module.exports = function(grunt) {
           src: ['.htaccess'],
           dest: 'dist/',
         }, {
+          expand: true,
+          src: ['fonts/**'],
+          dest: 'dist/',
+        },  {
           expand: true,
           src: ['*cfg*/**'],
           dest: 'dist/',
