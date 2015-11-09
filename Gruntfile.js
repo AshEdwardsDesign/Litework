@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'build/css/litework.css': ['sass/_bootstrap.scss']
+          'build/css/litework.css': ['sass/bootstrap.scss'],
         }
       }
     },
