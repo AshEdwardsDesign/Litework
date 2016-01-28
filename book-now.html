@@ -109,7 +109,7 @@
         <div class="row">
           <div class="column-12">
             <h1 class="white">Book now</h1>
-            <p class="white">Here you can pay for a booking via Paypal (plus debit/credit card)</p>
+            <p class="white">To Book, contact us to arrange the date and venue. Tests can be paid for by paypal, credit, debit or cash.</p>
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
 
     <!-- Content Start -->
     <div class="container" role="main">
-      <div class="row">
+      <!-- <div class="row">
 
         <div class="column-12">
           <h2>Make a booking</h2>
@@ -133,18 +133,23 @@
           <p>If you are in business and want to add this valuable benefit to your staff or if you have a business and want to offer this service to your customers - please contact us today to discuss corporate options and partnership deals.</p>
         </div>
 
-      </div>
+      </div> -->
       <div class="row">
+        <div class="column-12">
+          <h2>Want to book?</h2>
+          <p>Please contact us for pricing and booking information. Thank you.</p>
+        </div>
 
-        <div class="column-6">
+
+        <!-- <div class="column-6">
 
           <h2>Option 1: Book a test</h2>
-          <p>Here you can purchase a single test or a pacakge deal with great discounts.</p>
-          <p class="small">Please note: Discounts apply for bookings where they are made for the same date and location.</p>
+          <p>Here you can purchase a single test or a package deal with great discounts.</p>
+          <p class="small">Please note: Discounts apply for bookings where they are made for the same date and location.</p> -->
 
-          <!-- Standard Paypal button -->
+        <!-- Standard Paypal button -->
 
-          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <!-- <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="CWLALGQE7JVP2">
             <table>
@@ -178,17 +183,17 @@
             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
           </form>
 
-        </div>
+        </div> -->
         <!-- END OF Standard Paypal button -->
 
-        <div class="column-6">
+        <!-- <div class="column-6">
 
           <h2>Option 2: With a discount code</h2>
-          <p>Here you can purchase a single test if you have recieved a discount code from us.</p>
+          <p>Here you can purchase a single test if you have recieved a discount code from us.</p> -->
 
-          <!-- Discount paypal button -->
+        <!-- Discount paypal button -->
 
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal'; return ReadForm (this);">
+        <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" onsubmit="this.target = 'paypal'; return ReadForm (this);">
             <input type="hidden" name="cmd" value="_xclick" />
             <input type="hidden" name="add" value="1" />
             <input type="hidden" name="business" value="G6QZRQYAYGRGY" />
@@ -203,28 +208,30 @@
             <br/>
             <input type="image" class="paypal-bigger" id="xx" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" onclick="CalculateOrder(this.form)" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/WEBSCR-640-20110306-1/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
+          </form> -->
 
-          <!-- Discount paypal button -->
-        </div>
+        <!-- Discount paypal button -->
+        <!-- </div> -->
 
 
       </div>
 
-    </div>
-  </div>
-  </div>
-  <!-- Content End -->
+      <div class="row">
+        <div class="column-12">@@contactform</div>
+      </div>
 
-  <!-- Footer Start -->
-  @@footer
-  <!-- Footer End -->
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    @@footer
+    <!-- Footer End -->
 
   </div>
   <!-- Wrapper End -->
 
   @@scripts
-
+  <script src="cfg-form-1/js/form.js" defer></script>
 </body>
 
 </html>
