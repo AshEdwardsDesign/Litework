@@ -132,9 +132,6 @@ module.exports = function(grunt) {
             match: 'footer',
             replacement: '<%= grunt.file.read("snippets/footer.html") %>'
           }, {
-            match: 'warnings',
-            replacement: '<%= grunt.file.read("snippets/warnings.html") %>'
-          }, {
             match: 'analytics',
             replacement: '<%= grunt.file.read("snippets/analytics.html") %>'
           }, {
@@ -146,9 +143,6 @@ module.exports = function(grunt) {
           }, {
             match: 'webmaster',
             replacement: '<%= grunt.file.read("snippets/webmaster.html") %>'
-          }, {
-            match: 'isotope',
-            replacement: '<%= grunt.file.read("snippets/isotope.html") %>'
           }, {
             match: 'scripts',
             replacement: '<%= grunt.file.read("snippets/scripts.html") %>'
@@ -258,7 +252,7 @@ module.exports = function(grunt) {
           expand: true,
           src: ['fonts/**'],
           dest: 'dist/',
-        },  {
+        }, {
           expand: true,
           src: ['*cfg*/**'],
           dest: 'dist/',

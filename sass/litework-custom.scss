@@ -1,0 +1,28 @@
+// Custom SASS
+.gradient-bg {
+  background: #aa00ff;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #2196f3 , #aa00ff);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #2196f3, #aa00ff);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #2196f3, #aa00ff);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #2196f3 , #aa00ff);
+  /* Standard syntax */
+}
+#footer {
+  background-color: $gray-base !important;
+  color: $gray-lighter !important;
+}
+#footer h3 {
+  color: #aa00ff !important;
+}
+button {
+  background-color: #aa00ff !important;
+  color: white !important;
+}
+.padded {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
