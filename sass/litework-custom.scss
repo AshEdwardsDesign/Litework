@@ -11,18 +11,75 @@
   background: linear-gradient(to right, #2196f3 , #aa00ff);
   /* Standard syntax */
 }
+#homepage-hero {
+  background-image: url("img/homepage-header-graphic.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 600px !important;
+}
 #footer {
-  background-color: $gray-base !important;
+  background-color: $gray-darker !important;
   color: $gray-lighter !important;
 }
 #footer h3 {
   color: #aa00ff !important;
 }
-button {
+.btn {
   background-color: #aa00ff !important;
   color: white !important;
 }
 .padded {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+.sml-padded {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+}
+.text-white {
+  color: white !important;
+}
+.horizontal-space {
+  margin: 0 1em !important;
+}
+.no-vertical-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.navbar-default {
+  background-color: white !important;
+  border: none !important;
+}
+.brand-img-sml {
+  width:70px !important;
+}
+///////////
+/////////// VERTICAL SPACING CLASSES
+///////////
+@media (min-width: $screen-sm-min) {
+  .padded {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .padded {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  .padded {
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+  }
 }
