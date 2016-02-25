@@ -16,7 +16,6 @@
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
-  min-height: 600px !important;
 }
 #footer {
   background-color: $gray-darker !important;
@@ -52,7 +51,14 @@
   border: none !important;
 }
 .brand-img-sml {
-  width:70px !important;
+  width: 60px !important;
+}
+.padding-top {
+  padding-top: 2em !important;
+}
+.nav-highlight:hover {
+  color: white !important;
+  background-color: $brand-primary !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
