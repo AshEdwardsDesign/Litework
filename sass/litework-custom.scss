@@ -18,14 +18,15 @@
   background-position: center !important;
 }
 #footer {
-  background-color: $gray-darker !important;
-  color: $gray-lighter !important;
+  background-color: #222 !important;
+  color: #eee !important;
+;
 }
 #footer h3 {
-  color: #aa00ff !important;
+  color: #a0f !important;
 }
 .btn {
-  background-color: #aa00ff !important;
+  background-color: #a0f !important;
   color: white !important;
 }
 .padded {
@@ -48,42 +49,34 @@
 }
 .navbar-default {
   background-color: white !important;
-  border: none !important;
+  margin: 0 !important;
 }
 .brand-img-sml {
-  width: 60px !important;
+  width: 40px !important;
 }
 .padding-top {
   padding-top: 2em !important;
 }
 .nav-highlight:hover {
   color: white !important;
-  background-color: $brand-primary !important;
+  background-color: #a0f !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
 ///////////
-@media (min-width: $screen-sm-min) {
+@media (min-width: 768px) {
   .padded {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
   }
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
 }
-@media (min-width: $screen-md-min) {
+@media (min-width: 992px) {
   .padded {
     padding-top: 3em !important;
     padding-bottom: 3em !important;
   }
 }
-@media (min-width: $screen-lg-min) {
+@media (min-width: 1200px) {
   .padded {
     padding-top: 4em !important;
     padding-bottom: 4em !important;

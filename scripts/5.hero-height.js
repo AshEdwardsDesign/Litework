@@ -5,7 +5,4 @@ $(document).ready(function() {
   };
   setHeight();
 
-  $(window).resize(function() {
-    setHeight();
-  });
 });
