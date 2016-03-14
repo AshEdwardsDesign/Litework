@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     uncss: {
       dist: {
         options: {
-          ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.slicknav_menu', '.slicknav_btn', '.slicknav_menutxt', '.slicknav_no-text', '.slicknav_icon', '.slicknav_icon-bar', '.slicknav_nav', '.slicknav_arrow', '.slicknav_item', '.slicknav_row', '.slicknav_parent-link', '.slicknav_brand', '.old-ie', '.slicknav_*'],
+          ignore: ['#added_at_runtime', '.navbar-collapse', '.created_by_jQuery', ':hover', ':active', '.js', '.slicknav_menu', '.slicknav_btn', '.slicknav_menutxt', '.slicknav_no-text', '.slicknav_icon', '.slicknav_icon-bar', '.slicknav_nav', '.slicknav_arrow', '.slicknav_item', '.slicknav_row', '.slicknav_parent-link', '.slicknav_brand', '.old-ie', '.slicknav_*'],
           stylesheets: ['css/litework.css'],
         },
         files: {
