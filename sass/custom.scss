@@ -1,11 +1,14 @@
-// Main SASS
+// Variables
 
+$brand-primary: red;
+$brand-secondary: darken($brand-primary, 7%);
+$brand-tertiary: darken($brand-primary, 15%);
+
+// Main SASS
 body {
   color: white !important;
   background-color: #121212 !important;
 }
-
-
 // Custom SASS
 #homepage-hero {
   background-image: url("img/homepage-header-graphic.jpg") !important;
@@ -16,7 +19,6 @@ body {
 #footer {
   background-color: black !important;
   color: #ffffff !important;
-
 }
 #footer h3 {
   color: $brand-tertiary !important;
