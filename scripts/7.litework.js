@@ -14,6 +14,6 @@
 $(document).ready(function() {
   $('#hero-centered').flexVerticalCenter({
 
-    parentSelector: '#hero'
+    parentSelector: '#homepage-hero'
   });
 });

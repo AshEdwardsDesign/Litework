@@ -11,13 +11,19 @@ body {
 }
 // Custom SASS
 #homepage-hero {
-  background-image: url("img/homepage-header-graphic.jpg") !important;
+  background-image: url("img/hero.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.clouds-image {
+  background-image: url("img/clouds.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
 }
 #footer {
-  background-color: black !important;
+  background-color: #121212 !important;
   color: #ffffff !important;
 }
 #footer h3 {
@@ -57,6 +63,13 @@ body {
 .nav-highlight:hover {
   color: white !important;
   background-color: $brand-tertiary !important;
+}
+.wsmobileheader
+{
+  position:fixed !important;
+}
+.smalllogo {
+  height:65px !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
