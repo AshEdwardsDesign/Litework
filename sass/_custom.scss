@@ -1,0 +1,119 @@
+// Variables
+$brand-primary: red;
+$brand-secondary: darken($brand-primary, 7%);
+$brand-tertiary: darken($brand-primary, 15%); // Main SASS
+body {
+    color: white !important;
+    background-color: #121212 !important;
+}
+// Custom SASS
+// #homepage-hero {
+//     background-image: url("img/hero.jpg") !important;
+//     background-repeat: no-repeat !important;
+//     background-size: cover !important;
+//     background-position: center !important;
+// }
+.clouds-image {
+    background-image: url("img/clouds.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#footer {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+.btn {
+    background-color: $brand-tertiary !important;
+    color: white !important;
+}
+.padded {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.sml-padded {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.text-white {
+    color: white !important;
+}
+.horizontal-space {
+    margin: 0 1em !important;
+}
+.no-vertical-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.navbar-default {
+    margin: 0 !important;
+}
+.brand-img-sml {
+    width: 40px !important;
+}
+.padding-top {
+    padding-top: 2em !important;
+}
+.nav-highlight:hover {
+    color: white !important;
+    background-color: $brand-tertiary !important;
+}
+.wsmobileheader {
+    position: fixed !important;
+}
+.smalllogo {
+    height: 65px !important;
+}
+.padding20 {
+    padding: 20px !important;
+}
+.mobile-sub {
+    padding: 0 !important;
+}
+.jumbotron-parallax {
+    background-color: transparent !important;
+}
+.scrolltotop {
+    position: fixed !important;
+    right: 50px !important;
+    bottom: 50px !important;
+}
+#footer ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+.link {
+    color: white !important;
+}
+.link:hover {
+    color: $brand-tertiary !important;
+}
+///////////
+/////////// WS MENU CUSTOMISATION
+///////////
+.wsmenu {
+    background-color: #121212 !important;
+    background: #121212 !important;
+    color: #ffffff !important;
+}
+///////////
+/////////// VERTICAL SPACING CLASSES
+///////////
+@media (min-width: 768px) {
+    .padded {
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
+    }
+}
+@media (min-width: 992px) {
+    .padded {
+        padding-top: 3em !important;
+        padding-bottom: 3em !important;
+    }
+}
+@media (min-width: 1200px) {
+    .padded {
+        padding-top: 4em !important;
+        padding-bottom: 4em !important;
+    }
+}
