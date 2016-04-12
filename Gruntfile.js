@@ -4,6 +4,11 @@ module.exports = function(grunt) {
 
     require('time-grunt')(grunt);
 
+    // Load all plugins using JIT (just in time)
+    require('jit-grunt')(grunt, {
+        closureCompiler: 'grunt-closure-tools', // for custom tasks.
+    });
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -22,7 +27,7 @@ module.exports = function(grunt) {
         uncss: {
             dist: {
                 options: {
-                    ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.in'],
+                    ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.in', '.wsmenu', '.wsmenu-list', '.wsmenu-submenu', '.overlapblackbg', '.innerpnd', '.typography-text', '.halfdiv', '.menu_form', '.wsmenucontainer', '.wsoffcanvasopener', '.wsmobileheader', '.hometext', 'megacollink', 'megacolimage', 'typographylinks', 'typographydiv', 'mainmapdiv', 'wsmenu-click', 'wsmenu-click02', 'ws-activearrow', 'wsmenu-rotate', 'wsmenu-submenu-sub', 'wsmenu-submenu-sub-sub', 'megamenu', 'ad-style', 'halfmenu', 'animated-arrow', 'callusicon', 'smallogo'],
                     stylesheets: ['/css/litework.css'],
                 },
                 files: {
@@ -48,7 +53,7 @@ module.exports = function(grunt) {
         cssmin: {
             my_target: {
                 files: {
-                    'dist/css/litework.prefixed.slim.min.css': ['build/css/litework.prefixed.slim.css']
+                    'dist/css/litework.prefixed.slim.concat.min.css': ['build/css/litework.prefixed.slim.concat.css'],
                 }
             }
         },
@@ -60,7 +65,12 @@ module.exports = function(grunt) {
                 files: {
                     'build/scripts/litework.js': ['scripts/*.js']
                 }
-            }
+            },
+            css: {
+                files: {
+                    'build/css/litework.prefixed.slim.concat.css': ['sass/no-uncss/webslidemenu.css', 'build/css/litework.prefixed.slim.css']
+                }
+            },
         },
 
         // Uglify will minify any Javascript specified - beforehand be sure to concat where possible!
@@ -165,7 +175,7 @@ module.exports = function(grunt) {
                 options: {
                     patterns: [{
                             match: 'inline-css',
-                            replacement: '<%= grunt.file.read("dist/css/litework.prefixed.slim.min.css") %>'
+                            replacement: '<%= grunt.file.read("dist/css/litework.prefixed.slim.concat.min.css") %>'
                         },
 
                     ]
@@ -272,11 +282,8 @@ module.exports = function(grunt) {
 
     });
 
-    // Load all plugins using JIT (just in time)
-    require('jit-grunt')(grunt);
-
     // Here we tell Grunt what to do when we type 'grunt' into the CLI
-    grunt.registerTask('default', ["sass", "replace:footer", "concat", "uglify", "replace:dist", "uncss", "autoprefixer", "cssmin", "imagemin", "replace:css", "htmlhint", "htmlmin", "sitemap", "copy"]);
+    grunt.registerTask('default', ["sass", "replace:footer", "concat:dist", "uglify", "replace:dist", "uncss", "autoprefixer", 'concat:css',"cssmin", "imagemin", "replace:css", "htmlhint", "htmlmin", "sitemap", "copy"]);
 
     // This will start a live preview of your project and then trigger the watch task
     grunt.registerTask('live', ["browserSync"]);
