@@ -1,17 +1,16 @@
 // Variables
-$brand-primary: #bf3030;
+$brand-primary: #4fa0de;
 $brand-secondary: darken($brand-primary, 7%);
 $brand-tertiary: darken($brand-primary, 15%); // Main SASS
 body {
-    color: white !important;
-    background-color: #121212 !important;
+    color: #212121 !important;
+    background-color: #f9f9f9 !important;
 }
 // Custom SASS
-#homepage-hero {
-    background-image: url("img/hero.jpg") !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
+.header-bar {
+    background-color: $brand-primary !important;
+    color: white !important;
+    padding: 1em 0 !important;
 }
 #footer {
     background-color: #0A0A0A !important;
@@ -22,6 +21,10 @@ body {
     color: white !important;
 }
 .padded {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.sml-padded {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
@@ -73,19 +76,53 @@ body {
 .link:hover {
     color: $brand-tertiary !important;
 }
-///////////
-/////////// VERTICAL SPACING CLASSES
-///////////
+.js #menu {
+    display: none !important;
+}
+.js .slicknav_menu {
+    display: block !important;
+}
+.large-social-buttons {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -moz-transform: scale(2);
+    transform-origin: top left;
+    -ms-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+}
+.youtube-vid {
+    height: 4em !important;
+}
+.z-1 {
+    z-index: -1 !important;
+}
+.white-bg {
+    background-color: white !important;
+}
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
+    }
+    .slicknav_menu {
+        display: none !important;
+    }
+    .js #menu {
+        display: block !important;
     }
 }
 @media (min-width: 992px) {
     .padded {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
+    }
+    .sml-padded {
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
     }
 }
 @media (min-width: 1200px) {
