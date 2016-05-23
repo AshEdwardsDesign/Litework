@@ -162,6 +162,9 @@ module.exports = function(grunt) {
                     }, {
                         match: 'inlineJS',
                         replacement: '<%= grunt.file.read("build/scripts/litework.min.js") %>'
+                    }, {
+                        match: 'header',
+                        replacement: '<%= grunt.file.read("snippets/header.html") %>'
                     }]
                 },
                 files: [{

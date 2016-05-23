@@ -1,10 +1,10 @@
 // Variables
-$brand-primary: #bf3030;
+$brand-primary: #8f00b8;
 $brand-secondary: darken($brand-primary, 7%);
 $brand-tertiary: darken($brand-primary, 15%); // Main SASS
 body {
-    color: white !important;
-    background-color: #121212 !important;
+    color: #212121 !important;
+    background-color: #ffffff !important;
 }
 // Custom SASS
 #homepage-hero {
@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
+    min-height: 400px !important;
 }
 #footer {
     background-color: #0A0A0A !important;
@@ -24,6 +25,10 @@ body {
 .padded {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
+}
+.padded-big {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
 }
 .sml-padded {
     padding-top: 1em !important;
@@ -39,8 +44,12 @@ body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-.navbar-default {
-    margin: 0 !important;
+.nav-tabs {
+    background-color: $brand-primary !important;
+    color: white !important;
+}
+.nav-tabs a {
+    color: white !important;
 }
 .brand-img-sml {
     width: 40px !important;
@@ -49,8 +58,8 @@ body {
     padding-top: 2em !important;
 }
 .nav-highlight:hover {
-    color: white !important;
-    background-color: $brand-tertiary !important;
+    color: $brand-primary !important;
+    background-color: white !important;
 }
 .padding20 {
     padding: 20px !important;
@@ -58,20 +67,53 @@ body {
 .jumbotron-parallax {
     background-color: transparent !important;
 }
-.scrolltotop {
-    position: fixed !important;
-    right: 50px !important;
-    bottom: 50px !important;
+.jumbotron {
+    margin: 0 !important;
 }
 #footer ul {
     list-style: none !important;
     padding: 0 !important;
 }
 .link {
-    color: white !important;
+    color: $brand-primary !important;
 }
 .link:hover {
     color: $brand-tertiary !important;
+}
+.purple-box {
+    padding: 4em !important;
+    background-color: rgba(143, 0, 184, 0.8) !important;
+}
+.text-light-pink {
+    color: #e37fff !important;
+}
+.text-purple {
+    color: $brand-primary !important;
+}
+.header-white-bg {
+    background-color: white !important;
+}
+.large-text-24 {
+    font-size: 24px !important;
+}
+.large-text-36 {
+    font-size: 36px !important;
+}
+.large-text-48 {
+    font-size: 48px !important;
+}
+.man-running-bg {
+    background-image: url("img/man-running.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.btn {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+.nav-tabs.nav-justified a {
+    border: 0 !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
@@ -81,16 +123,28 @@ body {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
     }
+    .padded-big {
+        padding-top: 6em !important;
+        padding-bottom: 6em !important;
+    }
 }
 @media (min-width: 992px) {
     .padded {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
     }
+    .padded-big {
+        padding-top: 9em !important;
+        padding-bottom: 9em !important;
+    }
 }
 @media (min-width: 1200px) {
     .padded {
         padding-top: 4em !important;
         padding-bottom: 4em !important;
+    }
+    .padded-big {
+        padding-top: 12em !important;
+        padding-bottom: 12em !important;
     }
 }

@@ -5,3 +5,8 @@ $(document).ready(function() {
     parentSelector: '#homepage-hero'
   });
 });
+
+// Flex vertical center
+$(document).ready(function() {
+  $('.vertical-center').flexVerticalCenter();
+});
