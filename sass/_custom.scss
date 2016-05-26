@@ -18,6 +18,11 @@ body {
     background-color: #0A0A0A !important;
     color: #ffffff !important;
 }
+hr {
+    color: $brand-primary !important;
+    border: 1px solid $brand-primary !important;
+    width: 100% !important;
+}
 .btn {
     background-color: $brand-tertiary !important;
     color: white !important;
@@ -114,6 +119,10 @@ body {
 }
 .nav-tabs.nav-justified a {
     border: 0 !important;
+}
+.purple-bg {
+    background-color: $brand-primary !important;
+    color: white !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
