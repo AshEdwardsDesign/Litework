@@ -70,4 +70,10 @@
 .slicknav_brand {
   float: left; }
 
+/*Error messages for contact form*/
+.cfgen-errormessage {
+  color: white !important;
+  background-color: red !important;
+  padding: 10px !important; }
+
 /*# sourceMappingURL=no-uncss.css.map */
