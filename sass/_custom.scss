@@ -49,13 +49,13 @@ hr {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-.nav-tabs {
-    background-color: $brand-primary !important;
-    color: white !important;
-}
-.nav-tabs a {
-    color: white !important;
-}
+// .nav-tabs {
+//     background-color: $brand-primary !important;
+//     color: white !important;
+// }
+// .nav-tabs a {
+//     color: white !important;
+// }
 .brand-img-sml {
     width: 40px !important;
 }
@@ -65,6 +65,14 @@ hr {
 .nav-highlight:hover {
     color: $brand-primary !important;
     background-color: white !important;
+}
+.nav-highlight:hover a {
+    color: $brand-primary !important;
+    background-color: white !important;
+}
+.nav-highlight {
+    color: white !important;
+    background-color: $brand-primary !important;
 }
 .padding20 {
     padding: 20px !important;
@@ -119,6 +127,9 @@ hr {
 }
 .nav-tabs.nav-justified a {
     border: 0 !important;
+}
+.nav a {
+    color: white !important;
 }
 .purple-bg {
     background-color: $brand-primary !important;
