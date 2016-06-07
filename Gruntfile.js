@@ -260,7 +260,7 @@ module.exports = function(grunt) {
             }
         },
 
-        // Copy will copy certain files into the dist/ folder, in this case the robots.txt and your .htaccess file
+        // Copy will copy certain files into the dist/ folder
 
         copy: {
             main: {
@@ -279,6 +279,10 @@ module.exports = function(grunt) {
                 }, {
                     expand: true,
                     src: ['*cfg*/**'],
+                    dest: 'dist/',
+                }, {
+                    expand: true,
+                    src: ['*.ico'],
                     dest: 'dist/',
                 }]
             }

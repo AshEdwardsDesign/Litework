@@ -25,7 +25,10 @@ h5 {
     // z-index: 99999 !important;
 }
 .large-text {
-  font-size: 24px !important;
+    font-size: 24px !important;
+}
+.strong {
+    font-weight: 700 !important;
 }
 #comm100-button-2233img {
     width: 100% !important;
@@ -147,6 +150,7 @@ h5 {
 .card {
     background-color: white !important;
     border: 1px solid #b8b8b8 !important;
+    min-height: 535px !important;
 }
 .text-brand-primary {
     color: $brand-primary !important;
