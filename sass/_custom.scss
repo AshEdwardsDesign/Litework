@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis); // Variables
+// Variables
 $brand-primary: #4fa0de;
 $brand-secondary: darken($brand-primary, 7%);
 $brand-tertiary: darken($brand-primary, 15%); // Main SASS
@@ -12,7 +12,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Dosis', sans-serif !important;
+    font-family: sans-serif !important;
 }
 .header-bar {
     background-color: $brand-primary !important;
@@ -26,8 +26,9 @@ h5 {
 }
 .scrollToTop {
     position: fixed !important;
-    bottom: 0 !important;
+    bottom: 20% !important;
     right: 0 !important;
+    width: 15% !important;
 }
 .large-text {
     font-size: 24px !important;
@@ -220,10 +221,17 @@ h5 {
 label {
     color: white !important;
 }
+.text-center {
+    text-align: left !important;
+}
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
+    }
+    .scrollToTop {
+        right: 10px !important;
+        width: 4% !important;
     }
 }
 @media (min-width: 992px) {
@@ -234,6 +242,9 @@ label {
     .sml-padded {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
+    }
+    .text-center {
+        text-align: center !important;
     }
 }
 @media (min-width: 1200px) {
