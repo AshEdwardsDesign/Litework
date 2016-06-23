@@ -156,16 +156,15 @@ h5 {
 }
 .card {
     background-color: white !important;
-    border: 1px solid #b8b8b8 !important;
-    min-height: 450px !important;
+    border: 1px solid #b9b9b9 !important;
     position: relative !important;
 }
-.card .btn {
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-}
+// .card .btn {
+//     position: absolute !important;
+//     left: 0 !important;
+//     right: 0 !important;
+//     bottom: 0 !important;
+// }
 .text-brand-primary {
     color: $brand-primary !important;
 }
@@ -250,6 +249,9 @@ label {
     }
     .text-center {
         text-align: center !important;
+    }
+    .card {
+        min-height: 600px !important;
     }
 }
 @media (min-width: 1200px) {
