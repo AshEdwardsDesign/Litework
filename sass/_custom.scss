@@ -27,7 +27,7 @@ h5 {
 .scrollToTop {
     position: fixed !important;
     bottom: 20% !important;
-    right: 0 !important;
+    right: 10px !important;
     width: 15% !important;
 }
 .large-text {
@@ -258,5 +258,8 @@ label {
     .padded {
         padding-top: 4em !important;
         padding-bottom: 4em !important;
+    }
+    .scrollToTop {
+        width: 3% !important;
     }
 }
