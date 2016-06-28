@@ -82,10 +82,6 @@ h5 {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
-.sml-padded {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-}
 .text-white {
     color: white !important;
 }
@@ -158,6 +154,8 @@ h5 {
     background-color: white !important;
     border: 1px solid #b9b9b9 !important;
     position: relative !important;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
 }
 // .card .btn {
 //     position: absolute !important;
@@ -243,15 +241,11 @@ label {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
     }
-    .sml-padded {
-        padding-top: 2em !important;
-        padding-bottom: 2em !important;
-    }
     .text-center {
         text-align: center !important;
     }
     .card {
-        min-height: 600px !important;
+        min-height: 470px !important;
     }
 }
 @media (min-width: 1200px) {

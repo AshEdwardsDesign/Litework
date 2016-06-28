@@ -49,7 +49,7 @@ $cfg['adminnotification_subject'] = 'New message sent from the Readymade website
 
 $cfg['adminnotification_hideemptyvalues'] = false;
 
-$cfg['adminnotification_hideformurl'] = true;
+$cfg['adminnotification_hideformurl'] = false;
 
 $cfg['usernotification_inputid'] = 'cfgen-element-3-3';
 
