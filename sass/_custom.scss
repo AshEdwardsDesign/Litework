@@ -235,17 +235,23 @@ label {
         right: 10px !important;
         width: 4% !important;
     }
+    .text-center {
+        text-align: center !important;
+    }
+    .card {
+        min-height: 510px !important;
+    }
 }
 @media (min-width: 992px) {
     .padded {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
     }
-    .text-center {
-        text-align: center !important;
-    }
-    .card {
-        min-height: 470px !important;
+    .live-chat-button {
+        position: fixed !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 200px !important;
     }
 }
 @media (min-width: 1200px) {
