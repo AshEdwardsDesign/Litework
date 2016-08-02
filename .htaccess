@@ -1141,3 +1141,4 @@ RewriteRule ^health-alert.html$ http://readymadebusiness4u.com/health-business-o
 RewriteRule ^light-healing-clinic.html$ http://readymadebusiness4u.com/healing-business-opportunity.html [R=301,L]
 RewriteRule ^cdn-cgi/l/$ http://readymadebusiness4u.com [R=301,L]
 RewriteRule ^148.html$ http://readymadebusiness4u.com/washroom-vending-machines.html [R=301,L]
+RewriteRule ^http://readymadebusiness4u.com/product/holding-deposit$ http://shop.readymadebusiness4u.com/product/holding-deposit [R=301,L]
