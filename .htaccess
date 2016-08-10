@@ -1046,10 +1046,11 @@ RewriteRule ^148.html$ http://readymadebusiness4u.com/washroom-vending-machines.
 RewriteRule ^index.html$ http://readymadebusiness4u.com [R=301,L]
 
 # Alcohol
-RewriteRule ^alcohol-testing-business-opportunity.html$ http://readymadebusiness4u.com/pub-vending-business-opportunity.html [R=301,L]
-RewriteRule ^alcohol-testing-business-model.html$ http://readymadebusiness4u.com/pub-vending-business-opportunity.html [R=301,L]
-RewriteRule ^over_the_limit.html$ http://readymadebusiness4u.com/pub-vending-business-opportunity.html [R=301,L]
-RewriteRule ^133.html$ http://readymadebusiness4u.com/pub-vending-business-opportunity.html [R=301,L]
+RewriteRule ^alcohol-testing-business-opportunity.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^alcohol-testing-business-model.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^over_the_limit.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^133.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^pub-vending-business-opportunity.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
 
 # Coffee Vending
 RewriteRule ^coffee-vending-franchise.html$ http://readymadebusiness4u.com/coffee-vending-machines-coffee-franchise.html [R=301,L]
