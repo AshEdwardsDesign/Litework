@@ -991,7 +991,6 @@ RewriteRule ^hire-bar.html$ http://readymadebusiness4u.com/mobile-bar-business.h
 RewriteRule ^multi-washroom-vending.html$ http://readymadebusiness4u.com/washroom-vending-machines.html [R=301,L]
 RewriteRule ^weight-loss-business-model.html$ http://readymadebusiness4u.com/weight-loss-business-opportunity.html [R=301,L]
 RewriteRule ^chauffeur-business-model.html$ http://readymadebusiness4u.com/how-to-start-a-chauffeur-business.html [R=301,L]
-RewriteRule ^sandwich-deli.html$ http://readymadebusiness4u.com/sandwich-delivery-business.html [R=301,L]
 RewriteRule ^snack-and-toy-vending.html$ http://readymadebusiness4u.com/snack-vending-toy-vending.html [R=301,L]
 RewriteRule ^food-menu-advertising.html$ http://readymadebusiness4u.com/ [R=301,L]
 RewriteRule ^waste-collection-business-opportunity.html$ http://readymadebusiness4u.com/waste-collection-business-model.html [R=301,L]
@@ -1031,7 +1030,6 @@ RewriteRule ^fresh-start.html$ http://readymadebusiness4u.com/fresh-start-capsul
 RewriteRule ^waste-collection-business-model.html$ http://readymadebusiness4u.com/waste-collection-franchise.html [R=301,L]
 RewriteRule ^electronic-cigarette-business-model.html$ http://readymadebusiness4u.com/ecig-franchise-electronic-cigarette-franchise.html [R=301,L]
 RewriteRule ^dj-karaoke.html$ http://readymadebusiness4u.com/mobile-dj-business-karaoke-franchise.html [R=301,L]
-RewriteRule ^sandwich$ http://readymadebusiness4u.com/sandwich-delivery-business.html [R=301,L]
 RewriteRule ^hire-bar$ http://readymadebusiness4u.com/mobile-bar-business.html [R=301,L]
 RewriteRule ^mixmo$ http://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
 RewriteRule ^mixmo.html$ http://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
@@ -1044,6 +1042,11 @@ RewriteRule ^148.html$ http://readymadebusiness4u.com/washroom-vending-machines.
 
 # Homepage
 RewriteRule ^index.html$ http://readymadebusiness4u.com [R=301,L]
+
+# Sandwich Deli
+RewriteRule ^sandwich$ http://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
+RewriteRule ^sandwich-deli.html$ http://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
+RewriteRule ^sandwich-delivery-business.html$ http://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
 
 # Alcohol
 RewriteRule ^alcohol-testing-business-opportunity.html$ http://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
