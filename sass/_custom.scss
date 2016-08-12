@@ -135,10 +135,20 @@ hr {
     background-color: $brand-primary !important;
     color: white !important;
 }
-
 .navbar {
-  margin-bottom: 0 !important;
-  background-color: $brand-primary !important;
+    margin-bottom: 0 !important;
+    background-color: $brand-primary !important;
+}
+.dropdown-menu {
+    background-color: purple !important;
+    color: white !important;
+}
+.dropdown-menu li a:hover {
+    color: purple !important;
+    background-color: white !important;
+}
+.dropdown-toggle {
+    background-color: $brand-primary !important;
 }
 ///////////
 /////////// VERTICAL SPACING CLASSES
