@@ -1043,6 +1043,9 @@ RewriteRule ^148.html$ http://readymadebusiness4u.com/washroom-vending-machines.
 # Homepage
 RewriteRule ^index.html$ http://readymadebusiness4u.com [R=301,L]
 
+# Washroom
+RewriteRule ^washroom-vending-machines.html$ http://readymadebusiness4u.com/vending-business-opportunities-vending-machine-franchise.html [R=301,L]
+
 # Sandwich Deli
 RewriteRule ^sandwich$ http://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
 RewriteRule ^sandwich-deli.html$ http://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
