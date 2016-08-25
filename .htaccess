@@ -203,7 +203,7 @@ Options -MultiViews
     AddType video/x-flv                                 flv
 
     # Serving `.ico` image files with a different media type
-    # prevents Internet Explorer from displaying then as images:
+    # prevents Internet Explorer from displaying them as images:
     # https://github.com/h5bp/html5-boilerplate/commit/37b5fec090d00f38de64b591bcddcb205aadf8ee
 
     AddType image/x-icon                                cur ico
@@ -329,7 +329,7 @@ AddDefaultCharset utf-8
     # Options +SymLinksIfOwnerMatch
 
     # (4)
-    # RewriteBase /
+    RewriteBase /
 
     # (5)
     # RewriteOptions <options>
@@ -349,11 +349,11 @@ AddDefaultCharset utf-8
 # Redirect from the `http://` to the `https://` version of the URL.
 # https://wiki.apache.org/httpd/RewriteHTTPToHTTPS
 
-# <IfModule mod_rewrite.c>
-#    RewriteEngine On
-#    RewriteCond %{HTTPS} !=on
-#    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-# </IfModule>
+ <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+ </IfModule>
 
 # ----------------------------------------------------------------------
 # | Suppressing / Forcing the `www.` at the beginning of URLs          |
@@ -472,7 +472,7 @@ AddDefaultCharset utf-8
 #
 # http://content-security-policy.com/
 # http://www.html5rocks.com/en/tutorials/security/content-security-policy/
-# http://www.w3.org/TR/CSP11/).
+# https://w3c.github.io/webappsec-csp/
 
 # <IfModule mod_headers.c>
 
@@ -582,7 +582,7 @@ AddDefaultCharset utf-8
 # http://blogs.msdn.com/b/ieinternals/archive/2014/08/18/hsts-strict-transport-security-attacks-mitigations-deployment-https.aspx
 
 # <IfModule mod_headers.c>
-#     Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
+#     Header always set Strict-Transport-Security "max-age=16070400;"
 # </IfModule>
 
 # ----------------------------------------------------------------------
@@ -666,9 +666,9 @@ AddDefaultCharset utf-8
 #    (e.g.: ASP.NET, PHP), and its value contains information
 #    about them (e.g.: their name, version number)
 #
-#  * doesn't provide any value as far as users are concern,
-#    and in some cases, the information provided by it can
-#    be used by attackers
+#  * doesn't provide any value to users, contributes to header
+#    bloat, and in some cases, the information it provides can
+#    expose vulnerabilities
 #
 # (!) If you can, you should disable the `X-Powered-By` header from the
 # language / framework level (e.g.: for PHP, you can do that by setting
@@ -983,10 +983,194 @@ FileETag None
 #     RewriteRule ^(.+)\.(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
 
-# ----------------------------------------------------------------------
-# | Enable Keep-alive                                     |
-# ----------------------------------------------------------------------
+# ######################################################################
+# # Ash's 301 redirects                                                #
+# ######################################################################
+RewriteRule ^help-a-charity.html$ https://readymadebusiness4u.com/charity-sweet-box-business.html [R=301,L]
+RewriteRule ^hire-bar.html$ https://readymadebusiness4u.com/mobile-bar-business.html [R=301,L]
+RewriteRule ^multi-washroom-vending.html$ https://readymadebusiness4u.com/washroom-vending-machines.html [R=301,L]
+RewriteRule ^weight-loss-business-model.html$ https://readymadebusiness4u.com/weight-loss-business-opportunity.html [R=301,L]
+RewriteRule ^chauffeur-business-model.html$ https://readymadebusiness4u.com/how-to-start-a-chauffeur-business.html [R=301,L]
+RewriteRule ^snack-and-toy-vending.html$ https://readymadebusiness4u.com/snack-vending-toy-vending.html [R=301,L]
+RewriteRule ^food-menu-advertising.html$ https://readymadebusiness4u.com/ [R=301,L]
+RewriteRule ^waste-collection-business-opportunity.html$ https://readymadebusiness4u.com/waste-collection-business-model.html [R=301,L]
+RewriteRule ^chauffeur-business-opportunity.html$ https://readymadebusiness4u.com/how-to-start-a-chauffeur-business.html [R=301,L]
+RewriteRule ^teeth-whitening-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^Inserts/mobile_botox_information.pdf$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cigarette-business-opportunity.html$ https://readymadebusiness4u.com/electronic-cigarette-business-model.html [R=301,L]
+RewriteRule ^hangover-cure.html$ https://readymadebusiness4u.com/fresh-start.html [R=301,L]
+RewriteRule ^pick-n-mix-multi-vend.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^electronic-cigarette-business-opportunity.html$ https://readymadebusiness4u.com/electronic-cigarette-business-model.html [R=301,L]
+RewriteRule ^forever-young.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cigarette-filter-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^drinks_sensations.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^mobile-drinks-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^/Inserts/nail_and_flower_information.pdf$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^safeseat.html$ https://readymadebusiness4u.com/washroom-vending-machines.html [R=301,L]
+RewriteRule ^nail-and-flower-printing.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^service_please.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cigarette-and-energy-shisha-business-opportunity.html$ https://readymadebusiness4u.com/energy-shisha.html [R=301,L]
+RewriteRule ^index.php?q=chauffeur-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^154.html$ https://readymadebusiness4u.com/home-help.html [R=301,L]
+RewriteRule ^156.html$ https://readymadebusiness4u.com/energy-shisha.html [R=301,L]
+RewriteRule ^155.html$ https://readymadebusiness4u.com/mixmo.html [R=301,L]
+RewriteRule ^145.html$ https://readymadebusiness4u.com/light-healing-clinic.html [R=301,L]
+RewriteRule ^146.html$ https://readymadebusiness4u.com/mobile-bar-business.html [R=301,L]
+RewriteRule ^141.html$ https://readymadebusiness4u.com/how-to-start-a-chauffeur-business.html [R=301,L]
+RewriteRule ^158.html$ https://readymadebusiness4u.com/fresh-start.html [R=301,L]
+RewriteRule ^125.html$ https://readymadebusiness4u.com/waste-collection-business-model.html [R=301,L]
+RewriteRule ^159.html$ https://readymadebusiness4u.com/multi-clean.html [R=301,L]
+RewriteRule ^157.html$ https://readymadebusiness4u.com/coffee-vending-franchise.html [R=301,L]
+RewriteRule ^153.html$ https://readymadebusiness4u.com/dj-karaoke.html [R=301,L]
+RewriteRule ^upgrades$ https://readymadebusiness4u.com/upgrades.html [R=301,L]
+RewriteRule ^coffee-vending.html$ https://readymadebusiness4u.com/coffee-vending-franchise.html [R=301,L]
+RewriteRule ^anti-ageing-and-health.html$ https://readymadebusiness4u.com/health-alert.html [R=301,L]
+RewriteRule ^home-help.html$ https://readymadebusiness4u.com/home-help-business-opportunity.html [R=301,L]
+RewriteRule ^fresh-start.html$ https://readymadebusiness4u.com/fresh-start-capsules.html [R=301,L]
+RewriteRule ^waste-collection-business-model.html$ https://readymadebusiness4u.com/waste-collection-franchise.html [R=301,L]
+RewriteRule ^electronic-cigarette-business-model.html$ https://readymadebusiness4u.com/ecig-franchise-electronic-cigarette-franchise.html [R=301,L]
+RewriteRule ^dj-karaoke.html$ https://readymadebusiness4u.com/mobile-dj-business-karaoke-franchise.html [R=301,L]
+RewriteRule ^hire-bar$ https://readymadebusiness4u.com/mobile-bar-business.html [R=301,L]
+RewriteRule ^mixmo$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
+RewriteRule ^mixmo.html$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
+RewriteRule ^business-idea.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^franchise-opportunities.html$ https://readymadebusiness4u.com/franchise-opportunities-uk.html [R=301,L]
+RewriteRule ^multi-clean.html$ https://readymadebusiness4u.com/cleaning-franchise-opportunity.html [R=301,L]
+RewriteRule ^health-alert.html$ https://readymadebusiness4u.com/health-business-opportunity.html [R=301,L]
+RewriteRule ^light-healing-clinic.html$ https://readymadebusiness4u.com/healing-business-opportunity.html [R=301,L]
+RewriteRule ^148.html$ https://readymadebusiness4u.com/washroom-vending-machines.html [R=301,L]
 
-<ifModule mod_headers.c> 
-Header set Connection keep-alive 
-</ifModule>
+# Homepage
+RewriteRule ^index.html$ https://readymadebusiness4u.com [R=301,L]
+
+# Washroom
+RewriteRule ^washroom-vending-machines.html$ https://readymadebusiness4u.com/vending-business-opportunities-vending-machine-franchise.html [R=301,L]
+
+# Sandwich Deli
+RewriteRule ^sandwich$ https://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
+RewriteRule ^sandwich-deli.html$ https://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
+RewriteRule ^sandwich-delivery-business.html$ https://readymadebusiness4u.com/mobile-catering-business-for-sale.html [R=301,L]
+
+# Alcohol
+RewriteRule ^alcohol-testing-business-opportunity.html$ https://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^alcohol-testing-business-model.html$ https://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^over_the_limit.html$ https://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^133.html$ https://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+RewriteRule ^pub-vending-business-opportunity.html$ https://readymadebusiness4u.com/breathalyzer-vending-machine-business.html [R=301,L]
+
+# Coffee Vending
+RewriteRule ^coffee-vending-franchise.html$ https://readymadebusiness4u.com/coffee-vending-machines-coffee-franchise.html [R=301,L]
+
+# Tattoo Removal
+RewriteRule ^index.php?q=tattoo-removal-business-opportunity.html$ https://readymadebusiness4u.com/laser-tattoo-removal-training-uk.html [R=301,L]
+RewriteRule ^tattoo-removal-business-opportunity.html$ https://readymadebusiness4u.com/laser-tattoo-removal-training-uk.html [R=301,L]
+RewriteRule ^tattoo-removal-business-model.html$ https://readymadebusiness4u.com/laser-tattoo-removal-training-uk.html [R=301,L]
+
+# Mobile Phone
+RewriteRule ^mobile-phone-business-model.html$ https://readymadebusiness4u.com/mobile-phone-charging-business.html [R=301,L]
+RewriteRule ^flat_battery.html$ https://readymadebusiness4u.com/mobile-phone-charging-business.html [R=301,L]
+RewriteRule ^mobile-phone-business-opportunity.html$ https://readymadebusiness4u.com/mobile-phone-charging-business.html [R=301,L]
+RewriteRule ^127.html$ https://readymadebusiness4u.com/mobile-phone-charging-business.html [R=301,L]
+RewriteRule ^index.php?q=mobile-phone-business-opportunity.html$ https://readymadebusiness4u.com/mobile-phone-charging-business.html [R=301,L]
+
+# PAT Testing
+RewriteRule ^pat_testers.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+RewriteRule ^pat-testing-business-opportunity.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+RewriteRule ^pat-testing-business-model.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+RewriteRule ^132.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+RewriteRule ^index.php?q=pat-testing-business-opportunity.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+RewriteRule ^pat-testing-franchise.html$ https://readymadebusiness4u.com/pat-testing-course-pat-tester-course.html [R=301,L]
+
+# Shop
+RewriteRule ^http://readymadebusiness4u.com/product/holding-deposit$ http://shop.readymadebusiness4u.com/product/holding-deposit [R=301,L]
+
+# Vending category page
+RewriteRule ^vending-businesses.html$ https://readymadebusiness4u.com/vending-machine-business-for-sale.html [R=301,L]
+
+# Blog
+RewriteRule ^blog/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^blog$ https://readymadebusiness4u.com [R=301,L]
+
+# Random Crap
+RewriteRule ^ramtechweb/mysimplechat$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/iseries-software$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^/misc/caribbean-menu.pdf$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^news-su-cipro/f=$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^lasix-equivalent-of-bumex/f=$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/joomla-software$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^medco-cost-of-synthroid/f=$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cdn-cgi/nexp/dok3v=1613a3a185/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cdn-cgi/l/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^cdn-cgi/nexp/dok3v=1613a3a185/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=zh&lang=sk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=it$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^assets/images/small-business-opportunity%20$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^index.php?q=auto-repair-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/index.php?option=com_aicontactsafe&sTask=captcha&task=newCaptcha&pf=$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=fr$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=bg&lang=ro$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=sk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=zh&lang=de&lang=fr$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^index.php?option=com_content&view=article&id=54:something-new-under-the-sun&catid=1:latest-news&Itemid=63$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=sk&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=sk&lang=bg&lang=fi$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=pl&lang=ru&lang=fi$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^/ramtechweb/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^/ramtechweb/ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/*$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^/ramtechweb/*$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/contact-us2$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fr&lang=nl$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=zh&lang=es$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=el$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/iseries-software/54-izipit-for-ibm-system-i$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/payamr$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&ajax=true$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=nl$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fi&lang=zh$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=ru&lang=nl$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fi&lang=en$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=de&lang=es$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=no&lang=sv$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=ar&lang=bp$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=es&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fr&lang=de$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=no&lang=bg$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=no&lang=bp$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fi&lang=tr$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=pl&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=zh$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=no&lang=it$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fi&lang=bp$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=de&lang=no$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=nl$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=ro$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=en$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bp&lang=uk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=pl$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^index.php?option=com_content&view=article&id=48&Itemid=30$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=el&lang=fr&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=fr&lang=sv&lang=he$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=zh&lang=he&lang=uk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=bg&lang=en&lang=zh$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/components/com_mysimplechat/chatapp.php?jid=66&view=chat&lang=zh&lang=bg&lang=ru$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ramtechweb/index.php?option=com_aicontactsafe&sTask=message&task=deleteUploadedFile&filename=$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^index.php?option=com_content&view=article&id=55:how-much-does-it-cost-to-become-a-member-of-businesswebzonecom-&catid=31:general&Itemid=41&lang=en$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^recommendednews$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^preview/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^go/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^w/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^preview/$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^Inserts/hot_dog_vending.pdf$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^duplicate-of-testimonials-page/coffee-vending.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^teeth-whitening-business-opportunity.html+teeth+whitening+cost&ct=clnk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^testimonials/dj-karaoke.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^teeth-whitening-business-opportunity.html+teeth+whitening+products+that+work&ct=clnk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^teeth-whitening-business-opportunity.html+free+teeth+whitening&ct=clnk$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^http://www.readymadebusiness4u.com/tanning-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^http://readymadebusiness4u.com/tanning-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
