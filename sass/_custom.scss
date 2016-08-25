@@ -1,21 +1,15 @@
 // Variables
-$brand-primary: #4fa0de;
+$brand-primary: #930000;
 $brand-secondary: darken($brand-primary, 7%);
 $brand-tertiary: darken($brand-primary, 15%); // Main SASS
 body {
-    color: #212121 !important;
-    background-color: #f9f9f9 !important;
-}
-// Custom SASS
-h1,
-h2,
-h3,
-h4,
-h5 {
+    color: #ffffff !important;
+    background-color: #930000 !important;
     font-family: sans-serif !important;
 }
+// Custom SASS
 .header-bar {
-    background-color: $brand-primary !important;
+    background-color: #212121 !important;
     color: white !important;
     padding: 1em 0 !important;
     // position: fixed !important;
@@ -24,21 +18,11 @@ h5 {
     // width: 100% !important;
     // z-index: 99999 !important;
 }
-.scrollToTop {
-    position: fixed !important;
-    bottom: 20% !important;
-    right: 10px !important;
-    width: 15% !important;
-}
 .large-text {
     font-size: 24px !important;
 }
 .strong {
     font-weight: 700 !important;
-}
-#comm100-button-2233img {
-    width: 100% !important;
-    height: auto !important;
 }
 .container {
     max-width: 90% !important;
@@ -59,20 +43,31 @@ h5 {
     color: white !important;
 }
 #footer {
-    background-color: #0A0A0A !important;
+    background-color: #0d0d0d !important;
     color: #ffffff !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
 }
 .btn {
+    background-color: $brand-primary !important;
+    color: white !important;
+    border-radius: 0 !important;
+    padding: 1em !important;
+}
+.btn-dark {
     background-color: $brand-tertiary !important;
     color: white !important;
     border-radius: 0 !important;
+    padding: 1em !important;
+}
+.btn-dark a {
+    text-decoration: none !important;
 }
 .minus2em-margin-bottom {
     margin-bottom: -2em !important;
 }
 .jumbotron a {
     color: white !important;
-    text-decoration: underline !important;
 }
 .padded {
     padding-top: 1em !important;
@@ -132,18 +127,6 @@ h5 {
 .js .slicknav_menu {
     display: block !important;
 }
-.large-social-buttons {
-    transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    transform-origin: top left;
-    -ms-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -moz-transform-origin: top left;
-    -webkit-transform-origin: top left;
-}
 .z-1 {
     z-index: -1 !important;
 }
@@ -152,6 +135,7 @@ h5 {
 }
 .card {
     background-color: white !important;
+    color: #212121 !important;
     border: 1px solid #b9b9b9 !important;
     position: relative !important;
     margin-top: 1em !important;
@@ -166,20 +150,6 @@ h5 {
 .text-brand-primary {
     color: $brand-primary !important;
 }
-.business-man {
-    background-image: url("img/business-man.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    min-height: 500px !important;
-}
-.business-woman {
-    background-image: url("img/business-woman.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    min-height: 500px !important;
-}
 .min-height-400 {
     min-height: 400px !important;
 }
@@ -189,23 +159,18 @@ h5 {
 .bg-brand-primary {
     background-color: $brand-primary !important;
 }
-.m6-house-bg {
-    background-image: url("img/m6-motorway-house.jpg") !important;
+.homepage-hero {
+    background-image: url("img/puss-hero.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
-.mixmo-jumbotron {
-    background-image: url("img/opportunities/mixmo/mixmo-jumbotron.jpg") !important;
+.welcome-jumbotron {
+    background-image: url("img/welcome-jumbotron.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-}
-.road-bg {
-    background-image: url("img/road.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    margin: 0 !important;
 }
 .grey-bg {
     background-color: rgba(0, 0 ,0, 0.5) !important;
@@ -220,11 +185,49 @@ h5 {
 #footer li {
     padding: 0.5em 0 !important;
 }
+#footer a {
+    color: $brand-primary !important;
+}
+#footer a:hover {
+    color: $brand-tertiary !important;
+}
 label {
     color: white !important;
 }
 .text-center {
     text-align: left !important;
+}
+.no-underline {
+    text-decoration: none !important;
+}
+#menu {
+    display: none;
+}
+.slicknav_menu {
+    display: block;
+}
+.nav-pills {
+  > li {
+    float: left;
+
+    // Links rendered as pills
+    > a {
+      border-radius: $nav-pills-border-radius;
+    }
+    + li {
+      margin-left: 2px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $nav-pills-active-link-hover-color;
+        background-color: $nav-pills-active-link-hover-bg;
+      }
+    }
+  }
 }
 @media (min-width: 768px) {
     .padded {
@@ -252,6 +255,12 @@ label {
         right: 0 !important;
         bottom: 0 !important;
         width: 200px !important;
+    }
+    .slicknav_menu {
+        display: none;
+    }
+    #menu {
+        display: none;
     }
 }
 @media (min-width: 1200px) {

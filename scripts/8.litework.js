@@ -5,7 +5,7 @@ $(function() {
 // Load Addthis share bar after page load onload();
 function downloadJSAtOnload() {
     var element = document.createElement("script");
-    element.src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-574ed955612875d5";
+    element.src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bec894bfacf33c";
     document.body.appendChild(element);
 }
 if (window.addEventListener)
