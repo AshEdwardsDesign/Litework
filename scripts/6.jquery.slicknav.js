@@ -10,7 +10,7 @@
             closedSymbol: '&#9658;',
             openedSymbol: '&#9660;',
             prependTo: 'body',
-            appendTo: '',
+            appendTo: '#slicknav-append',
             parentTag: 'a',
             closeOnClick: false,
             allowParentLinks: false,

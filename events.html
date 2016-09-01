@@ -37,6 +37,20 @@
 
 <body>
 
+    <!--Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--End of Facebook SDK -->
+
     <!-- Nav start -->
     @@nav
     <!-- Nav End -->
@@ -49,13 +63,13 @@
         <div class="container" role="main">
 
             <div class="row">
-                <div class="text-brand-primary text-center sml-padded">
-                    <h2>A night out to remember...</h2>
+                <div class=" col-xs-12 text-center sml-padded">
+                    <h1>Events</h1>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-8">
                     <p>The Puss in Boots has fantastic nights and events throughout the week, ranging from food nights to games and entertainment for all the family!</p>
                     <p>Whether you're looking for somewhere to bring your family for a weekend lunch or dinner, or a great night out for you and your friends, give The Puss in Boots a try!</p>
                     <p>We now have two systems at The Puss and so can show a wide range of events. Want to watch a particular event/game? Let us know and we can sort it out for you!</p>
@@ -63,44 +77,10 @@
                     </p>
                     <p class="text-center"><strong><em>We now have a brand new top of the range satellite system showing all football and major sporting events in HD* at The Puss in Boots. *(HD where available)</em></strong></p>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-3 text-center">
-                    <h3>SAMPLE EVENT</h3>
-                    <p>This is one of our events</p>
-                    <div class="sml-padded">
-                        <a role="button" href="blah.pdf" class="btn btn-lg btn-dark">CLICK TO VIEW</a>
-                        <p class="small"><em>(PDF format)</em></p>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="fb-page" data-href="https://www.facebook.com/PussInBootsPub" data-tabs="events, timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/PussInBootsPub" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PussInBootsPub">The Puss In Boots Macclesfield</a></blockquote>
                     </div>
-                    <br>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <h3>SAMPLE EVENT</h3>
-                    <p>This is one of our events</p>
-                    <div class="sml-padded">
-                        <a role="button" href="blah.pdf" class="btn btn-lg btn-dark">CLICK TO VIEW</a>
-                        <p class="small"><em>(PDF format)</em></p>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <h3>SAMPLE EVENT</h3>
-                    <p>This is one of our events</p>
-                    <div class="sml-padded">
-                        <a role="button" href="blah.pdf" class="btn btn-lg btn-dark">CLICK TO VIEW</a>
-                        <p class="small"><em>(PDF format)</em></p>
-                    </div>
-                    <br>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <h3>SAMPLE EVENT</h3>
-                    <p>This is one of our events</p>
-                    <div class="sml-padded">
-                        <a role="button" href="blah.pdf" class="btn btn-lg btn-dark">CLICK TO VIEW</a>
-                        <p class="small"><em>(PDF format)</em></p>
-                    </div>
-                    <br>
                 </div>
             </div>
 

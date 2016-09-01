@@ -2,12 +2,14 @@
 $brand-primary: #930000;
 $brand-secondary: darken($brand-primary, 7%);
 $brand-tertiary: darken($brand-primary, 15%); // Main SASS
+
 body {
     color: #ffffff !important;
     background-color: #930000 !important;
     font-family: sans-serif !important;
 }
 // Custom SASS
+
 .header-bar {
     background-color: #212121 !important;
     color: white !important;
@@ -18,121 +20,155 @@ body {
     // width: 100% !important;
     // z-index: 99999 !important;
 }
+
 .large-text {
     font-size: 24px !important;
 }
+
 .strong {
     font-weight: 700 !important;
 }
+
 .container {
     max-width: 90% !important;
 }
+
 .cfgen-captcha-img {
     width: 200px !important;
 }
+
 .infront {
     z-index: 999999 !important;
 }
+
 .no-underline:hover {
     text-decoration: none !important;
 }
+
 .margin-top {
     margin-top: 5em !important;
 }
+
 .header-bar a {
     color: white !important;
 }
+
 #footer {
     background-color: #0d0d0d !important;
     color: #ffffff !important;
     padding-top: 2em !important;
     padding-bottom: 2em !important;
 }
+
 .btn {
     background-color: $brand-primary !important;
     color: white !important;
     border-radius: 0 !important;
     padding: 1em !important;
 }
+
 .btn-dark {
     background-color: $brand-tertiary !important;
     color: white !important;
     border-radius: 0 !important;
     padding: 1em !important;
 }
+
 .btn-dark a {
     text-decoration: none !important;
 }
+
 .minus2em-margin-bottom {
     margin-bottom: -2em !important;
 }
+
 .jumbotron a {
     color: white !important;
 }
+
 .padded {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
+
 .sml-padded {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
 }
+
 .text-white {
     color: white !important;
 }
+
 .horizontal-space {
     margin: 0 1em !important;
 }
+
 .no-vertical-padding {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+
 .navbar-default {
     margin: 0 !important;
 }
+
 .brand-img-sml {
     width: 40px !important;
 }
+
 .padding-top {
     padding-top: 2em !important;
 }
+
 .nav-highlight:hover {
     color: white !important;
     background-color: $brand-tertiary !important;
 }
+
 .padding20 {
     padding: 20px !important;
 }
+
 .jumbotron-parallax {
     background-color: transparent !important;
 }
+
 .scrolltotop {
     position: fixed !important;
     right: 50px !important;
     bottom: 50px !important;
 }
+
 #footer ul {
     list-style: none !important;
     padding: 0 !important;
 }
+
 .link {
     color: white !important;
 }
+
 .link:hover {
     color: $brand-tertiary !important;
 }
-.js #menu {
+
+#menu {
     display: none !important;
 }
-.js .slicknav_menu {
+
+.slicknav_menu {
     display: block !important;
 }
+
 .z-1 {
     z-index: -1 !important;
 }
+
 .white-bg {
     background-color: white !important;
 }
+
 .card {
     background-color: white !important;
     color: #212121 !important;
@@ -147,24 +183,30 @@ body {
 //     right: 0 !important;
 //     bottom: 0 !important;
 // }
+
 .text-brand-primary {
     color: $brand-primary !important;
 }
+
 .min-height-400 {
     min-height: 400px !important;
 }
+
 #slicknav-append {
     color: white !important;
 }
+
 .bg-brand-primary {
     background-color: $brand-primary !important;
 }
+
 .homepage-hero {
     background-image: url("img/puss-hero.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
 .welcome-jumbotron {
     background-image: url("img/welcome-jumbotron.jpg") !important;
     background-size: cover !important;
@@ -172,77 +214,78 @@ body {
     background-repeat: no-repeat !important;
     margin: 0 !important;
 }
+
 .grey-bg {
     background-color: rgba(0, 0 ,0, 0.5) !important;
     padding: 4em !important;
 }
+
 .certificate-boxes {
     padding: 4em !important;
 }
+
 .header-bar li {
     padding: 0.5em 0 !important;
 }
+
 #footer li {
     padding: 0.5em 0 !important;
 }
+
 #footer a {
     color: $brand-primary !important;
 }
+
 #footer a:hover {
     color: $brand-tertiary !important;
 }
+
 label {
     color: white !important;
 }
+
 .text-center {
     text-align: left !important;
 }
+
 .no-underline {
     text-decoration: none !important;
 }
-#menu {
-    display: none;
-}
-.slicknav_menu {
-    display: block;
-}
-.nav-pills {
-  > li {
-    float: left;
+// TA STUFF
 
-    // Links rendered as pills
-    > a {
-      border-radius: $nav-pills-border-radius;
-    }
-    + li {
-      margin-left: 2px;
-    }
+#CDSLOCINNER {
+    color: black !important;
+}
 
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $nav-pills-active-link-hover-color;
-        background-color: $nav-pills-active-link-hover-bg;
-      }
-    }
-  }
+#TA_cdsratingsonlynarrow603 {
+    text-align: -webkit-center !important;
+}
+//END OF TA STUFF
+
+.text-black {
+    color: #212121 !important;
 }
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
         padding-bottom: 2em !important;
     }
+
     .scrollToTop {
         right: 10px !important;
         width: 4% !important;
     }
+
     .text-center {
         text-align: center !important;
     }
+
     .card {
         min-height: 510px !important;
+    }
+
+    .menu-cards {
+        min-height: 300px !important;
     }
 }
 @media (min-width: 992px) {
@@ -250,17 +293,20 @@ label {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
     }
+
     .live-chat-button {
         position: fixed !important;
         right: 0 !important;
         bottom: 0 !important;
         width: 200px !important;
     }
+
     .slicknav_menu {
-        display: none;
+        display: none !important;
     }
+
     #menu {
-        display: none;
+        display: block !important;
     }
 }
 @media (min-width: 1200px) {
@@ -268,6 +314,7 @@ label {
         padding-top: 4em !important;
         padding-bottom: 4em !important;
     }
+
     .scrollToTop {
         width: 3% !important;
     }
