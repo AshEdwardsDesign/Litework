@@ -49,6 +49,9 @@ h5 {
 .infront {
     z-index: 999999 !important;
 }
+.no-underline {
+    text-decoration: none !important;
+}
 .no-underline:hover {
     text-decoration: none !important;
 }
