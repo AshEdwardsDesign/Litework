@@ -982,3 +982,8 @@ FileETag None
 #     RewriteCond %{REQUEST_FILENAME} !-f
 #     RewriteRule ^(.+)\.(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp|webmanifest)$ $1.$3 [L]
 # </IfModule>
+
+# ######################################################################
+# # Ash's 301 redirects                                                #
+# ######################################################################
+RewriteRule ^events.html$ https://thepussinboots.co.uk/events-in-macclesfield.html [R=301,L]
