@@ -274,11 +274,23 @@ label {
 .no-min-height {
     min-height: 0 !important;
 }
+
 .agent-hero {
     background-image: url("img/agent-hero.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+}
+
+.agent-ul {
+    list-style: none !important;
+    color: grey !important;
+    font-style: italic !important;
+    padding: 0 !important;
+}
+
+.agent-table td {
+    width: 33% !important;
 }
 @media (min-width: 768px) {
     .padded {
@@ -298,6 +310,7 @@ label {
     .card {
         min-height: 510px !important;
     }
+
     .no-min-height {
         min-height: 0 !important;
     }
