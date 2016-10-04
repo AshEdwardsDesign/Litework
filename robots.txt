@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: http://slenderwave.com/sitemap.xml
+Sitemap: https://slenderwave.co.uk/sitemap.xml
