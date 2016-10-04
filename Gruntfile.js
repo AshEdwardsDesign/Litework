@@ -165,6 +165,9 @@ module.exports = function(grunt) {
                     }, {
                         match: 'header',
                         replacement: '<%= grunt.file.read("snippets/header.html") %>'
+                    }, {
+                        match: 'homepage',
+                        replacement: '<%= pkg.homepage %>'
                     }]
                 },
                 files: [{
