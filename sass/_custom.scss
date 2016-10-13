@@ -283,10 +283,10 @@ label {
 }
 
 .agent-ul {
-    list-style: none !important;
+    list-style: disc url("img/tick.jpg") !important;
     color: grey !important;
     font-style: italic !important;
-    padding: 0 !important;
+    text-align: left !important;
 }
 
 .agent-table td {
