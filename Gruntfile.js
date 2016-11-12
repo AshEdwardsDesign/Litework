@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         uncss: {
             dist: {
                 options: {
-                    ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.in', '.wsmenu', '.wsmenu-list', '.wsmenu-submenu', '.overlapblackbg', '.innerpnd', '.typography-text', '.halfdiv', '.menu_form', '.wsmenucontainer', '.wsoffcanvasopener', '.wsmobileheader', '.hometext', 'megacollink', 'megacolimage', 'typographylinks', 'typographydiv', 'mainmapdiv', 'wsmenu-click', 'wsmenu-click02', 'ws-activearrow', 'wsmenu-rotate', 'wsmenu-submenu-sub', 'wsmenu-submenu-sub-sub', 'megamenu', 'ad-style', 'halfmenu', 'animated-arrow', 'callusicon', 'smallogo'],
+                    ignore: ['#added_at_runtime', '.created_by_jQuery', ':hover', ':active', '.js', '.in', '.wsmenu', '.wsmenu-list', '.wsmenu-submenu', '.overlapblackbg', '.innerpnd', '.typography-text', '.halfdiv', '.xmas', '.menu_form', '.wsmenucontainer', '.wsoffcanvasopener', '.wsmobileheader', '.hometext', 'megacollink', 'megacolimage', 'typographylinks', 'typographydiv', 'mainmapdiv', 'wsmenu-click', 'wsmenu-click02', 'ws-activearrow', 'wsmenu-rotate', 'wsmenu-submenu-sub', 'wsmenu-submenu-sub-sub', 'megamenu', '.welcome-jumbotron','ad-style', 'halfmenu', 'animated-arrow', 'callusicon', 'smallogo'],
                     stylesheets: ['/css/litework.css'],
                 },
                 files: {

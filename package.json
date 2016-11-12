@@ -1,5 +1,5 @@
 {
-    "name": "Puss in Boots Website 2016 redesign",
+    "name": "Puss",
     "version": "1.0.0",
     "description": "Complete rebuild of the Puss in Boots website.",
     "homepage": "https://thepussinboots.co.uk/",
@@ -25,7 +25,7 @@
         "grunt-contrib-clean": "^1.0.0",
         "grunt-contrib-concat": "^1.0.1",
         "grunt-contrib-copy": "^1.0.0",
-        "grunt-contrib-cssmin": "^1.0.1",
+        "grunt-contrib-cssmin": "^1.0.2",
         "grunt-contrib-htmlmin": "^2.0.0",
         "grunt-contrib-imagemin": "^1.0.1",
         "grunt-contrib-sass": "^1.0.0",
