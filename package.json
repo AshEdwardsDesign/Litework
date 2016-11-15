@@ -1,13 +1,8 @@
 {
-    "name": "Readymade Business Website 2016 redesign",
+    "name": "Inch Go Lipo website",
     "version": "1.0.0",
-    "description": "Complete rebuild of the Readymade Business 4 U website.",
-    "homepage": "https://readymadebusiness4u.com/",
-    "keywords": [
-        "framework",
-        "HTML/CSS",
-        "util"
-    ],
+    "description": "Inch Go Lipo website",
+    "homepage": "https://inchgolipo.com/",
     "author": "Ash Edwards <info@ashedwardsdesign.com>",
     "contributors": [],
     "scripts": {
