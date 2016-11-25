@@ -1,11 +1,11 @@
 // Variables
-$brand-primary: #4fa0de;
-$brand-secondary: darken($brand-primary, 7%);
-$brand-tertiary: darken($brand-primary, 15%); // Main SASS
+$brand-primary: #48d0e8;
+$brand-secondary: darken($brand-primary, 10%);
+$brand-tertiary: darken($brand-primary, 25%); // Main SASS
+$brand-quaternary: darken($brand-primary, 45%);
 
 body {
     color: #212121 !important;
-    background-color: #f9f9f9 !important;
 }
 // Custom SASS
 
@@ -82,10 +82,19 @@ h5 {
 }
 
 .btn {
-    background-color: $brand-tertiary !important;
+    background-color: $brand-secondary !important;
     color: white !important;
     border-radius: 0 !important;
     text-decoration: none !important;
+    white-space: normal !important;
+}
+
+.btn:hover {
+    background-color: $brand-tertiary !important;
+}
+
+.btn:active {
+    background-color: $brand-tertiary !important;
 }
 
 .minus2em-margin-bottom {
@@ -181,36 +190,25 @@ h5 {
 
 .card {
     background-color: white !important;
-    border: 1px solid #b9b9b9 !important;
+    border: 1px solid $brand-primary !important;
+    margin: 1em !important;
     position: relative !important;
-    margin-top: 1em !important;
-    margin-bottom: 1em !important;
+    min-height: 10em !important;
+    // overflow: hidden !important;
 }
-// .card .btn {
-//     position: absolute !important;
-//     left: 0 !important;
-//     right: 0 !important;
-//     bottom: 0 !important;
+// .card img {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   height: 100%;
+//   width: auto;
+//   -webkit-transform: translate(-50%,-50%);
+//       -ms-transform: translate(-50%,-50%);
+//           transform: translate(-50%,-50%);
 // }
 
 .text-brand-primary {
     color: $brand-primary !important;
-}
-
-.business-man {
-    background-image: url("img/business-man.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    min-height: 500px !important;
-}
-
-.business-woman {
-    background-image: url("img/business-woman.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    min-height: 500px !important;
 }
 
 .min-height-400 {
@@ -221,26 +219,13 @@ h5 {
     color: white !important;
 }
 
-.bg-brand-primary {
+.brand-primary-bg {
     background-color: $brand-primary !important;
+    color: white !important;
 }
 
-.m6-house-bg {
-    background-image: url("img/m6-motorway-house.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-.mixmo-jumbotron {
-    background-image: url("img/opportunities/mixmo/mixmo-jumbotron.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-.road-bg {
-    background-image: url("img/road.jpg") !important;
+.london-bg {
+    background-image: url("img/london-skyline.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -248,10 +233,6 @@ h5 {
 
 .grey-bg {
     background-color: rgba(0, 0 ,0, 0.5) !important;
-    padding: 4em !important;
-}
-
-.certificate-boxes {
     padding: 4em !important;
 }
 
@@ -275,22 +256,50 @@ label {
     min-height: 0 !important;
 }
 
-.agent-hero {
-    background-image: url("img/agent-hero.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+select {
+    width: 100% !important;
+    padding: 1em !important;
 }
 
-.agent-ul {
-    list-style: disc url("img/tick.jpg") !important;
-    color: grey !important;
-    font-style: italic !important;
-    text-align: left !important;
+#menu {
+    display: none !important;
 }
 
-.agent-table td {
-    width: 33% !important;
+.slicknav_menu {
+    display: block !important;
+}
+
+.scrollToTop {
+    display: block !important;
+}
+
+.btn-category {
+    margin: 1em !important;
+    padding: 1em 0 !important;
+}
+
+.spacer {
+    height: 50px !important;
+}
+
+.franchise-box-title {
+    padding: 1em !important;
+    margin: 0 !important;
+    color: white !important;
+    background-color: $brand-tertiary !important;
+    // position: absolute !important;
+    // bottom: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.testimonial-box {
+    background-color: $brand-quaternary !important;
+    padding: 2em !important;
+}
+
+.jumbotron p {
+    font-size: 16px !important;
 }
 @media (min-width: 768px) {
     .padded {
@@ -301,6 +310,7 @@ label {
     .scrollToTop {
         right: 10px !important;
         width: 4% !important;
+        display: none !important;
     }
 
     .text-center {
@@ -308,7 +318,7 @@ label {
     }
 
     .card {
-        min-height: 510px !important;
+        min-height: 150px !important;
     }
 
     .no-min-height {
@@ -319,13 +329,6 @@ label {
     .padded {
         padding-top: 3em !important;
         padding-bottom: 3em !important;
-    }
-
-    .live-chat-button {
-        position: fixed !important;
-        right: 0 !important;
-        bottom: 0 !important;
-        width: 200px !important;
     }
 }
 @media (min-width: 1200px) {
