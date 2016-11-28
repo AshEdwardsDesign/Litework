@@ -52,12 +52,12 @@ h5 {
     max-width: 90% !important;
 }
 
-.cfgen-captcha-img {
-    width: 200px !important;
-}
-
 .infront {
     z-index: 999999 !important;
+}
+
+.underline {
+    text-decoration: underline !important;
 }
 
 .no-underline {
@@ -244,10 +244,6 @@ h5 {
     padding: 0.5em 0 !important;
 }
 
-label {
-    color: white !important;
-}
-
 .text-center {
     text-align: left !important;
 }
@@ -259,6 +255,8 @@ label {
 select {
     width: 100% !important;
     padding: 1em !important;
+    color: #212121 !important;
+    border: 0 !important;
 }
 
 #menu {
@@ -300,6 +298,33 @@ select {
 
 .jumbotron p {
     font-size: 16px !important;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+input {
+    width: 100% !important;
+    padding: 1em !important;
+    color: #212121 !important;
+    border: 0 !important;
+}
+
+textarea {
+    width: 100% !important;
+    padding: 1em !important;
+    color: #212121 !important;
+    border: 0 !important;
+}
+
+.cfgen-form-container label {
+    display: none !important;
+}
+
+hr .text-white {
+    color: white !important;
+    border: 1px solid white !important;
 }
 @media (min-width: 768px) {
     .padded {

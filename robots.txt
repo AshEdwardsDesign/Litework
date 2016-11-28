@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /thankyou.html
+Disallow: /beta/
 Sitemap: https://franchiseopportunitieshub.co.uk/sitemap.xml
