@@ -175,7 +175,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     flatten: true,
-                    src: ['*.html'],
+                    src: ['*.html', 'profiles/*.html'],
                     dest: 'build/'
                 }]
             },

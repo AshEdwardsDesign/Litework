@@ -3,6 +3,8 @@ $brand-primary: #48d0e8;
 $brand-secondary: darken($brand-primary, 10%);
 $brand-tertiary: darken($brand-primary, 25%); // Main SASS
 $brand-quaternary: darken($brand-primary, 45%);
+$highlight: #e89048;
+$highlight-darker: darken($highlight, 25%);
 
 body {
     color: #212121 !important;
@@ -224,6 +226,11 @@ h5 {
     color: white !important;
 }
 
+.brand-tertiary-bg {
+    background-color: $brand-tertiary !important;
+    color: white !important;
+}
+
 .london-bg {
     background-image: url("img/london-skyline.jpg") !important;
     background-size: cover !important;
@@ -326,6 +333,40 @@ hr .text-white {
     color: white !important;
     border: 1px solid white !important;
 }
+
+.mcdonalds-bg {
+    background-image: url("img/profile-img/mcdonalds/mcdonalds-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.pcpal-bg {
+    background-image: url("img/profile-img/pc-pal/pc-pal-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.retro-bg {
+    background-image: url("img/profile-img/retro-gaming/retro-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.highlight {
+    background-color: $highlight !important;
+}
+
+.highlight:hover {
+    background-color: $highlight-darker !important;
+}
+
+.link-no-underline:hover {
+    text-decoration: none !important;
+}
+
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
