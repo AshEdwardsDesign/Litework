@@ -329,6 +329,12 @@ textarea {
     display: none !important;
 }
 
+hr {
+    color: $brand-tertiary;
+    border: 1px solid $brand-tertiary;
+    margin: 4em 0 !important;
+}
+
 hr .text-white {
     color: white !important;
     border: 1px solid white !important;
@@ -355,6 +361,20 @@ hr .text-white {
     background-repeat: no-repeat !important;
 }
 
+.dominos-bg {
+    background-image: url("img/profile-img/dominos/dominos-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.homefresh-bg {
+    background-image: url("img/profile-img/homefresh/homefresh-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
 .highlight {
     background-color: $highlight !important;
 }
@@ -366,7 +386,6 @@ hr .text-white {
 .link-no-underline:hover {
     text-decoration: none !important;
 }
-
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
