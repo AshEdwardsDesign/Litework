@@ -361,6 +361,17 @@ label {
     bottom: 0 !important;
     right: 0 !important;
 }
+
+.cfgen-label {
+    visibility: hidden;
+}
+
+.form-control {
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 2em !important;
+    margin: 0 !important;
+}
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
