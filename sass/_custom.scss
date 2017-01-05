@@ -340,6 +340,10 @@ hr .text-white {
     border: 1px solid white !important;
 }
 
+.text-red {
+    color: red !important;
+}
+
 .mcdonalds-bg {
     background-image: url("img/profile-img/mcdonalds/mcdonalds-hero.jpg") !important;
     background-size: cover !important;
@@ -381,6 +385,7 @@ hr .text-white {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
 .pizzahut-bg {
     background-image: url("img/profile-img/pizza-hut/pizza-hero.jpg") !important;
     background-size: cover !important;
@@ -418,6 +423,13 @@ hr .text-white {
 
 .pitman-bg {
     background-image: url("img/profile-img/pitman-training/pitman-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.dating-franchise-bg {
+    background-image: url("img/profile-img/dating-franchise/dating-franchise-hero.jpg") !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
