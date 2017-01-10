@@ -292,6 +292,10 @@ label {
 .agent-table td {
     width: 33% !important;
 }
+
+.spacer {
+    min-height: 100px !important;
+}
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
