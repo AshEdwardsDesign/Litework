@@ -456,6 +456,20 @@ hr .text-white {
     background-repeat: no-repeat !important;
 }
 
+.voucher-bg {
+    background-image: url("img/profile-img/voucher-packs/voucher-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.pvc-bg {
+    background-image: url("img/profile-img/pvc-wizard/pvc-hero.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
 .highlight {
     background-color: $highlight !important;
 }
