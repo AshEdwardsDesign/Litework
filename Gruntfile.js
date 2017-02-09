@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'build/css/litework.css': ['sass/bootstrap.scss'],
+                    'build/css/litework.slim.css': ['sass/bootstrap.scss'],
                 }
             },
             nouncss: {
@@ -295,7 +295,7 @@ module.exports = function(grunt) {
     });
 
     // Here we tell Grunt what to do when we type 'grunt' into the CLI
-    grunt.registerTask('default', ["sass:dist", "sass:nouncss", "replace:footer", "concat:dist", "uglify", "replace:dist", "uncss", "autoprefixer", 'concat:css', "cssmin", "imagemin", "replace:css", "htmlhint", "htmlmin", "sitemap", "copy"]);
+    grunt.registerTask('default', ["sass:dist", "sass:nouncss", "replace:footer", "concat:dist", "uglify", "replace:dist", "autoprefixer", 'concat:css', "cssmin", "imagemin", "replace:css", "htmlhint", "htmlmin", "sitemap", "copy"]);
 
     // This will start a live preview of your project and then trigger the watch task
     grunt.registerTask('live', ["browserSync"]);
