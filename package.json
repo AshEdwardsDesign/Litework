@@ -1,12 +1,10 @@
 {
-    "name": "readymade-2016",
+    "name": "lunches-and-munchies",
     "version": "1.0.0",
-    "description": "Complete rebuild of the Readymade Business 4 U website.",
-    "homepage": "https://readymadebusiness4u.com/",
+    "description": "Lunches and Muncies website",
+    "homepage": "https://lunchesandmunchies.co.uk/",
     "keywords": [
-        "framework",
-        "HTML/CSS",
-        "util"
+        "website"
     ],
     "author": "Ash Edwards <info@ashedwardsdesign.com>",
     "contributors": [],
