@@ -9,10 +9,10 @@ $contactform_obj = new contactForm($cfg);
 
 $json_error_array = array();
 
-if($_SESSION['captcha_img_string']['f9b8dd9bd907f434ba2e18e9aa6868367e3c79ca'] != $_POST['captcha_input']){
-	$captcha_element_id = 'cfgen-element-3-8'; // will be used in merge_post
-	$captcha_elementlabel_id = 'cfgen-element-3-8-label'; // will be used in element_ids_values
-	$json_error_array['cfgen-element-3-8']['errormessage'] = $contactform_obj->cfg['form_errormessage_captcha'];
+if($_SESSION['captcha_img_string']['6e1595832ab1f8f8207752f69088e41469e17fb2'] != $_POST['captcha_input']){
+	$captcha_element_id = 'cfgen-element-7-11'; // will be used in merge_post
+	$captcha_elementlabel_id = 'cfgen-element-7-11-label'; // will be used in element_ids_values
+	$json_error_array['cfgen-element-7-11']['errormessage'] = $contactform_obj->cfg['form_errormessage_captcha'];
 	$error_captcha = true;
 }
 

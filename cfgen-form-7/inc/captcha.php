@@ -2,7 +2,7 @@
 
 $captcha_length = 6;
 
-$captcha_format = 'lettersandnumbers';
+$captcha_format = 'numbers';
 
 ?>
 <?php
@@ -92,7 +92,7 @@ foreach($captcha_characters as $value){
 	$captcha_img_value .= $value;
 }
 
-$_SESSION['captcha_img_string']['f9b8dd9bd907f434ba2e18e9aa6868367e3c79ca'] = $captcha_img_value;
+$_SESSION['captcha_img_string']['6e1595832ab1f8f8207752f69088e41469e17fb2'] = $captcha_img_value;
 
 
 

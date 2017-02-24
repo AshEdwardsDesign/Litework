@@ -1,27 +1,30 @@
-<small><!-- Footer Start -->
-  <div id="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-4 padded">
-                  <h4 class="footer-heading"><strong>CONTACT US</strong></h4>
-<p><strong>Phone:</strong><br/>07856 303 672</p>
-<p><strong>Email:</strong><br/>info@lunchesandmunchies.co.uk</p>
-              </div>
+<!DOCTYPE html>
 
-              <div class="col-sm-4 padded">
-                  <h4 class="footer-heading"><strong>ABOUT US</strong></h4>
-<p>At Lunches and Munchies, we offer excellent value for money
-snacks and drinks from our mobile sandwich van.</p>
-<p>You’ll find a wide range of fresh snacks & cold drinks, ideal for
-a worktime lunch or breakfast.</p>
+<html>
 
-<p>Monday to Friday<br/>8:45am - 3pm</p>
-<p>Saturday<br/>9am - 2pm</p>
-<p>Sunday<br/>Closed</p>
-              </div>
+<head>
 
-              <div class="col-sm-4 padded">
-                  <h4 class="footer-heading"><strong>GET IN TOUCH</strong></h4>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta charset="utf-8">
+
+<title>Lunches and Munchies</title>
+
+
+<!-- Form Start -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="cfgen-form-7/js/form.js"></script>
+<link href="cfgen-form-7/css/form.css" rel="stylesheet" type="text/css">
+
+<!-- Form End -->
+
+
+</head>
+
+<body>
+
 <div class="cfgen-form-container" id="cfgen-form-7">
 
 <div class="cfgen-form-content">
@@ -133,9 +136,7 @@ a worktime lunch or breakfast.</p>
 
 </div><!-- cfgen-form-container -->
 
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Footer End -->
-  </small>
+</body>
+
+
+</html>

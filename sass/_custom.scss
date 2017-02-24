@@ -5,7 +5,8 @@ $brand-tertiary: darken($brand-primary, 15%); // Main SASS
 
 body {
     color: #212121 !important;
-    background-color: #f9f9f9 !important;
+    background-color: white !important;
+    margin: 0 !important;
 }
 // Custom SASS
 
@@ -15,6 +16,7 @@ h3,
 h4,
 h5 {
     font-family: sans-serif !important;
+    color: #076845;
 }
 
 .header-bar {
@@ -26,13 +28,6 @@ h5 {
     // left: 0 !important;
     // width: 100% !important;
     // z-index: 99999 !important;
-}
-
-.scrollToTop {
-    position: fixed !important;
-    bottom: 20% !important;
-    right: 10px !important;
-    width: 15% !important;
 }
 
 .large-text {
@@ -77,8 +72,8 @@ h5 {
 }
 
 #footer {
-    background-color: #0A0A0A !important;
-    color: #ffffff !important;
+    background-color: #076845 !important;
+    color: white !important;
 }
 
 .btn {
@@ -295,6 +290,10 @@ label {
 
 .spacer {
     min-height: 100px !important;
+}
+
+.footer-heading {
+    color: white !important;
 }
 @media (min-width: 768px) {
     .padded {
