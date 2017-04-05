@@ -1023,7 +1023,6 @@ RewriteRule ^fresh-start.html$ https://readymadebusiness4u.com/fresh-start-capsu
 RewriteRule ^electronic-cigarette-business-model.html$ https://readymadebusiness4u.com/ecig-franchise-electronic-cigarette-franchise.html [R=301,L]
 RewriteRule ^mixmo$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
 RewriteRule ^mixmo.html$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
-RewriteRule ^franchise-opportunities.html$ https://readymadebusiness4u.com/franchise-opportunities-uk.html [R=301,L]
 RewriteRule ^multi-clean.html$ https://readymadebusiness4u.com/cleaning-franchise-opportunity.html [R=301,L]
 RewriteRule ^health-alert.html$ https://readymadebusiness4u.com/health-business-opportunity.html [R=301,L]
 RewriteRule ^light-healing-clinic.html$ https://readymadebusiness4u.com/healing-business-opportunity.html [R=301,L]
@@ -1032,6 +1031,10 @@ RewriteRule ^148.html$ https://readymadebusiness4u.com/washroom-vending-machines
 # Homepage
 RewriteRule ^index.html$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^business-idea.html$ https://readymadebusiness4u.com [R=301,L]
+
+# Franchise Page
+RewriteRule ^franchise-opportunities.html$ https://readymadebusiness4u.com/franchise-opportunities-uk-franchise-opportunity-uk.html [R=301,L]
+RewriteRule ^franchise-opportunities-uk.html$ https://readymadebusiness4u.com/franchise-opportunities-uk-franchise-opportunity-uk.html [R=301,L]
 
 # Hire Bar
 RewriteRule ^hire-bar$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hire-franchise-opportunity.html [R=301,L]
