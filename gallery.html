@@ -33,6 +33,14 @@
 
     @@analytics
 
+    <style>
+        .galleria {
+            max-width: 100%;
+            height: 500px;
+            background: #000
+        }
+    </style>
+
 </head>
 
 <body>
@@ -56,7 +64,48 @@
                     </div>
                 </div>
 
+                <div class="spacer"></div>
 
+                <!-- Start of Galleria -->
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="galleria">
+                            <a href="img/back-before.jpg"><img src="img/back-before.jpg" alt="Back before" class="img-responsive"></a>
+                            <a href="img/back-after.jpg"><img src="img/back-after.jpg" alt="Back after" class="img-responsive"></a>
+                            <a href="img/stomach-stretch-before.jpg"><img src="img/stomach-stretch-before.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/stomach-stretch-after.jpg"><img src="img/stomach-stretch-after.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/ba-1.jpg"><img src="img/ba-1.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/ba-2.jpg"><img src="img/ba-2.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/ba-3.jpg"><img src="img/ba-3.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/customer-before-after-measure.jpg"><img src="img/customer-before-after-measure.jpg" alt="After just 1 session" class="img-responsive"></a>
+                            <a href="img/arm-before.jpg"><img src="img/arm-before.jpg" alt="Arm before and after" class="img-responsive"></a>
+                            <a href="img/arm-after.jpg"><img src="img/arm-after.jpg" alt="Arm before and after" class="img-responsive"></a>
+                            <a href="img/arm-before-2.jpg"><img src="img/arm-before-2.jpg" alt="Arm before and after" class="img-responsive"></a>
+                            <a href="img/arm-after-2.jpg"><img src="img/arm-after-2.jpg" alt="Arm before and after" class="img-responsive"></a>
+                            <a href="img/stomach-before-2.jpg"><img src="img/stomach-before-2.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/stomach-after-2.jpg"><img src="img/stomach-after-2.jpg" alt="Stomach before and after" class="img-responsive"></a>
+                            <a href="img/tattoo-before.jpg"><img src="img/tattoo-before.jpg" alt="Tattoo before and after" class="img-responsive"></a>
+                            <a href="img/tattoo-after.jpg"><img src="img/tattoo-after.jpg" alt="Tattoo before and after" class="img-responsive"></a>
+                            <a href="img/leg-2.jpg"><img src="img/leg-2.jpg" alt="Leg Before" class="img-responsive"></a>
+                            <a href="img/leg-1.jpg"><img src="img/leg-1.jpg" alt="Leg After" class="img-responsive"></a>
+                            <a href="img/stomach-tape-before.jpg"><img src="img/stomach-tape-before.jpg" alt="Stomach tape before" class="img-responsive"></a>
+                            <a href="img/stomach-tape-after.jpg"><img src="img/stomach-tape-after.jpg" alt="Stomach tape after" class="img-responsive"></a>
+                            <a href="img/bum-lift-before.jpg"><img src="img/bum-lift-before.jpg" alt="Bum lift before" class="img-responsive"></a>
+                            <a href="img/bum-lift-after.jpg"><img src="img/bum-lift-after.jpg" alt="Bum lift after" class="img-responsive"></a>
+                            <a href="img/inch-go-lipo-butt-lift.jpg"><img src="img/inch-go-lipo-butt-lift.jpg" alt="Bum lift treatment" class="img-responsive salon-img"></a>
+                            <a href="img/moobs-before.jpg"><img src="img/moobs-before.jpg" alt="Moobs before" class="img-responsive"></a>
+                            <a href="img/moobs-after.jpg"><img src="img/moobs-after.jpg" alt="Moobs after" class="img-responsive"></a>
+                            <a href="img/stomach-before.jpg"><img src="img/stomach-before.jpg" alt="Stomach Before" class="img-responsive"></a>
+                            <a href="img/stomach-after.jpg"><img src="img/stomach-after.jpg" alt="Stomach After" class="img-responsive"></a>
+                            <a href="img/before.jpg"><img src="img/before.jpg" alt="Before stomach" class="img-responsive"></a>
+                            <a href="img/after.jpg"><img src="img/after.jpg" alt="After stomach" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of galleria -->
+<!--
                 <div class="spacer"></div>
                 <div class="row">
                     <div class="col-xs-12 div col-sm-6">
@@ -182,7 +231,7 @@
                 <div class="row">
                     <div class="col-xs-6"><img src="img/before.jpg" alt="Before stomach" class="img-responsive"></div>
                     <div class="col-xs-6"><img src="img/after.jpg" alt="After stomach" class="img-responsive"></div>
-                </div>
+                </div> -->
 
                 <div class="spacer"></div>
 
@@ -219,11 +268,18 @@
     <!-- Wrapper End -->
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/galleria.min.js"></script>
     <!-- Inline JS -->
     <script>
-        @@inlineJS
+        @ @inlineJS
     </script>
+    <script>
+        (function() {
+            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+    </script>
+
 </body>
 
 </html>
