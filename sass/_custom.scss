@@ -296,6 +296,9 @@ label {
 .spacer {
     min-height: 100px !important;
 }
+.spacer-50 {
+  min-height:  50px !important;
+}
 @media (min-width: 768px) {
     .padded {
         padding-top: 2em !important;
