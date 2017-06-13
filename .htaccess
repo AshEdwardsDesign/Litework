@@ -1105,6 +1105,9 @@ RewriteRule ^http://readymadebusiness4u.com/product/holding-deposit$ http://shop
 # Vending category page
 RewriteRule ^vending-businesses.html$ https://readymadebusiness4u.com/vending-machine-business-for-sale.html [R=301,L]
 
+# Wifi Vending
+RewriteRule ^wifi-vending.html$ https://readymadebusiness4u.com/wi-fi-vending-machine.html [R=301,L]
+
 # Blog
 RewriteRule ^blog/$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^blog$ https://readymadebusiness4u.com [R=301,L]
