@@ -75,7 +75,9 @@ h5 {
     background-color: #076845 !important;
     color: white !important;
 }
-
+#footer a {
+  color:white !important;
+}
 .btn {
     background-color: $brand-tertiary !important;
     color: white !important;
@@ -263,7 +265,7 @@ label {
 }
 
 .text-center {
-    text-align: left !important;
+    text-align: center !important;
 }
 
 .no-min-height {
