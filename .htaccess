@@ -1042,6 +1042,9 @@ RewriteRule ^146.html$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hi
 RewriteRule ^hire-bar.html$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hire-franchise-opportunity.html [R=301,L]
 RewriteRule ^mobile-bar-business.html$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hire-franchise-opportunity.html [R=301,L]
 
+##Homefresh
+RewriteRule ^homefresh-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+
 # Waste Distribution
 RewriteRule ^waste-collection-franchise.html$ https://readymadebusiness4u.com/recycling-business-opportunities.html [R=301,L]
 RewriteRule ^waste-collection-business-model.html$ https://readymadebusiness4u.com/recycling-business-opportunities.html [R=301,L]
