@@ -1036,6 +1036,9 @@ RewriteRule ^business-idea.html$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^franchise-opportunities.html$ https://readymadebusiness4u.com/franchise-opportunities-uk-franchise-opportunity-uk.html [R=301,L]
 RewriteRule ^franchise-opportunities-uk.html$ https://readymadebusiness4u.com/franchise-opportunities-uk-franchise-opportunity-uk.html [R=301,L]
 
+# Funeral Page
+RewriteRule ^funeral-services-franchise.html$ https://readymadebusiness4u.com [R=301,L]
+
 # Hire Bar
 RewriteRule ^hire-bar$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hire-franchise-opportunity.html [R=301,L]
 RewriteRule ^146.html$ https://readymadebusiness4u.com/hire-bar-franchise-bar-hire-franchise-opportunity.html [R=301,L]
