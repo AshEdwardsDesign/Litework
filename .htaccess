@@ -992,10 +992,8 @@ RewriteRule ^snack-and-toy-vending.html$ https://readymadebusiness4u.com/snack-v
 RewriteRule ^food-menu-advertising.html$ https://readymadebusiness4u.com/ [R=301,L]
 RewriteRule ^teeth-whitening-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^Inserts/mobile_botox_information.pdf$ https://readymadebusiness4u.com [R=301,L]
-RewriteRule ^cigarette-business-opportunity.html$ https://readymadebusiness4u.com/electronic-cigarette-business-model.html [R=301,L]
 RewriteRule ^hangover-cure.html$ https://readymadebusiness4u.com/fresh-start.html [R=301,L]
 RewriteRule ^pick-n-mix-multi-vend.html$ https://readymadebusiness4u.com [R=301,L]
-RewriteRule ^electronic-cigarette-business-opportunity.html$ https://readymadebusiness4u.com/electronic-cigarette-business-model.html [R=301,L]
 RewriteRule ^forever-young.html$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^cigarette-filter-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
 RewriteRule ^drinks_sensations.html$ https://readymadebusiness4u.com [R=301,L]
@@ -1020,7 +1018,6 @@ RewriteRule ^coffee-vending.html$ https://readymadebusiness4u.com/coffee-vending
 RewriteRule ^anti-ageing-and-health.html$ https://readymadebusiness4u.com/health-alert.html [R=301,L]
 RewriteRule ^home-help.html$ https://readymadebusiness4u.com/home-help-business-opportunity.html [R=301,L]
 RewriteRule ^fresh-start.html$ https://readymadebusiness4u.com/fresh-start-capsules.html [R=301,L]
-RewriteRule ^electronic-cigarette-business-model.html$ https://readymadebusiness4u.com/ecig-franchise-electronic-cigarette-franchise.html [R=301,L]
 RewriteRule ^mixmo$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
 RewriteRule ^mixmo.html$ https://readymadebusiness4u.com/mixmo-franchise.html [R=301,L]
 RewriteRule ^multi-clean.html$ https://readymadebusiness4u.com/cleaning-franchise-opportunity.html [R=301,L]
@@ -1113,6 +1110,13 @@ RewriteRule ^vending-businesses.html$ https://readymadebusiness4u.com/vending-ma
 
 # Wifi Vending
 RewriteRule ^wifi-vending.html$ https://readymadebusiness4u.com/wi-fi-vending-machine.html [R=301,L]
+
+# Ecig
+RewriteRule ^electronic-cigarette-business-opportunity.html$ https://readymadebusiness4u.com/ [R=301,L]
+RewriteRule ^cigarette-business-opportunity.html$ https://readymadebusiness4u.com/ [R=301,L]
+RewriteRule ^electronic-cigarette-business-opportunity.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^ecig-franchise-electronic-cigarette-franchise.html$ https://readymadebusiness4u.com [R=301,L]
+RewriteRule ^electronic-cigarette-business-model.html$ https://readymadebusiness4u.com [R=301,L]
 
 # Blog
 RewriteRule ^blog/$ https://readymadebusiness4u.com [R=301,L]
