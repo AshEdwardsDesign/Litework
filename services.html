@@ -30,7 +30,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     @@analytics
 
 </head>
@@ -51,8 +51,10 @@
               <div class="container">
 
                 <div class="row">
-                  <div class="col-sm-12">
-                  <h1>SERVICES</h1>
+                  <div class="col-sm-1">
+                  </div>
+                  <div class="col-sm-10 text-center">
+                  <h1>Services</h1>
                   <div class="spacer-25">
                   </div>
                   <div class="table-responsive">
@@ -63,17 +65,17 @@
                       <td>Price</td>
                     </tr>
                     <tr>
-                      <td>Special </td>
+                      <td>Special Offer 1 </td>
                       <td>Have 2 Cavitation Liposuction and Cryolipolysis treatments of your choice from the list of services.</td>
                       <td>£99</td>
                     </tr>
                     <tr>
-                      <td>Special</td>
+                      <td>Special Offer 2</td>
                       <td>Have Cavitation Liposuction and Cryolipolysis on one area of your choice and a mini non-surgical face lift.</td>
                       <td>£99</td>
                     </tr>
                     <tr>
-                      <td>Special</td>
+                      <td>Special Offer 3</td>
                       <td>Have an indepth consultation and treatment plan created just for you and recieve a mini non-surgical face lift.</td>
                       <td>£35</td>
                     </tr>
@@ -139,15 +141,47 @@
                     </tr>
                   </table>
                   </div>
+                  <div class="col-sm-1">
+                  </div>
                   </div>
                   <div class="spacer">
                   </div></div>
 
             </div>
+
+            <div class="row">
+            <div class="col-xs-12 text-center">
+            <h2>Recent Promotions</h2>
+            </div>
+            </div>
+            <div class="spacer-25"></div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="galleria">
+
+                        <a href="img/galleries/promotions/img-1.jpg"><img src="img/galleries/promotions/img-1.jpg" alt="Image 1" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-2.jpg"><img src="img/galleries/promotions/img-2.jpg" alt="Image 2" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-3.jpg"><img src="img/galleries/promotions/img-3.jpg" alt="Image 3" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-4.jpg"><img src="img/galleries/promotions/img-4.jpg" alt="Image 4" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-5.jpg"><img src="img/galleries/promotions/img-5.jpg" alt="Image 5" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-6.jpg"><img src="img/galleries/promotions/img-6.jpg" alt="Image 6" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-7.jpg"><img src="img/galleries/promotions/img-7.jpg" alt="Image 7" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-8.jpg"><img src="img/galleries/promotions/img-8.jpg" alt="Image 8" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-9.jpg"><img src="img/galleries/promotions/img-9.jpg" alt="Image 9" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-10.jpg"><img src="img/galleries/promotions/img-10.jpg" alt="Image 10" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-11.jpg"><img src="img/galleries/promotions/img-11.jpg" alt="Image 11" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-12.jpg"><img src="img/galleries/promotions/img-12.jpg" alt="Image 12" class="img-responsive"></a>
+                        <a href="img/galleries/promotions/img-13.jpg"><img src="img/galleries/promotions/img-13.jpg" alt="Image 13" class="img-responsive"></a>
+
+                    </div>
+                </div>
+                </div>
+                <div class="spacer-25"></div>
+            </div>
             <!-- Content end -->
         </div>
         <!-- White bg end -->
-
+</div>
         <!-- Footer Start -->
         @@footer
         <!-- Footer End -->
@@ -155,11 +189,18 @@
     </div>
     <!-- Wrapper End -->
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
 
     <!-- Inline JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>@@inlineJS</script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/galleria.min.js"></script>
     <script>
-        @@inlineJS
+        (function() {
+            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.6/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
     </script>
 </body>
 
